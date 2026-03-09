@@ -24,7 +24,7 @@
 您可以使用以下脚本来帮助查找 `README.md` 中的失效链接。这对于维护项目质量非常有帮助。
 
 ```bash
-git clone https://github.com/trimstray/the-book-of-secret-knowledge && cd the-book-of-secret-knowledge
+git clone https://github.com/trimstray/the-book-of-secret-knowledge-zh && cd the-book-of-secret-knowledge-zh
 
 for i in $(sed -n 's/.*href="\([^"]*\).*/\1/p' README.md | grep -v "^#") ; do
 

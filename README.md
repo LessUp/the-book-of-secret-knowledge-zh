@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/trimstray/the-book-of-secret-knowledge">
-    <img src="https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/static/img/the-book-of-secret-knowledge-preview.png" alt="The Book of Secret Knowledge">
+    <img src="static/img/the-book-of-secret-knowledge-preview.png" alt="The Book of Secret Knowledge">
   </a>
 </p>
 
@@ -76,16 +76,16 @@
 
 <p align="left">
   <a href="https://opencollective.com/the-book-of-secret-knowledge" alt="Open Collective 上的资金贡献者">
-    <img src="https://img.shields.io/opencollective/backers/the-book-of-secret-knowledge?style=for-the-badge&color=FF4500&labelColor=A9A9A9"></a>
+    <img src="https://img.shields.io/opencollective/backers/the-book-of-secret-knowledge?style=for-the-badge&color=FF4500&labelColor=A9A9A9">
   </a>
   <a href="https://opencollective.com/the-book-of-secret-knowledge" alt="Open Collective 上的资金贡献者">
-    <img src="https://img.shields.io/opencollective/sponsors/the-book-of-secret-knowledge?style=for-the-badge&color=FF4500&labelColor=A9A9A9"></a>
+    <img src="https://img.shields.io/opencollective/sponsors/the-book-of-secret-knowledge?style=for-the-badge&color=FF4500&labelColor=A9A9A9">
   </a>
 </p>
 
 ## :newspaper: &nbsp;RSS 订阅与更新
 
-GitHub 提供了提交记录的 [RSS/Atom](https://github.com/trimstray/the-book-of-secret-knowledge/commits.atom) 订阅源，如果您想随时了解所有更改，这个功能会很有用。
+GitHub 提供了提交记录的 [RSS/Atom](https://github.com/trimstray/the-book-of-secret-knowledge-zh/commits.atom) 订阅源，如果您想随时了解所有更改，这个功能会很有用。
 
 ## :ballot_box_with_check: &nbsp;待办事项
 
@@ -230,7 +230,7 @@ GitHub 提供了提交记录的 [RSS/Atom](https://github.com/trimstray/the-book
 &nbsp;&nbsp; <a href="https://github.com/jedisct1/dnscrypt-proxy"><b>dnscrypt-proxy 2</b></a> - 一个灵活的 DNS 代理，支持加密的 DNS 协议。<br>
 &nbsp;&nbsp; <a href="https://github.com/dnsdb/dnsdbq"><b>dnsdbq</b></a> - 提供对被动 DNS 数据库系统访问的 API 客户端。<br>
 &nbsp;&nbsp; <a href="https://github.com/looterz/grimd"><b>grimd</b></a> - 快速的 dns 代理，用于黑洞化互联网广告和恶意软件服务器。<br>
-  &nbsp;&nbsp; <a href="https://github.com/elceef/dnstwist"><b>dnstwist</b></a> - 检测域名抢注、网络钓鱼攻击、欺诈和品牌冒充。<br>
+&nbsp;&nbsp; <a href="https://github.com/elceef/dnstwist"><b>dnstwist</b></a> - 检测域名抢注、网络钓鱼攻击、欺诈和品牌冒充。<br>
 </p>
 
 ##### :black_small_square: 网络 (HTTP)
@@ -321,7 +321,7 @@ GitHub 提供了提交记录的 [RSS/Atom](https://github.com/trimstray/the-book
 &nbsp;&nbsp; <a href="https://z.digitalclouds.dev/"><b>Zstandard</b></a> - 是一种快速无损压缩算法，主要针对实时压缩场景。<br>
 &nbsp;&nbsp; <a href="https://github.com/facebook/watchman"><b>watchman</b></a> - 是一种文件监视服务。<br>
 &nbsp;&nbsp; <a href="https://github.com/stewartmcgown/uds-tools"><b>uds-tools</b></a> - 是一种用于Unix域流套接字的工具，非常类似于netcat。<br>
-&nbsp;&nbsp; <a href="https://github.com/sematext/logagent-js"><b>logagent</b></a> - 是一个现代、开源、轻量级的日志托运工具。
+&nbsp;&nbsp; <a href="https://github.com/sematext/logagent-js"><b>logagent</b></a> - 是一个现代、开源、轻量级的日志托运工具。<br>
 &nbsp;&nbsp; <a href="https://lsof.github.io/lsof/"><b>lsof</b></a> - 是一个用于列出已打开文件的命令。<br>
 &nbsp;&nbsp; <a href="https://github.com/Pithikos/Cynet"><b>Cynet</b></a> - 是一个在Docker容器中为您的进程提供伪TTY的程序。<br>
 &nbsp;&nbsp; <a href="https://github.com/Nekmo/dirhunt"><b>dirhunt</b></a> - 无需暴力破解即可查找 Web 目录。<br>
@@ -331,7 +331,6 @@ GitHub 提供了提交记录的 [RSS/Atom](https://github.com/trimstray/the-book
 &nbsp;&nbsp; <a href="https://github.com/mozilla/ssh_scan"><b>ssh_scan</b></a> - 一个 SSH 配置和策略扫描器的原型。<br>
 &nbsp;&nbsp; <a href="https://github.com/woj-ciech/LeakLooker"><b>LeakLooker</b></a> - 查找开放的数据库 - 由 Binaryedge.io 提供支持。<br>
 &nbsp;&nbsp; <a href="https://github.com/offensive-security/exploitdb"><b>exploitdb</b></a> - 来自 Exploit 数据库的可搜索存档。<br>
-&nbsp;&nbsp; <a href="https://github.com/vulnersCom/getsploit"><b>getsploit</b></a> - 一款用于搜索和下载漏洞利用的命令行工具。<br>
 &nbsp;&nbsp; <a href="https://github.com/zardus/ctf-tools"><b>ctf-tools</b></a> - 一些用于安全研究工具的设置脚本。<br>
 &nbsp;&nbsp; <a href="https://github.com/Gallopsled/pwntools"><b>pwntools</b></a> - CTF 框架和漏洞利用开发库。<br>
 &nbsp;&nbsp; <a href="https://github.com/bl4de/security-tools"><b>security-tools</b></a> - 主要用 Python 创建的小型安全工具集合。用于 CTF、渗透测试等。<br>
@@ -341,12 +340,8 @@ GitHub 提供了提交记录的 [RSS/Atom](https://github.com/trimstray/the-book
 &nbsp;&nbsp; <a href="https://github.com/google/AFL"><b>AFL</b></a> - 由 Google 维护的一款免费软件模糊测试器。<br>
 &nbsp;&nbsp; <a href="https://github.com/AFLplusplus/AFLplusplus"><b>AFL++</b></a> - 带有社区补丁的 AFL。<br>
 &nbsp;&nbsp; <a href="https://github.com/google/syzkaller"><b>syzkaller</b></a> - 一款无监督、覆盖率引导的内核模糊测试器。<br>
-&nbsp;&nbsp; <a href="https://github.com/pwndbg/pwndbg"><b>pwndbg</b></a> - 使用 GDB 轻松进行漏洞利用开发和逆向工程。<br>
-&nbsp;&nbsp; <a href="https://github.com/longld/peda"><b>GDB PEDA</b></a> - 用于 GDB 的 Python 漏洞利用开发辅助工具。<br>
 &nbsp;&nbsp; <a href="https://www.hex-rays.com/products/ida/index.shtml"><b>IDA</b></a> - 用于逆向工程恶意软件的多处理器反汇编器和调试器。<br>
-&nbsp;&nbsp; <a href="https://github.com/radare/radare2"><b>radare2</b></a> - 用于逆向工程和分析二进制文件的框架。<br>
 &nbsp;&nbsp; <a href="https://github.com/threat9/routersploit"><b>routersploit</b></a> - 嵌入式设备的漏洞利用框架。<br>
-&nbsp;&nbsp; <a href="https://github.com/NationalSecurityAgency/ghidra"><b>Ghidra</b></a> - 一款软件逆向工程（SRE）框架。<br>
 &nbsp;&nbsp; <a href="https://cutter.re/"><b>Cutter</b></a> - 集成 Ghidra 反编译器的 SRE 平台。<br>
 &nbsp;&nbsp; <a href="https://github.com/salesforce/vulnreport"><b>Vulnreport</b></a> - Salesforce 产品安全团队开发的开源渗透测试管理和自动化平台。<br>
 &nbsp;&nbsp; <a href="https://github.com/sc0tfree/mentalist"><b>Mentalist</b></a> - 一款用于自定义词表生成的图形化工具。<br>
@@ -764,4 +759,38 @@ GitHub 提供了提交记录的 [RSS/Atom](https://github.com/trimstray/the-book
 &nbsp;&nbsp; <a href="https://www.youtube.com/user/Hak5Darren"><b>Hak5</b></a> - 一个提供黑客和安全教程的 YouTube 频道。<br>
 </p>
 
-</code_block_to_apply_changes_from>
+#### 黑客/渗透测试 &nbsp;[<sup>[目录]</sup>](#anger-目录)
+
+> :construction: **本章节正在翻译中，欢迎贡献！**
+>
+> 请参阅[英文原版](https://github.com/trimstray/the-book-of-secret-knowledge#black_flag-hacking--penetration-testing)获取完整内容。
+
+#### 您的日常知识和新闻 &nbsp;[<sup>[目录]</sup>](#anger-目录)
+
+> :construction: **本章节正在翻译中，欢迎贡献！**
+>
+> 请参阅[英文原版](https://github.com/trimstray/the-book-of-secret-knowledge#daily-knowledge-and-news)获取完整内容。
+
+#### 其他速查表 &nbsp;[<sup>[目录]</sup>](#anger-目录)
+
+> :construction: **本章节正在翻译中，欢迎贡献！**
+>
+> 请参阅[英文原版](https://github.com/trimstray/the-book-of-secret-knowledge#other-cheat-sheets)获取完整内容。
+
+#### Shell 单行命令 &nbsp;[<sup>[目录]</sup>](#anger-目录)
+
+> :construction: **本章节正在翻译中，欢迎贡献！**
+>
+> 请参阅[英文原版](https://github.com/trimstray/the-book-of-secret-knowledge#one-liners)获取完整内容。
+
+#### Shell 技巧 &nbsp;[<sup>[目录]</sup>](#anger-目录)
+
+> :construction: **本章节正在翻译中，欢迎贡献！**
+>
+> 请参阅[英文原版](https://github.com/trimstray/the-book-of-secret-knowledge#shell-tricks)获取完整内容。
+
+#### Shell 函数 &nbsp;[<sup>[目录]</sup>](#anger-目录)
+
+> :construction: **本章节正在翻译中，欢迎贡献！**
+>
+> 请参阅[英文原版](https://github.com/trimstray/the-book-of-secret-knowledge#shell-functions)获取完整内容。
