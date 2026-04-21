@@ -1,16 +1,18 @@
 <p align="center">
-  <a href="https://github.com/trimstray/the-book-of-secret-knowledge">
+  <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh">
     <img src="static/img/the-book-of-secret-knowledge-preview.png" alt="The Book of Secret Knowledge">
   </a>
 </p>
 
-> :cn: **中文翻译说明**
+> :cn: **中文翻译说明 | Chinese Translation Note**
 >
 > 本仓库是 [the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) 的中文翻译版。
 >
+> This is the Chinese translation of [the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge).
+>
 > 我们欢迎任何形式的贡献，无论是修正翻译错误还是参与新的翻译。请参阅[贡献指南](.github/CONTRIBUTING.md)了解更多信息。
 >
-> **[English Version](https://github.com/trimstray/the-book-of-secret-knowledge)**
+> **[English Version](https://github.com/trimstray/the-book-of-secret-knowledge)** | **[中文版](https://github.com/LessUp/the-book-of-secret-knowledge-zh)**
 
 ---
 
@@ -21,7 +23,7 @@
 <br>
 
 <p align="center">
-  <a href="https://github.com/trimstray/the-book-of-secret-knowledge-zh/pulls">
+  <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh/pulls">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?longCache=true" alt="欢迎 Pull Request">
   </a>
   <a href="LICENSE.md">
@@ -70,7 +72,7 @@
 
 这个项目的存在归功于所有贡献者。
 
-<a href="https://github.com/trimstray/the-book-of-secret-knowledge/graphs/contributors"><img src="https://opencollective.com/the-book-of-secret-knowledge/contributors.svg?width=890&button=false"></a>
+<a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh/graphs/contributors"><img src="https://opencollective.com/the-book-of-secret-knowledge/contributors.svg?width=890&button=false"></a>
 
 ### 资金贡献者
 
@@ -85,7 +87,7 @@
 
 ## :newspaper: &nbsp;RSS 订阅与更新
 
-GitHub 提供了提交记录的 [RSS/Atom](https://github.com/trimstray/the-book-of-secret-knowledge-zh/commits.atom) 订阅源，如果您想随时了解所有更改，这个功能会很有用。
+GitHub 提供了提交记录的 [RSS/Atom](https://github.com/LessUp/the-book-of-secret-knowledge-zh/commits.atom) 订阅源，如果您想随时了解所有更改，这个功能会很有用。
 
 ## :ballot_box_with_check: &nbsp;待办事项
 

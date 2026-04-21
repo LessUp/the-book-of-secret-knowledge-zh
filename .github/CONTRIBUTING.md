@@ -1,4 +1,4 @@
-# 贡献指南
+# 贡献指南 | Contributing Guide
 
 > _然而，一个真正的社区只有在其成员以有意义的方式互动时才存在，这种互动加深了他们对彼此的理解并促进了学习。_
 
@@ -6,7 +6,7 @@
 
 ## 使用问题跟踪器
 
-[问题跟踪器](https://github.com/trimstray/the-book-of-secret-knowledge/issues) 是报告错误、功能请求和提交 pull request 的首选渠道，但请遵守以下限制：
+[问题跟踪器](https://github.com/LessUp/the-book-of-secret-knowledge-zh/issues) 是报告错误、功能请求和提交 pull request 的首选渠道，但请遵守以下限制：
 
 *   请**不要**使用问题跟踪器来请求个人支持（请使用 [Stack Overflow](https://stackoverflow.com) 或 IRC）。
 *   请**不要**在问题中进行无端攻击或引战。请保持讨论的重点，并尊重他人的意见。
@@ -24,7 +24,7 @@
 您可以使用以下脚本来帮助查找 `README.md` 中的失效链接。这对于维护项目质量非常有帮助。
 
 ```bash
-git clone https://github.com/trimstray/the-book-of-secret-knowledge-zh && cd the-book-of-secret-knowledge-zh
+git clone https://github.com/LessUp/the-book-of-secret-knowledge-zh && cd the-book-of-secret-knowledge-zh
 
 for i in $(sed -n 's/.*href="\([^"]*\).*/\1/p' README.md | grep -v "^#") ; do
 
