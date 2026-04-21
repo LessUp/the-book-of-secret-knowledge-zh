@@ -4,6 +4,30 @@
   </a>
 </p>
 
+<h1 align="center">📚 秘密知识之书</h1>
+<h3 align="center">The Book of Secret Knowledge - Chinese Translation</h3>
+
+<p align="center">
+  <em>系统管理员、DevOps、渗透测试与安全研究人员的知识宝库</em>
+</p>
+
+<p align="center">
+  <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh/actions/workflows/check-links.yml">
+    <img src="https://github.com/LessUp/the-book-of-secret-knowledge-zh/actions/workflows/check-links.yml/badge.svg" alt="Link Check">
+  </a>
+  <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh/pulls">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?longCache=true" alt="欢迎 Pull Request">
+  </a>
+  <a href="LICENSE.md">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg?longCache=true" alt="MIT 许可证">
+  </a>
+  <a href="https://lessup.github.io/the-book-of-secret-knowledge-zh/">
+    <img src="https://img.shields.io/badge/GitHub-Pages-brightgreen" alt="GitHub Pages">
+  </a>
+</p>
+
+---
+
 > :cn: **中文翻译说明 | Chinese Translation Note**
 >
 > 本仓库是 [the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) 的中文翻译版。
@@ -12,61 +36,48 @@
 >
 > 我们欢迎任何形式的贡献，无论是修正翻译错误还是参与新的翻译。请参阅[贡献指南](.github/CONTRIBUTING.md)了解更多信息。
 >
-> **[English Version](https://github.com/trimstray/the-book-of-secret-knowledge)** | **[中文版](https://github.com/LessUp/the-book-of-secret-knowledge-zh)**
+> **[English Version](https://github.com/trimstray/the-book-of-secret-knowledge)** | **[中文版](https://github.com/LessUp/the-book-of-secret-knowledge-zh)** | **[📖 在线阅读](https://lessup.github.io/the-book-of-secret-knowledge-zh/)**
 
 ---
 
-<p align="center">"<i>知识就是力量，请谨慎使用！</i>"</p>
+<p align="center"><i>💡 知识就是力量，请谨慎使用！</i></p>
 
-<h4 align="center">一系列鼓舞人心的列表、手册、速查表、博客、技巧、命令行脚本、CLI/Web工具等。</h4>
+## 📖 项目简介
 
-<br>
+这个仓库汇集了大量在日常工作中使用的各种工具和资源。它包含了系统管理员、DevOps 工程师、渗透测试人员和安全研究人员所需的各类知识，集中于一处便于查阅。
 
-<p align="center">
-  <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh/pulls">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?longCache=true" alt="欢迎 Pull Request">
-  </a>
-  <a href="LICENSE.md">
-    <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg?longCache=true" alt="MIT 许可证">
-  </a>
-</p>
+## 🎯 目标用户
 
-<br>
+本资源主要面向以下群体：
 
-****
+| 角色 | 描述 |
+|------|------|
+| 🔧 **系统管理员** | Linux/Unix 系统管理、服务器运维 |
+| 🚀 **DevOps 工程师** | CI/CD、容器编排、自动化部署 |
+| 🔒 **安全研究人员** | 漏洞分析、安全审计、渗透测试 |
+| 🌐 **网络工程师** | 网络架构、流量分析、故障排查 |
 
-## :notebook_with_decorative_cover: &nbsp;这是什么？
+当然，任何人都可以从中受益！
 
-这个仓库汇集了我在日常工作中每天使用的各种材料和工具。它包含了大量有用的信息，集中于一处。它对我来说是宝贵的知识源泉，我经常回顾。
+## 🤝 如何贡献
 
-## :restroom: &nbsp;为谁准备？
+如果您发现任何翻译错误或内容问题，欢迎创建 Pull Request。请确保您的更改：
 
-实际上，是为每个人准备的。每个人都可以在这里找到自己喜欢的内容。但说实话，它主要面向系统和网络管理员、DevOps、渗透测试人员和安全研究人员。
+- ✅ 内容准确、清晰
+- ✅ 格式规范、易于阅读
+- ✅ 符合项目风格
 
-## :information_source: &nbsp;如何贡献
+标记为 <b>*</b> 的链接暂时不可用，请在确认其已永久失效前不要删除。
 
-如果您发现任何不合理或不正确的内容，请创建一个 pull request，并就您的更改或评论添加有效且理由充分的解释。
-
-这个项目的几条简单规则：
-
--   内容具有吸引力且清晰
--   阅读不累
--   内容有用
-
-以下规则可能更好：
-
--   易于贡献（Markdown + HTML ...）
--   易于查找（简单的目录，也许值得扩展？）
-
-标记为 <b>*</b> 的链接暂时不可用。请在确认其已永久失效前不要删除。
-
-在添加 pull request 之前，请参阅 **[贡献指南](.github/CONTRIBUTING.md)**。您也应该记住这一点：
+详细贡献指南请参阅 **[CONTRIBUTING.md](.github/CONTRIBUTING.md)**。
 
 ```diff
-+ 本仓库的目的不是包含所有东西，而只收录高质量的内容。
++ 本仓库的目标是收录高质量的内容，而非追求大而全。
 ```
 
 欢迎所有 **建议/PR**！
+
+## 👥 贡献者
 
 ### 代码贡献者
 
@@ -74,51 +85,53 @@
 
 <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh/graphs/contributors"><img src="https://opencollective.com/the-book-of-secret-knowledge/contributors.svg?width=890&button=false"></a>
 
-### 资金贡献者
+### 资金支持者
 
 <p align="left">
-  <a href="https://opencollective.com/the-book-of-secret-knowledge" alt="Open Collective 上的资金贡献者">
+  <a href="https://opencollective.com/the-book-of-secret-knowledge" alt="Open Collective">
     <img src="https://img.shields.io/opencollective/backers/the-book-of-secret-knowledge?style=for-the-badge&color=FF4500&labelColor=A9A9A9">
   </a>
-  <a href="https://opencollective.com/the-book-of-secret-knowledge" alt="Open Collective 上的资金贡献者">
+  <a href="https://opencollective.com/the-book-of-secret-knowledge" alt="Open Collective">
     <img src="https://img.shields.io/opencollective/sponsors/the-book-of-secret-knowledge?style=for-the-badge&color=FF4500&labelColor=A9A9A9">
   </a>
 </p>
 
-## :newspaper: &nbsp;RSS 订阅与更新
+## 📰 订阅更新
 
-GitHub 提供了提交记录的 [RSS/Atom](https://github.com/LessUp/the-book-of-secret-knowledge-zh/commits.atom) 订阅源，如果您想随时了解所有更改，这个功能会很有用。
+GitHub 提供了提交记录的 [RSS/Atom](https://github.com/LessUp/the-book-of-secret-knowledge-zh/commits.atom) 订阅源，方便您随时了解所有更改。
 
-## :ballot_box_with_check: &nbsp;待办事项
+## ✅ 待办事项
 
-- [ ] 添加新内容...
+- [ ] 完成剩余章节的翻译
 - [ ] 添加有用的 shell 函数
-- [ ] 为收集工具添加命令行脚本（例如 CLI 工具）
-- [ ] 列表排序
+- [ ] 为收集工具添加命令行脚本
+- [ ] 列表排序优化
 
-新项目也会定期添加。
+新项目和资源会定期添加。
 
-## :anger: &nbsp;目录
+## 📋 目录
 
-仅含主要章节：
+| 分类 | 描述 |
+|------|------|
+| **[CLI 工具](#cli-工具)** | 命令行工具：Shell、编辑器、网络工具等 |
+| **[GUI 工具](#gui-工具)** | 图形化工具：终端模拟器、安全工具等 |
+| **[Web 工具](#web-工具)** | 在线工具：SSL测试、DNS工具等 |
+| **[系统/服务](#系统服务)** | 操作系统、托管服务 |
+| **[网络](#网络)** | 网络工具和学习资源 |
+| **[容器/编排](#容器编排)** | Docker、Kubernetes 等 |
+| **[手册/指南/教程](#手册指南教程)** | 技术文档和学习资源 |
+| **[精选列表](#精选列表)** | Awesome 系列资源 |
+| **[博客/播客/视频](#博客播客视频)** | 安全相关的媒体资源 |
+| **[黑客/渗透测试](#黑客渗透测试)** | 🚧 翻译中 |
+| **[您的日常知识和新闻](#您的日常知识和新闻)** | 🚧 翻译中 |
+| **[其他速查表](#其他速查表)** | 🚧 翻译中 |
+| **[Shell 单行命令](#shell-单行命令)** | 🚧 翻译中 |
+| **[Shell 技巧](#shell-技巧)** | 🚧 翻译中 |
+| **[Shell 函数](#shell-函数)** | 🚧 翻译中 |
 
-- **[CLI 工具](#cli-工具)**
-- **[GUI 工具](#gui-工具)**
-- **[Web 工具](#web-工具)**
-- **[系统/服务](#系统服务)**
-- **[网络](#网络)**
-- **[容器/编排](#容器编排)**
-- **[手册/指南/教程](#手册指南教程)**
-- **[精选列表](#精选列表)**
-- **[博客/播客/视频](#博客播客视频)**
-- **[黑客/渗透测试](#黑客渗透测试)**
-- **[您的日常知识和新闻](#您的日常知识和新闻)**
-- **[其他速查表](#其他速查表)**
-- **[Shell 单行命令](#shell-单行命令)**
-- **[Shell 技巧](#shell-技巧)**
-- **[Shell 函数](#shell-函数)**
+---
 
-## :trident: &nbsp;私房秘籍（章节）
+## 🔥 核心内容
 
 #### CLI 工具 &nbsp;[<sup>[目录]</sup>](#anger-目录)
 
@@ -495,7 +508,7 @@ GitHub 提供了提交记录的 [RSS/Atom](https://github.com/LessUp/the-book-of
 &nbsp;&nbsp; <a href="https://uselesscsp.com/"><b>无用的 CSP</b></a> - 一些世界顶级网站正在使用的 CSP 公开列表。<br>
 &nbsp;&nbsp; <a href="https://whynohttps.com/"><b>为什么不用 HTTPS？</b></a> - Alexa 排名前 100 的未自动重定向到 HTTPS 的网站列表。<br>
 &nbsp;&nbsp; <a href="https://ciphersuite.info/"><b>TLS 密码套件搜索</b></a> - 密码套件搜索引擎。<br>
-&nbsp;&nbsp; <a href="https://github.com/RaymiiOrg/cipherli.st"><b>cipherli.st</b></a> - 用于 Apache、Nginx、Lighttpd 等的强密码套件。<b>*</b><br>
+&nbsp;&nbsp; <a href="https://github.com/RaymiiOrg/cipherli.st"><b>cipherli.st</b></a> - 用于 Apache、Nginx、Lighttpd 等的强密码套件。<br>
 &nbsp;&nbsp; <a href="https://2ton.com.au/dhtool/"><b>dhtool</b></a> - 公共 Diffie-Hellman 参数服务/工具。<br>
 &nbsp;&nbsp; <a href="https://badssl.com/"><b>badssl.com</b></a> - 测试客户端对不良 SSL 配置的响应。<br>
 &nbsp;&nbsp; <a href="https://tlsfun.de/"><b>tlsfun.de</b></a> - 用于各种 TLS/SSL 协议测试。<br>
@@ -569,7 +582,7 @@ GitHub 提供了提交记录的 [RSS/Atom](https://github.com/LessUp/the-book-of
 ##### :black_small_square: 网络工具
 
 <p>
-&nbsp;&nbsp; <a href="https://toolbar.netcraft.com/site_report"><b>Netcraft</b></a> - 关于网站的详细报告，帮助您做出明智的选择。<b>*</b><br>
+&nbsp;&nbsp; <a href="https://sitereport.netcraft.com"><b>Netcraft Site Report</b></a> - 关于网站的详细报告，帮助您做出明智的选择。<br>
 &nbsp;&nbsp; <a href="https://atlas.ripe.net/"><b>RIPE NCC Atlas</b></a> - 一个全球性、开放、分布式的互联网测量平台。<br>
 &nbsp;&nbsp; <a href="https://www.robtex.com/"><b>Robtex</b></a> - 使用各种来源收集关于 IP 地址、域名、主机名等的公开信息。<br>
 &nbsp;&nbsp; <a href="https://securitytrails.com/"><b>Security Trails</b></a> - 为安全公司、研究人员和团队提供的 API。<br>

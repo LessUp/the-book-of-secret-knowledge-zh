@@ -1,9 +1,12 @@
-name: 检查失效链接
+name: 🔗 链接检查 | Link Checker
 
 on:
   schedule:
-    - cron: '0 0 1 * *'  # 每月1日运行
+    - cron: '0 0 1 * *'  # 每月1日运行 (UTC 00:00)
   workflow_dispatch:       # 支持手动触发
+  push:
+    branches: [master]
+    paths: ['README.md']
 
 jobs:
   check-links:
@@ -23,6 +26,7 @@ jobs:
             --exclude-mail
             --exclude "^https://opencollective.com"
             --exclude "^https://img.shields.io"
+            --exclude "^https://github.com/.*"
             './README.md'
           fail: false
 
@@ -33,3 +37,20 @@ jobs:
           name: link-check-report
           path: ./lychee/out.md
           retention-days: 30
+
+      - name: Create issue for broken links
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('./lychee/out.md', 'utf8');
+            if (report.includes('Errors')) {
+              github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: '🔗 发现失效链接 | Broken Links Detected',
+                body: '## 失效链接报告\n\n' + report + '\n\n---\n_此 Issue 由自动化工作流生成_',
+                labels: ['broken-links', 'maintenance']
+              });
+            }

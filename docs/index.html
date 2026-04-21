@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>秘密知识之书 | The Book of Secret Knowledge (Chinese)</title>
-    <meta name="description" content="The Book of Secret Knowledge Chinese Translation - A collection of tools, manuals, cheatsheets for SysAdmins, DevOps, and Security Researchers">
-    <meta name="keywords" content="DevOps, SysAdmin, Security, Pentest, Tools, Cheatsheet, CLI, Chinese, 中文翻译">
+    <title>秘密知识之书 | The Book of Secret Knowledge 中文版</title>
+    <meta name="description" content="秘密知识之书中文版 - 系统管理员、DevOps、渗透测试与安全研究人员的知识宝库。包含500+工具、手册、速查表、CLI/Web工具等。">
+    <meta name="keywords" content="DevOps, SysAdmin, Security, Pentest, Tools, Cheatsheet, CLI, Chinese, 中文翻译, 渗透测试, 安全工具, 命令行">
     <meta name="author" content="LessUp">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="秘密知识之书 | The Book of Secret Knowledge 中文版">
+    <meta property="og:description" content="系统管理员、DevOps、渗透测试与安全研究人员的知识宝库">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lessup.github.io/the-book-of-secret-knowledge-zh/">
+    <meta property="og:image" content="https://lessup.github.io/the-book-of-secret-knowledge-zh/static/img/the-book-of-secret-knowledge-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://lessup.github.io/the-book-of-secret-knowledge-zh/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
     <style>
         :root {
             --primary: #e94560;
@@ -201,6 +209,35 @@
             content: '→';
             color: var(--primary);
         }
+        .translation-status {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.1), rgba(255, 107, 107, 0.1));
+            border: 1px solid var(--primary);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        .translation-status h2 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        .progress-bar {
+            background: var(--bg-dark);
+            border-radius: 10px;
+            height: 20px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        .progress-fill {
+            background: linear-gradient(90deg, var(--primary), #ff6b6b);
+            height: 100%;
+            border-radius: 10px;
+            width: 65%;
+            transition: width 1s ease;
+        }
+        .progress-text {
+            color: var(--text-secondary);
+        }
         footer {
             background: var(--bg-card);
             border-top: 1px solid var(--border);
@@ -333,6 +370,17 @@
                 <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh#shell-单行命令" class="toc-item">Shell 单行命令</a>
             </div>
         </div>
+
+        <div class="translation-status">
+            <h2>🚧 翻译进度 | Translation Progress</h2>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <p class="progress-text">已完成约 65% 的内容翻译，剩余章节正在持续翻译中...</p>
+            <p class="progress-text" style="margin-top: 10px;">
+                <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh/blob/master/.github/CONTRIBUTING.md" style="color: var(--primary);">欢迎参与翻译贡献 →</a>
+            </p>
+        </div>
     </main>
 
     <footer>
@@ -350,7 +398,7 @@
             <span class="badge">欢迎贡献</span>
         </div>
         <p style="margin-top: 20px; font-size: 0.85rem;">
-            © 2024 <a href="https://github.com/LessUp">LessUp</a> | 
+            © 2024-2025 <a href="https://github.com/LessUp">LessUp</a> |
             Original by <a href="https://github.com/trimstray">trimstray</a>
         </p>
     </footer>
