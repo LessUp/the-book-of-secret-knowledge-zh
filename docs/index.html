@@ -3,344 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>秘密知识之书 | The Book of Secret Knowledge 中文版</title>
-    <meta name="description" content="秘密知识之书中文版 - 系统管理员、DevOps、渗透测试与安全研究人员的知识宝库。包含500+工具、手册、速查表、CLI/Web工具等。">
-    <meta name="keywords" content="DevOps, SysAdmin, Security, Pentest, Tools, Cheatsheet, CLI, Chinese, 中文翻译, 渗透测试, 安全工具, 命令行">
-    <meta name="author" content="LessUp">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="秘密知识之书 | The Book of Secret Knowledge 中文版">
-    <meta property="og:description" content="系统管理员、DevOps、渗透测试与安全研究人员的知识宝库">
+    <title>首页 | 秘密知识之书</title>
+    <meta name="description" content="首页 - 秘密知识之书中文版，系统管理员、DevOps工程师和安全研究人员的知识宝库">
+    <meta name="keywords" content="DevOps, SysAdmin, Security, Pentest, Tools, CLI, 中文翻译, 渗透测试, 安全工具">
+    <meta property="og:title" content="首页 | 秘密知识之书">
+    <meta property="og:description" content="系统管理员、DevOps工程师和安全研究人员的知识宝库">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lessup.github.io/the-book-of-secret-knowledge-zh/">
-    <meta property="og:image" content="https://lessup.github.io/the-book-of-secret-knowledge-zh/static/img/the-book-of-secret-knowledge-preview.png">
-    <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://lessup.github.io/the-book-of-secret-knowledge-zh/">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
-    <style>
-        :root {
-            --primary: #e94560;
-            --primary-dark: #c73e54;
-            --bg-dark: #0d1117;
-            --bg-card: #161b22;
-            --text-primary: #f0f6fc;
-            --text-secondary: #8b949e;
-            --border: #30363d;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.6;
-            min-height: 100vh;
-        }
-        .hero {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            padding: 80px 20px;
-            text-align: center;
-        }
-        .hero-logo {
-            font-size: 5rem;
-            margin-bottom: 20px;
-            animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 10px;
-            background: linear-gradient(90deg, var(--primary), #ff6b6b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .hero .subtitle {
-            font-size: 1.2rem;
-            color: var(--text-secondary);
-            margin-bottom: 30px;
-        }
-        .hero .description {
-            max-width: 600px;
-            margin: 0 auto 30px;
-            color: var(--text-secondary);
-        }
-        .btn-group {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 14px 32px;
-            background: var(--primary);
-            color: #fff;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background: var(--primary-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
-        }
-        .btn-outline {
-            background: transparent;
-            border: 2px solid var(--primary);
-        }
-        .btn-outline:hover {
-            background: rgba(233, 69, 96, 0.1);
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-        .section-title {
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 40px;
-            position: relative;
-        }
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 4px;
-            background: var(--primary);
-            margin: 15px auto 0;
-            border-radius: 2px;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-bottom: 60px;
-        }
-        .feature-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 30px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
-        }
-        .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-        .feature-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            color: var(--primary);
-        }
-        .feature-card p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 40px;
-            margin-bottom: 60px;
-        }
-        .stat-item {
-            text-align: center;
-        }
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
-        .stat-label {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-        .toc {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 40px;
-        }
-        .toc h2 {
-            font-size: 1.5rem;
-            margin-bottom: 25px;
-            color: var(--primary);
-        }
-        .toc-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-        }
-        .toc-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 12px 15px;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 8px;
-            text-decoration: none;
-            color: var(--text-primary);
-            transition: all 0.3s;
-        }
-        .toc-item:hover {
-            background: rgba(233, 69, 96, 0.1);
-            transform: translateX(5px);
-        }
-        .toc-item::before {
-            content: '→';
-            color: var(--primary);
-        }
-        .translation-status {
-            background: linear-gradient(135deg, rgba(233, 69, 96, 0.1), rgba(255, 107, 107, 0.1));
-            border: 1px solid var(--primary);
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 60px;
-            text-align: center;
-        }
-        .translation-status h2 {
-            color: var(--primary);
-            margin-bottom: 15px;
-        }
-        .progress-bar {
-            background: var(--bg-dark);
-            border-radius: 10px;
-            height: 20px;
-            margin: 20px 0;
-            overflow: hidden;
-        }
-        .progress-fill {
-            background: linear-gradient(90deg, var(--primary), #ff6b6b);
-            height: 100%;
-            border-radius: 10px;
-            width: 65%;
-            transition: width 1s ease;
-        }
-        .progress-text {
-            color: var(--text-secondary);
-        }
-        footer {
-            background: var(--bg-card);
-            border-top: 1px solid var(--border);
-            padding: 40px 20px;
-            text-align: center;
-        }
-        footer p {
-            color: var(--text-secondary);
-            margin-bottom: 10px;
-        }
-        footer a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        .badges {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .badge {
-            padding: 5px 12px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-            .hero-logo { font-size: 3.5rem; }
-            .btn-group { flex-direction: column; align-items: center; }
-            .btn { width: 100%; max-width: 280px; justify-content: center; }
-        }
-    </style>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📚%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="/the-book-of-secret-knowledge-zh/css/style.css">
+    <link rel="stylesheet" href="/the-book-of-secret-knowledge-zh/css/highlight.css">
 </head>
-<body>
-    <header class="hero">
-        <div class="hero-logo">📚</div>
-        <h1>秘密知识之书</h1>
-        <p class="subtitle">The Book of Secret Knowledge - Chinese Translation</p>
-        <p class="description">
-            A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.
-            <br>系统管理员、DevOps、渗透测试与安全研究人员的知识宝库
-        </p>
-        <div class="btn-group">
-            <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh" class="btn">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                </svg>
-                View on GitHub
+<body data-theme="dark">
+    <header class="site-header">
+        <div class="header-left">
+            <button class="menu-toggle" aria-label="切换菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="/the-book-of-secret-knowledge-zh/" class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">秘密知识之书</span>
             </a>
-            <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh/blob/master/README.md" class="btn btn-outline">
-                📖 阅读文档
+        </div>
+        <div class="header-center">
+            <div class="search-box">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                </svg>
+                <input type="text" id="search-input" placeholder="搜索工具、资源... (Ctrl+K)" autocomplete="off">
+                <div class="search-results" id="search-results"></div>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle" id="theme-toggle" aria-label="切换主题">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
             </a>
         </div>
     </header>
 
-    <main class="container">
-        <h2 class="section-title">核心特性 | Features</h2>
-        <div class="features">
-            <div class="feature-card">
-                <div class="feature-icon">🛠️</div>
-                <h3>CLI Tools</h3>
-                <p>强大的命令行工具集合，涵盖 Shell、文本编辑器、网络工具、安全工具等</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🖥️</div>
-                <h3>GUI Tools</h3>
-                <p>图形化安全测试工具、终端模拟器、密码管理器、浏览器等</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🌐</div>
-                <h3>Web Tools</h3>
-                <p>在线安全检测服务、SSL 测试、DNS 工具、编码解码工具等</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">📖</div>
-                <h3>Manuals & Guides</h3>
-                <p>详尽的技术手册、教程指南、白皮书和学习资源</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🔐</div>
-                <h3>Security & Pentest</h3>
-                <p>渗透测试工具、安全审计、漏洞扫描、逆向工程资源</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">⚡</div>
-                <h3>Shell One-liners</h3>
-                <p>实用的 Shell 单行命令和技巧，提高工作效率</p>
+    <div class="site-container">
+        <aside class="sidebar-left">
+            <nav class="toc-tree">
+                <div class="toc-section">
+                    <h4>目录导航</h4>
+                    <a href="/the-book-of-secret-knowledge-zh/tools/" class="toc-item">🛠️ CLI 工具</a><a href="/the-book-of-secret-knowledge-zh/gui-tools/" class="toc-item">🖥️ GUI 工具</a><a href="/the-book-of-secret-knowledge-zh/web-tools/" class="toc-item">🌐 Web 工具</a><a href="/the-book-of-secret-knowledge-zh/system/" class="toc-item">⚙️ 系统/服务</a><a href="/the-book-of-secret-knowledge-zh/network/" class="toc-item">🌐 网络</a><a href="/the-book-of-secret-knowledge-zh/containers/" class="toc-item">🐳 容器/编排</a><a href="/the-book-of-secret-knowledge-zh/guides/" class="toc-item">📖 手册/指南/教程</a><a href="/the-book-of-secret-knowledge-zh/lists/" class="toc-item">⭐ 精选列表</a><a href="/the-book-of-secret-knowledge-zh/media/" class="toc-item">🎧 博客/播客/视频</a><a href="/the-book-of-secret-knowledge-zh/pentest/" class="toc-item">🔐 黑客/渗透测试</a><a href="/the-book-of-secret-knowledge-zh/cheatsheets/" class="toc-item">📋 其他速查表</a><a href="/the-book-of-secret-knowledge-zh/one-liners/" class="toc-item">⚡ Shell 单行命令</a><a href="/the-book-of-secret-knowledge-zh/shell-tricks/" class="toc-item">💡 Shell 技巧</a><a href="/the-book-of-secret-knowledge-zh/shell-functions/" class="toc-item">🔧 Shell 函数</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="content">
+            
+            <article class="markdown-body">
+                
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="hero-logo">📚</div>
+            <h1 class="hero-title">秘密知识之书</h1>
+            <p class="hero-subtitle">The Book of Secret Knowledge - Chinese Translation</p>
+            <p class="hero-desc">系统管理员、DevOps、渗透测试与安全研究人员的知识宝库</p>
+            <div class="hero-actions">
+                <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh" class="btn btn-primary" target="_blank">
+                    <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    View on GitHub
+                </a>
+                <a href="#categories" class="btn btn-secondary">浏览目录</a>
             </div>
         </div>
+    </div>
 
-        <div class="stats">
+    <div class="stats-section">
+        <div class="stats-grid">
             <div class="stat-item">
                 <div class="stat-number">500+</div>
                 <div class="stat-label">工具和资源</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">10+</div>
+                <div class="stat-number">14</div>
                 <div class="stat-label">主要分类</div>
             </div>
             <div class="stat-item">
@@ -348,59 +97,138 @@
                 <div class="stat-label">完整翻译</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">开源</div>
-                <div class="stat-label">MIT 协议</div>
+                <div class="stat-number">MIT</div>
+                <div class="stat-label">开源协议</div>
             </div>
         </div>
+    </div>
 
-        <div class="toc">
-            <h2>📋 目录 | Table of Contents</h2>
-            <div class="toc-grid">
-                <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh#cli-工具" class="toc-item">CLI 工具</a>
-                <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh#gui-工具" class="toc-item">GUI 工具</a>
-                <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh#web-工具" class="toc-item">Web 工具</a>
-                <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh#系统服务" class="toc-item">系统/服务</a>
-                <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh#网络" class="toc-item">网络</a>
-                <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh#容器编排" class="toc-item">容器/编排</a>
-                <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh#手册指南教程" class="toc-item">手册/指南/教程</a>
-                <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh#精选列表" class="toc-item">精选列表</a>
-                <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh#博客播客视频" class="toc-item">博客/播客/视频</a>
-                <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh#黑客渗透测试" class="toc-item">黑客/渗透测试</a>
-                <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh#其他速查表" class="toc-item">其他速查表</a>
-                <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh#shell-单行命令" class="toc-item">Shell 单行命令</a>
-            </div>
+    <div class="features-section">
+        <h2 class="section-title">核心内容</h2>
+        <div class="features-grid">
+            
+        <div class="feature-card">
+            <div class="feature-icon">🛠️</div>
+            <h3>CLI 工具</h3>
+            <a href="/the-book-of-secret-knowledge-zh/tools/" class="feature-link">查看全部 →</a>
         </div>
+        <div class="feature-card">
+            <div class="feature-icon">🖥️</div>
+            <h3>GUI 工具</h3>
+            <a href="/the-book-of-secret-knowledge-zh/gui-tools/" class="feature-link">查看全部 →</a>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <h3>Web 工具</h3>
+            <a href="/the-book-of-secret-knowledge-zh/web-tools/" class="feature-link">查看全部 →</a>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">⚙️</div>
+            <h3>系统/服务</h3>
+            <a href="/the-book-of-secret-knowledge-zh/system/" class="feature-link">查看全部 →</a>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <h3>网络</h3>
+            <a href="/the-book-of-secret-knowledge-zh/network/" class="feature-link">查看全部 →</a>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🐳</div>
+            <h3>容器/编排</h3>
+            <a href="/the-book-of-secret-knowledge-zh/containers/" class="feature-link">查看全部 →</a>
+        </div>
+        </div>
+    </div>
 
-        <div class="translation-status">
-            <h2>🚧 翻译进度 | Translation Progress</h2>
-            <div class="progress-bar">
-                <div class="progress-fill"></div>
-            </div>
-            <p class="progress-text">已完成约 65% 的内容翻译，剩余章节正在持续翻译中...</p>
-            <p class="progress-text" style="margin-top: 10px;">
-                <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh/blob/master/.github/CONTRIBUTING.md" style="color: var(--primary);">欢迎参与翻译贡献 →</a>
-            </p>
+    <div class="categories-section" id="categories">
+        <h2 class="section-title">内容分类</h2>
+        <div class="categories-grid">
+            
+        <a href="/the-book-of-secret-knowledge-zh/tools/" class="category-card">
+            <span class="category-icon">🛠️</span>
+            <span class="category-name">CLI 工具</span>
+        </a>
+        <a href="/the-book-of-secret-knowledge-zh/gui-tools/" class="category-card">
+            <span class="category-icon">🖥️</span>
+            <span class="category-name">GUI 工具</span>
+        </a>
+        <a href="/the-book-of-secret-knowledge-zh/web-tools/" class="category-card">
+            <span class="category-icon">🌐</span>
+            <span class="category-name">Web 工具</span>
+        </a>
+        <a href="/the-book-of-secret-knowledge-zh/system/" class="category-card">
+            <span class="category-icon">⚙️</span>
+            <span class="category-name">系统/服务</span>
+        </a>
+        <a href="/the-book-of-secret-knowledge-zh/network/" class="category-card">
+            <span class="category-icon">🌐</span>
+            <span class="category-name">网络</span>
+        </a>
+        <a href="/the-book-of-secret-knowledge-zh/containers/" class="category-card">
+            <span class="category-icon">🐳</span>
+            <span class="category-name">容器/编排</span>
+        </a>
+        <a href="/the-book-of-secret-knowledge-zh/guides/" class="category-card">
+            <span class="category-icon">📖</span>
+            <span class="category-name">手册/指南/教程</span>
+        </a>
+        <a href="/the-book-of-secret-knowledge-zh/lists/" class="category-card">
+            <span class="category-icon">⭐</span>
+            <span class="category-name">精选列表</span>
+        </a>
+        <a href="/the-book-of-secret-knowledge-zh/media/" class="category-card">
+            <span class="category-icon">🎧</span>
+            <span class="category-name">博客/播客/视频</span>
+        </a>
+        <a href="/the-book-of-secret-knowledge-zh/pentest/" class="category-card">
+            <span class="category-icon">🔐</span>
+            <span class="category-name">黑客/渗透测试</span>
+        </a>
+        <a href="/the-book-of-secret-knowledge-zh/cheatsheets/" class="category-card">
+            <span class="category-icon">📋</span>
+            <span class="category-name">其他速查表</span>
+        </a>
+        <a href="/the-book-of-secret-knowledge-zh/one-liners/" class="category-card">
+            <span class="category-icon">⚡</span>
+            <span class="category-name">Shell 单行命令</span>
+        </a>
+        <a href="/the-book-of-secret-knowledge-zh/shell-tricks/" class="category-card">
+            <span class="category-icon">💡</span>
+            <span class="category-name">Shell 技巧</span>
+        </a>
+        <a href="/the-book-of-secret-knowledge-zh/shell-functions/" class="category-card">
+            <span class="category-icon">🔧</span>
+            <span class="category-name">Shell 函数</span>
+        </a>
         </div>
-    </main>
+    </div>
 
-    <footer>
-        <p>
-            🌟 如果这个项目对你有帮助，欢迎给个 
-            <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh">Star</a>！
-        </p>
-        <p>
-            翻译自 <a href="https://github.com/trimstray/the-book-of-secret-knowledge">trimstray/the-book-of-secret-knowledge</a>
-        </p>
-        <div class="badges">
-            <span class="badge">MIT License</span>
-            <span class="badge">中文翻译</span>
-            <span class="badge">持续更新</span>
-            <span class="badge">欢迎贡献</span>
+    <div class="contribute-section">
+        <div class="contribute-content">
+            <h2>🤝 参与贡献</h2>
+            <p>欢迎提交 Pull Request 帮助改进翻译或添加新内容</p>
+            <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh/blob/master/.github/CONTRIBUTING.md" class="btn btn-outline" target="_blank">
+                查看贡献指南 →
+            </a>
         </div>
-        <p style="margin-top: 20px; font-size: 0.85rem;">
-            © 2024-2025 <a href="https://github.com/LessUp">LessUp</a> |
-            Original by <a href="https://github.com/trimstray">trimstray</a>
-        </p>
-    </footer>
+    </div>
+    
+            </article>
+        </main>
+
+        <aside class="sidebar-right">
+            
+        </aside>
+    </div>
+
+    <button class="back-to-top" id="back-to-top" aria-label="回到顶部">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="/the-book-of-secret-knowledge-zh/js/search.js"></script>
+    <script src="/the-book-of-secret-knowledge-zh/js/theme.js"></script>
+    <script src="/the-book-of-secret-knowledge-zh/js/nav.js"></script>
 </body>
 </html>

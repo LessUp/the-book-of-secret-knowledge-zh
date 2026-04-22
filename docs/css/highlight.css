@@ -1,0 +1,279 @@
+/* ========================================
+   代码高亮样式 - GitHub Dark 主题
+   ======================================== */
+
+.markdown-body pre {
+    background: #161b22;
+    border-radius: var(--radius-md);
+    padding: 16px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.markdown-body pre code {
+    background: transparent;
+    padding: 0;
+    color: #c9d1d9;
+    font-family: 'SF Mono', Monaco, Inconsolata, 'Fira Code', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.markdown-body code {
+    background: var(--bg-tertiary);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'SF Mono', Monaco, Inconsolata, 'Fira Code', monospace;
+    font-size: 0.9em;
+    color: var(--accent-primary);
+}
+
+.markdown-body pre code {
+    background: transparent;
+    padding: 0;
+    color: inherit;
+}
+
+/* 语法高亮颜色 */
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0;
+    color: #c9d1d9;
+    background: transparent;
+}
+
+.hljs-comment,
+.hljs-meta {
+    color: #8b949e;
+    font-style: italic;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition {
+    color: #a5d6ff;
+}
+
+.hljs-number,
+.hljs-literal {
+    color: #79c0ff;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-section,
+.hljs-name,
+.hljs-strong {
+    color: #ff7b72;
+    font-weight: bold;
+}
+
+.hljs-attribute,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-class .hljs-title {
+    color: #ffa657;
+}
+
+.hljs-title,
+.hljs-function {
+    color: #d2a8ff;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+    color: #79c0ff;
+}
+
+.hljs-tag,
+.hljs-params {
+    color: #7ee787;
+}
+
+.hljs-selector-id,
+.hljs-selector-class {
+    color: #ffa657;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+    color: #79c0ff;
+}
+
+.hljs-link {
+    color: #a5d6ff;
+    text-decoration: underline;
+}
+
+.hljs-deletion {
+    color: #ffdcd7;
+    background-color: #67060c;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+/* 浅色主题下的代码块 */
+[data-theme="light"] .markdown-body pre {
+    background: #f6f8fa;
+    border-color: #d0d7de;
+}
+
+[data-theme="light"] .markdown-body pre code {
+    color: #24292f;
+}
+
+[data-theme="light"] .markdown-body code {
+    background: rgba(175, 184, 193, 0.2);
+    color: #cf222e;
+}
+
+[data-theme="light"] .hljs {
+    color: #24292f;
+}
+
+[data-theme="light"] .hljs-comment,
+[data-theme="light"] .hljs-meta {
+    color: #6e7781;
+}
+
+[data-theme="light"] .hljs-string,
+[data-theme="light"] .hljs-regexp,
+[data-theme="light"] .hljs-addition {
+    color: #0a3069;
+}
+
+[data-theme="light"] .hljs-number,
+[data-theme="light"] .hljs-literal {
+    color: #0550ae;
+}
+
+[data-theme="light"] .hljs-keyword,
+[data-theme="light"] .hljs-selector-tag,
+[data-theme="light"] .hljs-section,
+[data-theme="light"] .hljs-name,
+[data-theme="light"] .hljs-strong {
+    color: #cf222e;
+}
+
+[data-theme="light"] .hljs-attribute,
+[data-theme="light"] .hljs-variable,
+[data-theme="light"] .hljs-template-variable,
+[data-theme="light"] .hljs-class .hljs-title {
+    color: #953800;
+}
+
+[data-theme="light"] .hljs-title,
+[data-theme="light"] .hljs-function {
+    color: #8250df;
+}
+
+[data-theme="light"] .hljs-built_in,
+[data-theme="light"] .hljs-builtin-name {
+    color: #0550ae;
+}
+
+[data-theme="light"] .hljs-tag,
+[data-theme="light"] .hljs-params {
+    color: #116329;
+}
+
+[data-theme="light"] .hljs-selector-id,
+[data-theme="light"] .hljs-selector-class {
+    color: #953800;
+}
+
+[data-theme="light"] .hljs-symbol,
+[data-theme="light"] .hljs-bullet {
+    color: #0550ae;
+}
+
+[data-theme="light"] .hljs-link {
+    color: #0a3069;
+}
+
+/* 代码块复制按钮 */
+.code-block-wrapper {
+    position: relative;
+}
+
+.code-block-wrapper pre {
+    margin: 0;
+}
+
+.code-copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 6px 12px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity var(--transition-fast), background var(--transition-fast);
+}
+
+.code-block-wrapper:hover .code-copy-btn {
+    opacity: 1;
+}
+
+.code-copy-btn:hover {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+}
+
+.code-copy-btn.copied {
+    background: #238636;
+    color: white;
+    border-color: #238636;
+}
+
+/* 行号 */
+.hljs-line-numbers {
+    color: var(--text-muted);
+    user-select: none;
+    text-align: right;
+    padding-right: 16px;
+    border-right: 1px solid var(--border-color);
+    margin-right: 16px;
+}
+
+/* 代码块标题 */
+.code-block-header {
+    background: var(--bg-tertiary);
+    padding: 8px 16px;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    border: 1px solid var(--border-color);
+    border-bottom: none;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.code-block-header + pre {
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+}
+
+.code-lang-icon {
+    font-size: 1rem;
+}
+
+/* 内联代码特殊处理 */
+p code,
+li code {
+    word-break: break-word;
+}
+
+/* 深色/浅色切换时的过渡 */
+.markdown-body pre,
+.markdown-body code {
+    transition: background var(--transition-normal), color var(--transition-normal), border-color var(--transition-normal);
+}

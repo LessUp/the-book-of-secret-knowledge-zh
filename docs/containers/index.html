@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>容器/编排 | 秘密知识之书</title>
+    <meta name="description" content="容器/编排 - 秘密知识之书中文版，系统管理员、DevOps工程师和安全研究人员的知识宝库">
+    <meta name="keywords" content="DevOps, SysAdmin, Security, Pentest, Tools, CLI, 中文翻译, 渗透测试, 安全工具">
+    <meta property="og:title" content="容器/编排 | 秘密知识之书">
+    <meta property="og:description" content="系统管理员、DevOps工程师和安全研究人员的知识宝库">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lessup.github.io/the-book-of-secret-knowledge-zh/">
+    <link rel="canonical" href="https://lessup.github.io/the-book-of-secret-knowledge-zh/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📚%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="/the-book-of-secret-knowledge-zh/css/style.css">
+    <link rel="stylesheet" href="/the-book-of-secret-knowledge-zh/css/highlight.css">
+</head>
+<body data-theme="dark">
+    <header class="site-header">
+        <div class="header-left">
+            <button class="menu-toggle" aria-label="切换菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="/the-book-of-secret-knowledge-zh/" class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">秘密知识之书</span>
+            </a>
+        </div>
+        <div class="header-center">
+            <div class="search-box">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                </svg>
+                <input type="text" id="search-input" placeholder="搜索工具、资源... (Ctrl+K)" autocomplete="off">
+                <div class="search-results" id="search-results"></div>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle" id="theme-toggle" aria-label="切换主题">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="site-container">
+        <aside class="sidebar-left">
+            <nav class="toc-tree">
+                <div class="toc-section">
+                    <h4>目录导航</h4>
+                    <a href="/the-book-of-secret-knowledge-zh/tools/" class="toc-item">🛠️ CLI 工具</a><a href="/the-book-of-secret-knowledge-zh/gui-tools/" class="toc-item">🖥️ GUI 工具</a><a href="/the-book-of-secret-knowledge-zh/web-tools/" class="toc-item">🌐 Web 工具</a><a href="/the-book-of-secret-knowledge-zh/system/" class="toc-item">⚙️ 系统/服务</a><a href="/the-book-of-secret-knowledge-zh/network/" class="toc-item">🌐 网络</a><a href="/the-book-of-secret-knowledge-zh/containers/" class="toc-item">🐳 容器/编排</a><a href="/the-book-of-secret-knowledge-zh/guides/" class="toc-item">📖 手册/指南/教程</a><a href="/the-book-of-secret-knowledge-zh/lists/" class="toc-item">⭐ 精选列表</a><a href="/the-book-of-secret-knowledge-zh/media/" class="toc-item">🎧 博客/播客/视频</a><a href="/the-book-of-secret-knowledge-zh/pentest/" class="toc-item">🔐 黑客/渗透测试</a><a href="/the-book-of-secret-knowledge-zh/cheatsheets/" class="toc-item">📋 其他速查表</a><a href="/the-book-of-secret-knowledge-zh/one-liners/" class="toc-item">⚡ Shell 单行命令</a><a href="/the-book-of-secret-knowledge-zh/shell-tricks/" class="toc-item">💡 Shell 技巧</a><a href="/the-book-of-secret-knowledge-zh/shell-functions/" class="toc-item">🔧 Shell 函数</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="content">
+            
+        <nav class="breadcrumb">
+            <a href="/the-book-of-secret-knowledge-zh/">首页</a>
+            <span class="separator">/</span>
+            <span class="current">容器/编排</span>
+        </nav>
+            <article class="markdown-body">
+                <p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.docker.com/" target="_blank" rel="noopener" class="tool-name">Docker</a>
+        <span class="tool-domain">docker.com</span>
+    </div>
+    <p class="tool-desc">是一个供开发者和系统管理员开发、交付和运行应用程序的平台。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/moby/moby" target="_blank" rel="noopener" class="tool-name">Moby</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是由 Docker 创建的用于组装专用容器系统的开放框架。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://podman.io/" target="_blank" rel="noopener" class="tool-name">podman</a>
+        <span class="tool-domain">podman.io</span>
+    </div>
+    <p class="tool-desc">是一个无守护进程的容器引擎，用于在您的 Linux 系统上开发、管理和运行 OCI 容器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/google/gvisor" target="_blank" rel="noopener" class="tool-name">gVisor</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用 Go 编写的用户空间内核，在主机操作系统和应用程序之间提供安全的隔离边界。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/containers/buildah" target="_blank" rel="noopener" class="tool-name">Buildah</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一个有助于构建 OCI 容器镜像的工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/opencontainers/runc" target="_blank" rel="noopener" class="tool-name">runc</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个根据 OCI 规范生成和运行容器的 CLI 工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://containerd.io/" target="_blank" rel="noopener" class="tool-name">containerd</a>
+        <span class="tool-domain">containerd.io</span>
+    </div>
+    <p class="tool-desc">是一个行业标准的容器运行时，强调简单性、健壮性和可移植性。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/kata-containers/kata-containers" target="_blank" rel="noopener" class="tool-name">Kata 容器</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个致力于构建轻量级虚拟机标准实现的开源项目和社区。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/wagoodman/dive" target="_blank" rel="noopener" class="tool-name">dive</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一个用于探索 docker 镜像、层内容以及发现缩小 Docker 镜像大小的方法的工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://kubernetes.io/" target="_blank" rel="noopener" class="tool-name">Kubernetes</a>
+        <span class="tool-domain">kubernetes.io</span>
+    </div>
+    <p class="tool-desc">是一个用于自动化部署、扩展和管理容器化应用程序的开源系统。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://k3s.io/" target="_blank" rel="noopener" class="tool-name">K3s</a>
+        <span class="tool-domain">k3s.io</span>
+    </div>
+    <p class="tool-desc">是一个高可用、经认证的 Kubernetes 发行版，专为无人值守、资源受限、远程位置或物联网设备内的生产工作负载而设计。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/derailed/k9s" target="_blank" rel="noopener" class="tool-name">k9s</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">提供一个终端 UI 来与您的 Kubernetes 集群进行交互。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://kops.sigs.k8s.io/" target="_blank" rel="noopener" class="tool-name">kops</a>
+        <span class="tool-domain">kops.sigs.k8s.io</span>
+    </div>
+    <p class="tool-desc">是让生产级 Kubernetes 集群启动并运行的最简单方法。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/pivotal/kpack" target="_blank" rel="noopener" class="tool-name">kpack</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一种 Kubernetes 原生构建服务，可自动从源代码创建和更新容器镜像。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.open-shift.com/" target="_blank" rel="noopener" class="tool-name">OpenShift</a>
+        <span class="tool-domain">open-shift.com</span>
+    </div>
+    <p class="tool-desc">是一个专注于开发者体验和应用程序安全的 Kubernetes 发行版。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://rancher.com/" target="_blank" rel="noopener" class="tool-name">Rancher</a>
+        <span class="tool-domain">rancher.com</span>
+    </div>
+    <p class="tool-desc">是一个用于管理容器的开源平台。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/GoogleContainerTools/kaniko" target="_blank" rel="noopener" class="tool-name">kaniko</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一个用于从 Dockerfile 在容器或 Kubernetes 集群内部构建容器镜像的工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/moby/buildkit" target="_blank" rel="noopener" class="tool-name">BuildKit</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个并发、缓存高效且与 Dockerfile 无关的构建工具包。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://cri-o.io/" target="_blank" rel="noopener" class="tool-name">CRI-O</a>
+        <span class="tool-domain">cri-o.io</span>
+    </div>
+    <p class="tool-desc">是 Kubernetes 容器运行时接口的基于 OCI 的实现。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://goharbor.io/" target="_blank" rel="noopener" class="tool-name">Harbor</a>
+        <span class="tool-domain">goharbor.io</span>
+    </div>
+    <p class="tool-desc">是一个开源的可信云原生注册表项目，用于存储、签名和扫描内容。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/helm/helm" target="_blank" rel="noopener" class="tool-name">Helm</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一个简化安装和管理 Kubernetes 应用程序的工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/GoogleContainerTools/skaffold" target="_blank" rel="noopener" class="tool-name">Skaffold</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一个命令行工具，可促进 Kubernetes 应用程序的持续开发。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/argoproj/argo-cd" target="_blank" rel="noopener" class="tool-name">Argo CD</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于 Kubernetes 的声明式、GitOps 持续交付工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://traefik.io/" target="_blank" rel="noopener" class="tool-name">Traefik</a>
+        <span class="tool-domain">traefik.io</span>
+    </div>
+    <p class="tool-desc">一个现代化的 HTTP 反向代理和负载均衡器，使部署微服务变得容易。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://istio.io/" target="_blank" rel="noopener" class="tool-name">Istio</a>
+        <span class="tool-domain">istio.io</span>
+    </div>
+    <p class="tool-desc">一个连接、管理和保护微服务的开放平台。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.envoyproxy.io/" target="_blank" rel="noopener" class="tool-name">Envoy</a>
+        <span class="tool-domain">envoyproxy.io</span>
+    </div>
+    <p class="tool-desc">是一个专为云原生应用程序设计的开源边缘和服务代理。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://ebpf.io/" target="_blank" rel="noopener" class="tool-name">eBPF</a>
+        <span class="tool-domain">ebpf.io</span>
+    </div>
+    <p class="tool-desc">可以在操作系统内核中运行沙盒程序。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/cilium/cilium" target="_blank" rel="noopener" class="tool-name">Cilium</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一款开源软件，用于在应用程序工作负载（如应用程序容器或进程）之间透明地提供和保护网络连接及负载均衡。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://falco.org/" target="_blank" rel="noopener" class="tool-name">Falco</a>
+        <span class="tool-domain">falco.org</span>
+    </div>
+    <p class="tool-desc">是一种行为活动监视器，旨在检测应用程序中的异常活动。</p>
+</div>
+</p> 
+            </article>
+        </main>
+
+        <aside class="sidebar-right">
+            
+        </aside>
+    </div>
+
+    <button class="back-to-top" id="back-to-top" aria-label="回到顶部">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="/the-book-of-secret-knowledge-zh/js/search.js"></script>
+    <script src="/the-book-of-secret-knowledge-zh/js/theme.js"></script>
+    <script src="/the-book-of-secret-knowledge-zh/js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>其他速查表 | 秘密知识之书</title>
+    <meta name="description" content="其他速查表 - 秘密知识之书中文版，系统管理员、DevOps工程师和安全研究人员的知识宝库">
+    <meta name="keywords" content="DevOps, SysAdmin, Security, Pentest, Tools, CLI, 中文翻译, 渗透测试, 安全工具">
+    <meta property="og:title" content="其他速查表 | 秘密知识之书">
+    <meta property="og:description" content="系统管理员、DevOps工程师和安全研究人员的知识宝库">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lessup.github.io/the-book-of-secret-knowledge-zh/">
+    <link rel="canonical" href="https://lessup.github.io/the-book-of-secret-knowledge-zh/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📚%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="/the-book-of-secret-knowledge-zh/css/style.css">
+    <link rel="stylesheet" href="/the-book-of-secret-knowledge-zh/css/highlight.css">
+</head>
+<body data-theme="dark">
+    <header class="site-header">
+        <div class="header-left">
+            <button class="menu-toggle" aria-label="切换菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="/the-book-of-secret-knowledge-zh/" class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">秘密知识之书</span>
+            </a>
+        </div>
+        <div class="header-center">
+            <div class="search-box">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                </svg>
+                <input type="text" id="search-input" placeholder="搜索工具、资源... (Ctrl+K)" autocomplete="off">
+                <div class="search-results" id="search-results"></div>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle" id="theme-toggle" aria-label="切换主题">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="site-container">
+        <aside class="sidebar-left">
+            <nav class="toc-tree">
+                <div class="toc-section">
+                    <h4>目录导航</h4>
+                    <a href="/the-book-of-secret-knowledge-zh/tools/" class="toc-item">🛠️ CLI 工具</a><a href="/the-book-of-secret-knowledge-zh/gui-tools/" class="toc-item">🖥️ GUI 工具</a><a href="/the-book-of-secret-knowledge-zh/web-tools/" class="toc-item">🌐 Web 工具</a><a href="/the-book-of-secret-knowledge-zh/system/" class="toc-item">⚙️ 系统/服务</a><a href="/the-book-of-secret-knowledge-zh/network/" class="toc-item">🌐 网络</a><a href="/the-book-of-secret-knowledge-zh/containers/" class="toc-item">🐳 容器/编排</a><a href="/the-book-of-secret-knowledge-zh/guides/" class="toc-item">📖 手册/指南/教程</a><a href="/the-book-of-secret-knowledge-zh/lists/" class="toc-item">⭐ 精选列表</a><a href="/the-book-of-secret-knowledge-zh/media/" class="toc-item">🎧 博客/播客/视频</a><a href="/the-book-of-secret-knowledge-zh/pentest/" class="toc-item">🔐 黑客/渗透测试</a><a href="/the-book-of-secret-knowledge-zh/cheatsheets/" class="toc-item">📋 其他速查表</a><a href="/the-book-of-secret-knowledge-zh/one-liners/" class="toc-item">⚡ Shell 单行命令</a><a href="/the-book-of-secret-knowledge-zh/shell-tricks/" class="toc-item">💡 Shell 技巧</a><a href="/the-book-of-secret-knowledge-zh/shell-functions/" class="toc-item">🔧 Shell 函数</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="content">
+            
+        <nav class="breadcrumb">
+            <a href="/the-book-of-secret-knowledge-zh/">首页</a>
+            <span class="separator">/</span>
+            <span class="current">其他速查表</span>
+        </nav>
+            <article class="markdown-body">
+                <h5 id="构建您自己的dns服务器">构建您自己的DNS服务器</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://calomel.org/unbound_dns.html" target="_blank" rel="noopener" class="tool-name">Unbound DNS教程</a>
+        <span class="tool-domain">calomel.org</span>
+    </div>
+    <p class="tool-desc">验证、递归和缓存DNS服务器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.ctrl.blog/entry/knot-dns-resolver-tutorial.html" target="_blank" rel="noopener" class="tool-name">Fedora上的Knot Resolver</a>
+        <span class="tool-domain">ctrl.blog</span>
+    </div>
+    <p class="tool-desc">如何在Fedora上使用Knot Resolver获得更快、更安全的DNS解析。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.aaflalo.me/2018/10/tutorial-setup-dns-over-https-server/" target="_blank" rel="noopener" class="tool-name">DNS-over-HTTPS</a>
+        <span class="tool-domain">aaflalo.me</span>
+    </div>
+    <p class="tool-desc">设置您自己的DNS-over-HTTPS (DoH)服务器的教程。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/" target="_blank" rel="noopener" class="tool-name">DNS-over-HTTPS</a>
+        <span class="tool-domain">hacks.mozilla.org</span>
+    </div>
+    <p class="tool-desc">DNS over HTTPS的卡通介绍。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.aaflalo.me/2019/03/dns-over-tls/" target="_blank" rel="noopener" class="tool-name">DNS-over-TLS</a>
+        <span class="tool-domain">aaflalo.me</span>
+    </div>
+    <p class="tool-desc">在DoH服务器之后，设置您的DNS-over-TLS (DoT)服务器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://zwischenzugs.com/2018/01/26/how-and-why-i-run-my-own-dns-servers/" target="_blank" rel="noopener" class="tool-name">DNS服务器</a>
+        <span class="tool-domain">zwischenzugs.com</span>
+    </div>
+    <p class="tool-desc">如何(以及为什么)运行我自己的DNS服务器。</p>
+</div>
+</p>
+<h5 id="构建您自己的证书颁发机构">构建您自己的证书颁发机构</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://jamielinux.com/docs/openssl-certificate-authority/" target="_blank" rel="noopener" class="tool-name">OpenSSL证书颁发机构</a>
+        <span class="tool-domain">jamielinux.com</span>
+    </div>
+    <p class="tool-desc">使用OpenSSL工具构建您自己的证书颁发机构(CA)。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/smallstep/certificates" target="_blank" rel="noopener" class="tool-name">step-ca证书颁发机构</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">使用开源step-ca构建您自己的证书颁发机构(CA)。</p>
+</div>
+</p>
+<h5 id="构建您自己的系统虚拟机">构建您自己的系统/虚拟机</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/cfenollosa/os-tutorial" target="_blank" rel="noopener" class="tool-name">os-tutorial</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">如何从头开始创建操作系统。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://justinmeiners.github.io/lc3-vm/" target="_blank" rel="noopener" class="tool-name">编写您自己的虚拟机</a>
+        <span class="tool-domain">justinmeiners.github.io</span>
+    </div>
+    <p class="tool-desc">如何编写您自己的虚拟机(VM)。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/cirosantilli/x86-bare-metal-examples" target="_blank" rel="noopener" class="tool-name">x86裸机示例</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">数十个最小操作系统，用于学习x86系统编程。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/djhworld/simple-computer" target="_blank" rel="noopener" class="tool-name">simple-computer</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">J. Clark Scott的"But How Do It Know?"中的Scott CPU。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://littleosbook.github.io/" target="_blank" rel="noopener" class="tool-name">littleosbook</a>
+        <span class="tool-domain">littleosbook.github.io</span>
+    </div>
+    <p class="tool-desc">关于操作系统开发的小书。</p>
+</div>
+</p>
+<h5 id="dns服务器列表隐私">DNS服务器列表(隐私)</h5>
+<p>| <b><u>IP</u></b> | <b><u>URL</u></b> |</p>
+<p>| :---         | :---         |</p>
+<p>| <strong><code>84.200.69.80</code></strong> | <a href="https://dns.watch/" target="_blank" rel="noopener">dns.watch</a> |</p>
+<p>| <strong><code>94.247.43.254</code></strong> | <a href="https://www.opennic.org/" target="_blank" rel="noopener">opennic.org</a> |</p>
+<p>| <strong><code>64.6.64.6</code></strong> | <a href="https://www.verisign.com/en_US/security-services/public-dns/index.xhtml" target="_blank" rel="noopener">verisign.com</a> |</p>
+<p>| <strong><code>89.233.43.71</code></strong> | <a href="https://blog.uncensoreddns.org/" target="_blank" rel="noopener">censurfridns.dk</a> |</p>
+<p>| <strong><code>1.1.1.1</code></strong> | <a href="https://1.1.1.1/" target="_blank" rel="noopener">cloudflare.com</a> |</p>
+<p>| <strong><code>94.130.110.185</code></strong> | <a href="https://dnsprivacy.at/" target="_blank" rel="noopener">dnsprivacy.at</a> |</p>
+<h5 id="顶级浏览器扩展">顶级浏览器扩展</h5>
+<p>| <b><u>扩展名称</u></b> | <b><u>描述</u></b> |</p>
+<p>| :---         | :---         |</p>
+<p>| <strong><code>IPvFoo</code></strong> | 在所有页面元素中显示服务器IP地址和HTTPS信息。 |</p>
+<p>| <strong><code>FoxyProxy</code></strong> | 简化配置浏览器访问代理服务器。 |</p>
+<p>| <strong><code>HTTPS Everywhere</code></strong> | 在许多网站上自动使用HTTPS安全。 |</p>
+<p>| <strong><code>uMatrix</code></strong> | 点击即可禁止/允许浏览器发出的任何类型的请求。 |</p>
+<p>| <strong><code>uBlock Origin</code></strong> | 高效的拦截器：对内存和CPU占用小。 |</p>
+<p>| <strong><code>Session Buddy</code></strong> | 轻松管理浏览器标签页和书签。 |</p>
+<p>| <strong><code>SuperSorter</code></strong> | 递归排序书签、删除重复项、合并文件夹等。 |</p>
+<p>| <strong><code>Clear Cache</code></strong> | 清除缓存和浏览数据。 |</p>
+<p>| <strong><code>d3coder</code></strong> | 各种类型编码的编码/解码插件。 |</p>
+<p>| <strong><code>Web Developer</code></strong> | 添加包含各种Web开发者工具的工具栏按钮。 |</p>
+<p>| <strong><code>ThreatPinch Lookup</code></strong> | 添加威胁情报悬停工具提示。 |</p>
+<h5 id="顶级burp扩展">顶级Burp扩展</h5>
+<p>| <b><u>扩展名称</u></b> | <b><u>描述</u></b> |</p>
+<p>| :---         | :---         |</p>
+<p>| <strong><code>Active Scan++</code></strong> | 扩展Burp的主动和被动扫描功能。 |</p>
+<p>| <strong><code>Autorize</code></strong> | 自动检测授权执行。 |</p>
+<p>| <strong><code>AuthMatrix</code></strong> | 定义所需访问权限级别的简单矩阵网格。 |</p>
+<p>| <strong><code>Logger++</code></strong> | 以可排序表格记录所有Burp工具的请求和响应。 |</p>
+<p>| <strong><code>Bypass WAF</code></strong> | 添加用于绕过某些WAF设备的有用标头。 |</p>
+<p>| <strong><code>JSON Beautifier</code></strong> | 在HTTP消息查看器中美化JSON内容。 |</p>
+<p>| <strong><code>JSON Web Tokens</code></strong> | 使Burp能够解码和操作JSON Web令牌。 |</p>
+<p>| <strong><code>CSP Auditor</code></strong> | 显示响应的CSP标头，并被动报告CSP弱点。 |</p>
+<p>| <strong><code>CSP-Bypass</code></strong> | 被动扫描包含已知绕过的CSP标头。 |</p>
+<p>| <strong><code>Hackvertor</code></strong> | 使用基于标签的配置转换数据以应用各种编码。 |</p>
+<p>| <strong><code>HTML5 Auditor</code></strong> | 扫描风险HTML5功能的使用。 |</p>
+<p>| <strong><code>Software Vulnerability Scanner</code></strong> | 基于vulners.com审计API的漏洞扫描器。 |</p>
+<p>| <strong><code>Turbo Intruder</code></strong> | 强大的暴力破解工具。 |</p>
+<p>| <strong><code>Upload Scanner</code></strong> | 上传多种不同类型的文件，附带不同形式的payload。 |</p>
+<h5 id="破解mozilla-firefox地址栏">破解Mozilla Firefox地址栏</h5>
+<p>在Firefox的地址栏中，您可以通过在搜索词之前或之后键入特殊字符来限制结果：</p>
+<p>- <code>^</code> - 匹配浏览历史记录</p>
+<p>- <code>*</code> - 匹配书签。</p>
+<p>- <code>%</code> - 匹配当前打开的标签页。</p>
+<p>- <code>#</code> - 匹配页面标题。</p>
+<p>- <code>@</code> - 匹配Web地址。</p>
+<h5 id="chrome隐藏命令">Chrome隐藏命令</h5>
+<p>- <code>chrome://chrome-urls</code> - 所有命令列表</p>
+<p>- <code>chrome://flags</code> - 启用实验和开发功能</p>
+<p>- <code>chrome://interstitials</code> - 错误和警告</p>
+<p>- <code>chrome://net-internals</code> - 网络内部(事件、dns、缓存)</p>
+<p>- <code>chrome://network-errors</code> - 网络错误</p>
+<p>- <code>chrome://net-export</code> - 开始将未来的网络活动记录到文件</p>
+<p>- <code>chrome://safe-browsing</code> - 安全浏览选项</p>
+<p>- <code>chrome://user-actions</code> - 记录所有用户操作</p>
+<p>- <code>chrome://restart</code> - 重启chrome</p>
+<p>- <code>chrome://dino</code> - 离线小恐龙游戏...</p>
+<p>- <code>cache:<网站地址></code> - 查看网页的缓存版本</p>
+            </article>
+        </main>
+
+        <aside class="sidebar-right">
+            <nav class="page-outline"><h4>本页大纲</h4><ul><li class="level-3"><a href="#构建您自己的dns服务器">构建您自己的DNS服务器</a></li><li class="level-3"><a href="#构建您自己的证书颁发机构">构建您自己的证书颁发机构</a></li><li class="level-3"><a href="#构建您自己的系统虚拟机">构建您自己的系统/虚拟机</a></li><li class="level-3"><a href="#dns服务器列表隐私">DNS服务器列表(隐私)</a></li><li class="level-3"><a href="#顶级浏览器扩展">顶级浏览器扩展</a></li><li class="level-3"><a href="#顶级burp扩展">顶级Burp扩展</a></li><li class="level-3"><a href="#破解mozilla-firefox地址栏">破解Mozilla Firefox地址栏</a></li><li class="level-3"><a href="#chrome隐藏命令">Chrome隐藏命令</a></li></ul></nav>
+        </aside>
+    </div>
+
+    <button class="back-to-top" id="back-to-top" aria-label="回到顶部">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="/the-book-of-secret-knowledge-zh/js/search.js"></script>
+    <script src="/the-book-of-secret-knowledge-zh/js/theme.js"></script>
+    <script src="/the-book-of-secret-knowledge-zh/js/nav.js"></script>
+</body>
+</html>

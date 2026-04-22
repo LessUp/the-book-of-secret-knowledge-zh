@@ -776,36 +776,405 @@ GitHub 提供了提交记录的 [RSS/Atom](https://github.com/LessUp/the-book-of
 
 #### 黑客/渗透测试 &nbsp;[<sup>[目录]</sup>](#anger-目录)
 
-> :construction: **本章节正在翻译中，欢迎贡献！**
->
-> 请参阅[英文原版](https://github.com/trimstray/the-book-of-secret-knowledge#black_flag-hacking--penetration-testing)获取完整内容。
+##### :black_small_square: 渗透测试工具集
+
+<p>
+&nbsp;&nbsp; <a href="http://www.syhunt.com/sandcat/"><b>Sandcat 浏览器</b></a> - 一款专为渗透测试设计的浏览器，内置大量高级功能。<br>
+&nbsp;&nbsp; <a href="https://www.metasploit.com/"><b>Metasploit</b></a> - 系统、Web等多方面的渗透测试工具和框架。<br>
+&nbsp;&nbsp; <a href="https://portswigger.net/burp"><b>Burp Suite</b></a> - Web应用安全测试工具，具有拦截代理、重放、注入、扫描和模糊测试功能。<br>
+&nbsp;&nbsp; <a href="https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project"><b>OWASP ZAP</b></a> - 用于重放、注入、扫描和模糊测试HTTP请求的拦截代理。<br>
+&nbsp;&nbsp; <a href="http://w3af.org/"><b>w3af</b></a> - Web应用攻击和审计框架。<br>
+&nbsp;&nbsp; <a href="https://mitmproxy.org/"><b>mitmproxy</b></a> - 面向渗透测试人员的交互式TLS拦截HTTP代理。<br>
+&nbsp;&nbsp; <a href="https://cirt.net/Nikto2"><b>Nikto2</b></a> - Web服务器扫描器，对Web服务器进行全面的多项目测试。<br>
+&nbsp;&nbsp; <a href="http://sqlmap.org/"><b>sqlmap</b></a> - 自动检测和利用SQL注入漏洞的工具。<br>
+&nbsp;&nbsp; <a href="https://github.com/lanmaster53/recon-ng"><b>Recon-ng</b></a> - 用Python编写的全功能Web侦察框架。<br>
+&nbsp;&nbsp; <a href="https://github.com/Tib3rius/AutoRecon"><b>AutoRecon</b></a> - 对服务进行自动枚举的网络侦察工具。<br>
+&nbsp;&nbsp; <a href="https://www.faradaysec.com/"><b>Faraday</b></a> - 集成化多用户渗透测试环境。<br>
+&nbsp;&nbsp; <a href="https://github.com/s0md3v/Photon"><b>Photon</b></a> - 专为OSINT设计的极速爬虫。<br>
+&nbsp;&nbsp; <a href="https://github.com/s0md3v/XSStrike"><b>XSStrike</b></a> - 最先进的XSS检测套件。<br>
+&nbsp;&nbsp; <a href="https://github.com/1N3/Sn1per"><b>Sn1per</b></a> - 面向攻击性安全专家的自动化渗透测试框架。<br>
+&nbsp;&nbsp; <a href="https://github.com/future-architect/vuls"><b>vuls</b></a> - 适用于Linux、FreeBSD等的无代理漏洞扫描器。<br>
+&nbsp;&nbsp; <a href="https://github.com/google/tsunami-security-scanner"><b>tsunami</b></a> - 具有可扩展插件系统的通用网络安全扫描器。<br>
+&nbsp;&nbsp; <a href="https://github.com/michenriksen/aquatone"><b>aquatone</b></a> - 域名侦察工具。<br>
+&nbsp;&nbsp; <a href="https://github.com/GitHackTools/BillCipher"><b>BillCipher</b></a> - 网站或IP地址的信息收集工具。<br>
+&nbsp;&nbsp; <a href="https://github.com/Ekultek/WhatWaf"><b>WhatWaf</b></a> - 检测和绕过Web应用防火墙和保护系统。<br>
+&nbsp;&nbsp; <a href="https://github.com/s0md3v/Corsy"><b>Corsy</b></a> - CORS配置错误扫描器。<br>
+&nbsp;&nbsp; <a href="https://github.com/evyatarmeged/Raccoon"><b>Raccoon</b></a> - 用于侦察和漏洞扫描的高性能攻击性安全工具。<br>
+&nbsp;&nbsp; <a href="https://github.com/Nekmo/dirhunt"><b>dirhunt</b></a> - 无需暴力破解即可查找Web目录。<br>
+&nbsp;&nbsp; <a href="https://www.openwall.com/john/"><b>John The Ripper</b></a> - 快速的密码破解器，适用于多种Unix、Windows等系统。<br>
+&nbsp;&nbsp; <a href="https://hashcat.net/hashcat/"><b>hashcat</b></a> - 世界上最快、最先进的密码恢复工具。<br>
+&nbsp;&nbsp; <a href="http://lcamtuf.coredump.cx/p0f3/"><b>p0f</b></a> - 识别任何偶然TCP/IP通信背后参与者的工具。<br>
+&nbsp;&nbsp; <a href="https://github.com/mozilla/ssh_scan"><b>ssh_scan</b></a> - SSH配置和策略扫描器原型。<br>
+&nbsp;&nbsp; <a href="https://github.com/woj-ciech/LeakLooker"><b>LeakLooker</b></a> - 查找开放数据库 - 由Binaryedge.io提供支持。<br>
+&nbsp;&nbsp; <a href="https://github.com/offensive-security/exploitdb"><b>exploitdb</b></a> - Exploit数据库的可搜索存档。<br>
+&nbsp;&nbsp; <a href="https://github.com/vulnersCom/getsploit"><b>getsploit</b></a> - 用于搜索和下载漏洞利用的命令行工具。<br>
+&nbsp;&nbsp; <a href="https://github.com/zardus/ctf-tools"><b>ctf-tools</b></a> - 安全研究工具的设置脚本。<br>
+&nbsp;&nbsp; <a href="https://github.com/Gallopsled/pwntools"><b>pwntools</b></a> - CTF框架和漏洞利用开发库。<br>
+&nbsp;&nbsp; <a href="https://github.com/bl4de/security-tools"><b>security-tools</b></a> - 主要用Python编写的小型安全工具集合，用于CTF、渗透测试等。<br>
+&nbsp;&nbsp; <a href="https://github.com/leonteale/pentestpackage"><b>pentestpackage</b></a> - 渗透测试脚本包。<br>
+&nbsp;&nbsp; <a href="https://github.com/dloss/python-pentest-tools"><b>python-pentest-tools</b></a> - 面向渗透测试人员的Python工具。<br>
+&nbsp;&nbsp; <a href="https://github.com/fuzzdb-project/fuzzdb"><b>fuzzdb</b></a> - 用于黑盒应用故障注入的攻击模式和原语字典。<br>
+&nbsp;&nbsp; <a href="https://github.com/google/AFL"><b>AFL</b></a> - Google维护的免费软件模糊测试器。<br>
+&nbsp;&nbsp; <a href="https://github.com/AFLplusplus/AFLplusplus"><b>AFL++</b></a> - 带有社区补丁的AFL。<br>
+&nbsp;&nbsp; <a href="https://github.com/google/syzkaller"><b>syzkaller</b></a> - 无监督、覆盖率引导的内核模糊测试器。<br>
+&nbsp;&nbsp; <a href="https://github.com/pwndbg/pwndbg"><b>pwndbg</b></a> - 使GDB漏洞利用开发和逆向工程变得简单。<br>
+&nbsp;&nbsp; <a href="https://github.com/longld/peda"><b>GDB PEDA</b></a> - GDB的Python漏洞利用开发助手。<br>
+&nbsp;&nbsp; <a href="https://www.hex-rays.com/products/ida/index.shtml"><b>IDA</b></a> - 用于逆向工程恶意软件的多处理器反汇编器和调试器。<br>
+&nbsp;&nbsp; <a href="https://github.com/radare/radare2"><b>radare2</b></a> - 用于逆向工程和分析二进制文件的框架。<br>
+&nbsp;&nbsp; <a href="https://github.com/threat9/routersploit"><b>routersploit</b></a> - 嵌入式设备漏洞利用框架。<br>
+&nbsp;&nbsp; <a href="https://github.com/NationalSecurityAgency/ghidra"><b>Ghidra</b></a> - 软件逆向工程(SRE)框架。<br>
+&nbsp;&nbsp; <a href="https://cutter.re/"><b>Cutter</b></a> - 集成Ghidra反编译器的SRE平台。<br>
+&nbsp;&nbsp; <a href="https://github.com/salesforce/vulnreport"><b>Vulnreport</b></a> - Salesforce产品安全团队开发的开源渗透测试管理和自动化平台。<br>
+&nbsp;&nbsp; <a href="https://github.com/sc0tfree/mentalist"><b>Mentalist</b></a> - 自定义词表生成的图形化工具。<br>
+&nbsp;&nbsp; <a href="https://github.com/archerysec/archerysec"><b>archerysec</b></a> - 漏洞评估和管理，帮助执行扫描和管理漏洞。<br>
+&nbsp;&nbsp; <a href="https://github.com/j3ssie/Osmedeus"><b>Osmedeus</b></a> - 用于侦察和漏洞扫描的全自动攻击性安全工具。<br>
+&nbsp;&nbsp; <a href="https://github.com/beefproject/beef"><b>beef</b></a> - 浏览器漏洞利用框架项目。<br>
+&nbsp;&nbsp; <a href="https://github.com/NullArray/AutoSploit"><b>AutoSploit</b></a> - 自动化大规模漏洞利用工具。<br>
+&nbsp;&nbsp; <a href="https://github.com/TH3xACE/SUDO_KILLER"><b>SUDO_KILLER</b></a> - 识别和利用sudo规则配置错误和漏洞的工具。<br>
+&nbsp;&nbsp; <a href="https://github.com/VirusTotal/yara"><b>yara</b></a> - 模式匹配的瑞士军刀。<br>
+&nbsp;&nbsp; <a href="https://github.com/gentilkiwi/mimikatz"><b>mimikatz</b></a> - 用于玩转Windows安全的小工具。<br>
+&nbsp;&nbsp; <a href="https://github.com/sherlock-project/sherlock"><b>sherlock</b></a> - 通过用户名在社交网络中追查社交媒体账户。<br>
+&nbsp;&nbsp; <a href="https://owasp.org/www-project-threat-dragon/"><b>OWASP Threat Dragon</b></a> - 用于创建威胁模型图和记录可能威胁的工具。<br>
+</p>
+
+##### :black_small_square: 渗透测试书签集
+
+<p>
+&nbsp;&nbsp; <a href="http://www.pentest-standard.org/index.php/Main_Page"><b>PTES</b></a> - 渗透测试执行标准。<br>
+&nbsp;&nbsp; <a href="https://www.amanhardikar.com/mindmaps/Practice.html"><b>渗透测试思维导图</b></a> - 包含易受攻击应用和系统的惊人思维导图。<br>
+&nbsp;&nbsp; <a href="https://www.amanhardikar.com/mindmaps/webapptest.html"><b>Web应用安全测试思维导图</b></a> - 用于Web应用安全测试的令人难以置信的思维导图。<br>
+&nbsp;&nbsp; <a href="https://brutelogic.com.br/blog/"><b>Brute XSS</b></a> - 掌握跨站脚本的艺术。<br>
+&nbsp;&nbsp; <a href="https://portswigger.net/web-security/cross-site-scripting/cheat-sheet"><b>XSS速查表</b></a> - 包含许多可以帮助您绕过WAF和过滤器的向量。<br>
+&nbsp;&nbsp; <a href="https://jivoi.github.io/2015/07/03/offensive-security-bookmarks/"><b>攻击性安全书签</b></a> - 安全书签集合，作者通过OSCP所需的一切。<br>
+&nbsp;&nbsp; <a href="https://github.com/coreb1t/awesome-pentest-cheat-sheets"><b>超棒的渗透测试速查表</b></a> - 对渗透测试有用的速查表集合。<br>
+&nbsp;&nbsp; <a href="https://github.com/Hack-with-Github/Awesome-Hacking"><b>HackWithGithub的超棒黑客资源</b></a> - 面向黑客、渗透测试人员和安全研究人员的超棒列表。<br>
+&nbsp;&nbsp; <a href="https://github.com/carpedm20/awesome-hacking"><b>carpedm20的超棒黑客资源</b></a> - 精选的超棒黑客教程、工具和资源列表。<br>
+&nbsp;&nbsp; <a href="https://github.com/vitalysim/Awesome-Hacking-Resources"><b>超棒的黑客资源</b></a> - 黑客/渗透测试资源集合，让您变得更强。<br>
+&nbsp;&nbsp; <a href="https://github.com/enaqx/awesome-pentest"><b>超棒的渗透测试</b></a> - 超棒的渗透测试资源、工具和其他亮点的集合。<br>
+&nbsp;&nbsp; <a href="https://github.com/m4ll0k/Awesome-Hacking-Tools"><b>超棒的黑客工具</b></a> - 精选的超棒黑客工具列表。<br>
+&nbsp;&nbsp; <a href="https://github.com/ksanchezcld/Hacking_Cheat_Sheet"><b>黑客速查表</b></a> - 作者的黑客和渗透测试笔记。<br>
+&nbsp;&nbsp; <a href="https://github.com/toolswatch/blackhat-arsenal-tools"><b>blackhat-arsenal-tools</b></a> - 官方黑帽arsenal安全工具库。<br>
+&nbsp;&nbsp; <a href="https://www.peerlyst.com/posts/the-complete-list-of-infosec-related-cheat-sheets-claus-cramon"><b>渗透测试和Web应用速查表</b></a> - 信息安全相关速查表的完整列表。<br>
+&nbsp;&nbsp; <a href="https://github.com/The-Art-of-Hacking/h4cker"><b>网络安全资源</b></a> - 包括数千个与网络安全相关的参考资料和资源。<br>
+&nbsp;&nbsp; <a href="https://github.com/jhaddix/pentest-bookmarks"><b>渗透测试书签</b></a> - 大量渗透测试博客。<br>
+&nbsp;&nbsp; <a href="https://github.com/OlivierLaflamme/Cheatsheet-God"><b>速查表之神</b></a> - 渗透测试参考库 - OSCP/PTP & PTX速查表。<br>
+&nbsp;&nbsp; <a href="https://github.com/Cyb3rWard0g/ThreatHunter-Playbook"><b>威胁猎人手册</b></a> - 帮助开发狩猎活动的技术和假设。<br>
+&nbsp;&nbsp; <a href="https://github.com/hmaverickadams/Beginner-Network-Pentesting"><b>初学者网络渗透测试</b></a> - 初学者网络渗透测试课程的笔记。<br>
+&nbsp;&nbsp; <a href="https://github.com/rewardone/OSCPRepo"><b>OSCPRepo</b></a> - 作者为准备OSCP而收集的资源列表。<br>
+&nbsp;&nbsp; <a href="https://github.com/swisskyrepo/PayloadsAllTheThings"><b>PayloadsAllTheThings</b></a> - 用于Web应用安全和渗透测试/CTF的有用payload和绕过方法列表。<br>
+&nbsp;&nbsp; <a href="https://github.com/foospidy/payloads"><b>payloads</b></a> - 获取所有Payload！Web攻击payload集合。<br>
+&nbsp;&nbsp; <a href="https://github.com/payloadbox/command-injection-payload-list"><b>命令注入payload列表</b></a> - 命令注入payload列表。<br>
+&nbsp;&nbsp; <a href="https://github.com/jakejarvis/awesome-shodan-queries"><b>超棒的Shodan搜索查询</b></a> - 用于插入Shodan的出色搜索查询。<br>
+&nbsp;&nbsp; <a href="https://github.com/s0md3v/AwesomeXSS"><b>AwesomeXSS</b></a> - 超棒XSS资源的集合。<br>
+&nbsp;&nbsp; <a href="https://github.com/JohnTroony/php-webshells"><b>php-webshells</b></a> - 常见的php webshell。<br>
+&nbsp;&nbsp; <a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/"><b>渗透测试工具速查表</b></a> - 典型渗透测试的快速参考高级概述。<br>
+&nbsp;&nbsp; <a href="https://cheatsheetseries.owasp.org/"><b>OWASP速查表系列</b></a> - 关于特定应用安全主题的高价值信息集合。<br>
+&nbsp;&nbsp; <a href="https://jeremylong.github.io/DependencyCheck/index.html"><b>OWASP dependency-check</b></a> - OWASP Top 10 2013条目的开源解决方案。<br>
+&nbsp;&nbsp; <a href="https://www.owasp.org/index.php/OWASP_Proactive_Controls"><b>OWASP主动控制</b></a> - OWASP Top 10主动控制2018。<br>
+&nbsp;&nbsp; <a href="https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE"><b>PENTESTING-BIBLE</b></a> - 黑客和渗透测试和红队和网络安全资源。<br>
+&nbsp;&nbsp; <a href="https://github.com/nixawk/pentest-wiki"><b>pentest-wiki</b></a> - 面向渗透测试人员/研究人员的免费在线安全知识库。<br>
+&nbsp;&nbsp; <a href="https://media.defcon.org/"><b>DEF CON媒体服务器</b></a> - 来自DEFCON的精彩内容。<br>
+&nbsp;&nbsp; <a href="https://github.com/rshipp/awesome-malware-analysis"><b>超棒的恶意软件分析</b></a> - 精选的恶意软件分析工具和资源列表。<br>
+&nbsp;&nbsp; <a href="https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/"><b>SQL注入速查表</b></a> - 关于SQL注入许多不同变体的详细技术资料。<br>
+&nbsp;&nbsp; <a href="http://kb.entersoft.co.in/"><b>Entersoft知识库</b></a> - 关于漏洞的详细参考。<br>
+&nbsp;&nbsp; <a href="http://html5sec.org/"><b>HTML5安全速查表</b></a> - 与HTML5相关的XSS攻击向量集合。<br>
+&nbsp;&nbsp; <a href="http://evuln.com/tools/xss-encoder/"><b>XSS字符串编码器</b></a> - 用于生成XSS代码以检查输入验证过滤器对XSS的防护。<br>
+&nbsp;&nbsp; <a href="https://gtfobins.github.io/"><b>GTFOBins</b></a> - 可被攻击者利用来绕过本地安全限制的Unix二进制文件列表。<br>
+&nbsp;&nbsp; <a href="https://guif.re/"><b>Guifre Ruiz笔记</b></a> - 安全、系统、网络和渗透测试速查表集合。<br>
+&nbsp;&nbsp; <a href="http://blog.safebuff.com/2016/07/03/SSRF-Tips/index.html"><b>SSRF技巧</b></a> - SSRF技巧集合。<br>
+&nbsp;&nbsp; <a href="http://shell-storm.org/repo/CTF/"><b>shell-storm CTF仓库</b></a> - 极好的CTF存档。<br>
+&nbsp;&nbsp; <a href="https://github.com/bl4de/ctf"><b>ctf</b></a> - CTF(Capture The Flag)解题报告、代码片段、笔记、脚本。<br>
+&nbsp;&nbsp; <a href="https://github.com/orangetw/My-CTF-Web-Challenges"><b>我的CTF Web挑战</b></a> - CTF Web挑战集合。<br>
+&nbsp;&nbsp; <a href="https://github.com/OWASP/owasp-mstg"><b>MSTG</b></a> - 移动安全测试指南(MSTG)是移动应用安全测试的综合手册。<br>
+&nbsp;&nbsp; <a href="https://github.com/sdcampbell/Internal-Pentest-Playbook"><b>内部渗透测试手册</b></a> - 关于内部网络渗透测试最常见事项的笔记。<br>
+&nbsp;&nbsp; <a href="https://github.com/streaak/keyhacks"><b>KeyHacks</b></a> - 显示检查漏洞赏金计划泄露的API密钥的快速方法。<br>
+&nbsp;&nbsp; <a href="https://github.com/securitum/research"><b>securitum/research</b></a> - Securitum进行的各种安全研究的Proof of Concepts。<br>
+&nbsp;&nbsp; <a href="https://github.com/juliocesarfort/public-pentesting-reports"><b>公开渗透测试报告</b></a> - 多个咨询安全组发布的公开渗透测试报告列表。<br>
+&nbsp;&nbsp; <a href="https://github.com/djadmin/awesome-bug-bounty"><b>超棒的漏洞赏金</b></a> - 全面的可用漏洞赏金精选列表。<br>
+&nbsp;&nbsp; <a href="https://github.com/ngalongc/bug-bounty-reference"><b>漏洞赏金参考</b></a> - 漏洞赏金解题报告列表。<br>
+&nbsp;&nbsp; <a href="https://github.com/devanshbatham/Awesome-Bugbounty-Writeups"><b>超棒的漏洞赏金解题报告</b></a> - 精选的漏洞赏金解题报告列表。<br>
+&nbsp;&nbsp; <a href="https://pentester.land/list-of-bug-bounty-writeups.html"><b>漏洞赏金解题报告</b></a> - 漏洞赏金解题报告列表(2012-2020)。<br>
+&nbsp;&nbsp; <a href="https://hackso.me/"><b>hackso.me</b></a> - 安全之旅。<br>
+</p>
+
+##### :black_small_square: 后门/漏洞利用
+
+<p>
+&nbsp;&nbsp; <a href="https://github.com/bartblaze/PHP-backdoors"><b>PHP-backdoors</b></a> - PHP后门集合。仅供教育或测试目的。<br>
+</p>
+
+##### :black_small_square: 密码字典和弱密码
+
+<p>
+&nbsp;&nbsp; <a href="https://weakpass.com/"><b>Weakpass</b></a> - 用于任何类型的暴力破解，查找词表或同时释放它们的力量！<br>
+&nbsp;&nbsp; <a href="https://hashes.org/"><b>Hashes.org</b></a> - 免费的在线哈希解析服务，包含许多无与伦比的技术。<br>
+&nbsp;&nbsp; <a href="https://github.com/danielmiessler/SecLists"><b>SecLists</b></a> - 安全评估期间使用的多种类型列表的集合，汇集在一处。<br>
+&nbsp;&nbsp; <a href="https://github.com/berzerk0/Probable-Wordlists"><b>Probable-Wordlists</b></a> - 按概率排序，最初用于密码生成和测试。<br>
+&nbsp;&nbsp; <a href="https://wiki.skullsecurity.org/index.php?title=Passwords"><b>skullsecurity密码</b></a> - 密码字典和泄露密码仓库。<br>
+&nbsp;&nbsp; <a href="https://github.com/insidetrust/statistically-likely-usernames"><b>统计可能的用户名</b></a> - 用于创建统计可能的用户名列表的词表。<br>
+</p>
+
+##### :black_small_square: 赏金平台
+
+<p>
+&nbsp;&nbsp; <a href="https://www.yeswehack.com/"><b>YesWeHack</b></a> - 带有信息安全工作的漏洞赏金平台。<br>
+&nbsp;&nbsp; <a href="https://www.openbugbounty.org/"><b>Openbugbounty</b></a> - 允许任何安全研究人员报告任何网站上的漏洞。<br>
+&nbsp;&nbsp; <a href="https://www.hackerone.com/"><b>hackerone</b></a> - 全球黑客社区，发现最相关的安全问题。<br>
+&nbsp;&nbsp; <a href="https://www.bugcrowd.com/"><b>bugcrowd</b></a> - 企业众包网络安全。<br>
+&nbsp;&nbsp; <a href="https://crowdshield.com/"><b>Crowdshield</b></a> - 众包安全和漏洞赏金管理。<br>
+&nbsp;&nbsp; <a href="https://www.synack.com/"><b>Synack</b></a> - 众包安全和漏洞赏金计划、人群安全情报平台等。<br>
+&nbsp;&nbsp; <a href="https://hacktrophy.com/en/"><b>Hacktrophy</b></a> - 漏洞赏金平台。<br>
+</p>
+
+##### :black_small_square: Web训练应用(本地安装)
+
+<p>
+&nbsp;&nbsp; <a href="https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project"><b>OWASP-VWAD</b></a> - 全面且维护良好的所有已知易受攻击Web应用注册表。<br>
+&nbsp;&nbsp; <a href="http://www.dvwa.co.uk/"><b>DVWA</b></a> - 极易受攻击的PHP/MySQL Web应用。<br>
+&nbsp;&nbsp; <a href="https://metasploit.help.rapid7.com/docs/metasploitable-2"><b>metasploitable2</b></a> - 在安全研究人员中广受欢迎的易受攻击Web应用。<br>
+&nbsp;&nbsp; <a href="https://github.com/rapid7/metasploitable3"><b>metasploitable3</b></a> - 从头开始构建的具有大量安全漏洞的VM。<br>
+&nbsp;&nbsp; <a href="https://github.com/stamparm/DSVW"><b>DSVW</b></a> - 用不到100行代码编写的故意易受攻击的Web应用。<br>
+&nbsp;&nbsp; <a href="https://sourceforge.net/projects/mutillidae/"><b>OWASP Mutillidae II</b></a> - 免费、开源、故意易受攻击的Web应用。<br>
+&nbsp;&nbsp; <a href="https://www.owasp.org/index.php/OWASP_Juice_Shop_Project"><b>OWASP Juice Shop项目</b></a> - 现存漏洞最多的应用。<br>
+&nbsp;&nbsp; <a href="https://www.owasp.org/index.php/Projects/OWASP_Node_js_Goat_Project"><b>OWASP Node.js Goat项目</b></a> - OWASP Top 10安全风险适用于使用Node.js开发的Web应用。<br>
+&nbsp;&nbsp; <a href="https://github.com/iteratec/juicy-ctf"><b>juicy-ctf</b></a> - 使用OWASP Juice Shop运行夺旗赛和安全培训。<br>
+&nbsp;&nbsp; <a href="https://github.com/OWASP/SecurityShepherd"><b>SecurityShepherd</b></a> - Web和移动应用安全培训平台。<br>
+&nbsp;&nbsp; <a href="https://github.com/opendns/Security_Ninjas_AppSec_Training"><b>Security Ninjas</b></a> - 开源应用安全培训计划。<br>
+&nbsp;&nbsp; <a href="https://github.com/rapid7/hackazon"><b>hackazon</b></a> - 现代易受攻击的Web应用。<br>
+&nbsp;&nbsp; <a href="https://github.com/appsecco/dvna"><b>dvna</b></a> - 极易受攻击的NodeJS应用。<br>
+&nbsp;&nbsp; <a href="https://github.com/DefectDojo/django-DefectDojo"><b>django-DefectDojo</b></a> - 开源应用漏洞关联和安全编排工具。<br>
+&nbsp;&nbsp; <a href="https://google-gruyere.appspot.com/"><b>Google Gruyere</b></a> - Web应用漏洞利用和防御。<br>
+&nbsp;&nbsp; <a href="https://github.com/amolnaik4/bodhi"><b>Bodhi</b></a> - 专注于学习客户端Web漏洞利用的演练场。<br>
+&nbsp;&nbsp; <a href="https://websploit.h4cker.org/"><b>Websploit</b></a> - 将多个易受攻击的应用程序组合在一个环境中的单VM实验室。<br>
+&nbsp;&nbsp; <a href="https://github.com/vulhub/vulhub"><b>vulhub</b></a> - 基于docker-compose的预构建易受攻击环境。<br>
+&nbsp;&nbsp; <a href="https://rhinosecuritylabs.com/aws/introducing-cloudgoat-2/"><b>CloudGoat 2</b></a> - 全新改进的"故意易受攻击"AWS部署工具。<br>
+&nbsp;&nbsp; <a href="https://github.com/globocom/secDevLabs"><b>secDevLabs</b></a> - 以实践方式学习安全Web开发的实验室。<br>
+&nbsp;&nbsp; <a href="https://github.com/incredibleindishell/CORS-vulnerable-Lab"><b>CORS-vulnerable-Lab</b></a> - 示例易受攻击代码及其利用代码。<br>
+&nbsp;&nbsp; <a href="https://github.com/moloch--/RootTheBox"><b>RootTheBox</b></a> - 黑客游戏(CTF记分板和游戏管理器)。<br>
+&nbsp;&nbsp; <a href="https://application.security/"><b>KONTRA</b></a> - 应用安全培训(OWASP Top Web和API)。<br>
+</p>
+
+##### :black_small_square: 实验室(道德黑客平台/培训/CTF)
+
+<p>
+&nbsp;&nbsp; <a href="https://www.offensive-security.com/"><b>Offensive Security</b></a> - 十多年来真正的基于实战的渗透测试培训。<br>
+&nbsp;&nbsp; <a href="https://www.hackthebox.eu/"><b>Hack The Box</b></a> - 在线平台，让您测试渗透测试技能。<br>
+&nbsp;&nbsp; <a href="https://www.hacking-lab.com/index.html"><b>Hacking-Lab</b></a> - 在线道德黑客、计算机网络和安全挑战平台。<br>
+&nbsp;&nbsp; <a href="http://pwnable.kr/index.php"><b>pwnable.kr</b></a> - 提供各种pwn挑战的非商业战争游戏网站。<br>
+&nbsp;&nbsp; <a href="https://pwnable.tw/"><b>Pwnable.tw</b></a> - 战争游戏网站，供黑客测试和扩展他们的二进制利用技能。<br>
+&nbsp;&nbsp; <a href="https://picoctf.com/"><b>picoCTF</b></a> - 面向中学生和大学生的免费计算机安全游戏。<br>
+&nbsp;&nbsp; <a href="https://ctflearn.com/"><b>CTFlearn</b></a> - 在线平台，帮助道德黑客学习和练习网络安全知识。<br>
+&nbsp;&nbsp; <a href="https://ctftime.org/"><b>ctftime</b></a> - CTF存档和获取其他CTF相关信息的地方。<br>
+&nbsp;&nbsp; <a href="https://silesiasecuritylab.com/"><b>Silesia Security Lab</b></a> - 高质量的安全测试服务。<br>
+&nbsp;&nbsp; <a href="https://practicalpentestlabs.com/"><b>Practical Pentest Labs</b></a> - 渗透测试实验室，将您的黑客技能提升到一个新水平。<br>
+&nbsp;&nbsp; <a href="https://www.root-me.org/?lang=en"><b>Root Me</b></a> - 快速、简单、经济实惠的方式来训练您的黑客技能。<br>
+&nbsp;&nbsp; <a href="https://rozwal.to/login"><b>rozwal.to</b></a> - 训练渗透测试技能的绝佳平台。<br>
+&nbsp;&nbsp; <a href="https://tryhackme.com/"><b>TryHackMe</b></a> - 让网络安全学习变得简单。<br>
+&nbsp;&nbsp; <a href="https://hackxor.net/"><b>hackxor</b></a> - 一款逼真的Web应用黑客游戏，旨在帮助各种水平的玩家发展技能。<br>
+&nbsp;&nbsp; <a href="http://hack-yourself-first.com/"><b>Hack Yourself First</b></a> - 充满了讨厌的应用安全漏洞。<br>
+&nbsp;&nbsp; <a href="http://overthewire.org/wargames/"><b>OverTheWire</b></a> - 帮助您以有趣的游戏形式学习和练习安全概念。<br>
+&nbsp;&nbsp; <a href="https://labs.wizard-security.net/"><b>Wizard Labs</b></a> - 在线渗透测试实验室。<br>
+&nbsp;&nbsp; <a href="https://pentesterlab.com/"><b>PentesterLab</b></a> - 提供易受攻击的系统，可用于测试和理解漏洞。<br>
+&nbsp;&nbsp; <a href="https://ringzer0ctf.com/"><b>RingZer0</b></a> - 大量旨在测试和提高您黑客技能的挑战。<br>
+&nbsp;&nbsp; <a href="http://www.try2hack.nl/"><b>try2hack</b></a> - 几个以安全为导向的挑战供您娱乐。<br>
+&nbsp;&nbsp; <a href="https://www.ubeeri.com/preconfig-labs"><b>Ubeeri</b></a> - 预配置的实验室环境。<br>
+&nbsp;&nbsp; <a href="https://lab.pentestit.ru/"><b>Pentestit</b></a> - 模拟真实公司的IT基础设施以进行合法的渗透测试和提高渗透测试技能。<br>
+&nbsp;&nbsp; <a href="https://microcorruption.com/login"><b>Microcorruption</b></a> - 在Web界面中完成的逆向挑战。<br>
+&nbsp;&nbsp; <a href="https://crackmes.one/"><b>Crackmes</b></a> - 下载crackmes以帮助提高您的逆向工程技能。<br>
+&nbsp;&nbsp; <a href="https://domgo.at/cxss/intro"><b>DomGoat</b></a> - DOM XSS安全学习和实践平台。<br>
+&nbsp;&nbsp; <a href="https://chall.stypr.com"><b>陈规定型挑战</b></a> - 立即升级您的Web黑客技术！<br>
+&nbsp;&nbsp; <a href="https://www.vulnhub.com/"><b>Vulnhub</b></a> - 让任何人获得数字安全的实践经验。<br>
+&nbsp;&nbsp; <a href="https://w3challs.com/"><b>W3Challs</b></a> - 渗透测试培训平台，提供各种计算机挑战。<br>
+&nbsp;&nbsp; <a href="https://ringzer0ctf.com/challenges"><b>RingZer0 CTF</b></a> - 为您提供大量旨在测试和提高您黑客技能的挑战。<br>
+&nbsp;&nbsp; <a href="https://hack.me/"><b>Hack.me</b></a> - 一个平台，您可以在其中构建、托管和共享易受攻击的Web应用以用于教育目的。<br>
+&nbsp;&nbsp; <a href="https://www.hackthis.co.uk/levels/"><b>Hack This!</b></a> - 了解如何执行黑客攻击、转储和篡改，并保护您的网站。<br>
+&nbsp;&nbsp; <a href="https://www.enigmagroup.org/#"><b>Enigma Group WebApp培训</b></a> - 这些挑战涵盖了OWASP Top 10项目中列出的漏洞。<br>
+&nbsp;&nbsp; <a href="https://challenges.re/"><b>逆向工程挑战</b></a> - 按级别、按类型等的挑战、练习、问题和任务。<br>
+&nbsp;&nbsp; <a href="https://0x00sec.org/"><b>0x00sec</b></a> - 黑客之家 - 恶意软件、逆向工程和计算机科学。<br>
+&nbsp;&nbsp; <a href="https://www.wechall.net/challs"><b>We Chall</b></a> - 存在许多不同类型的挑战。<br>
+&nbsp;&nbsp; <a href="https://www.hackergateway.com/"><b>Hacker Gateway</b></a> - 黑客测试技能的理想场所。<br>
+&nbsp;&nbsp; <a href="https://www.hacker101.com/"><b>Hacker101</b></a> - 免费的Web安全课程。<br>
+&nbsp;&nbsp; <a href="https://contained.af/"><b>contained.af</b></a> - 一个关于容器、能力和系统调用的愚蠢游戏。<br>
+&nbsp;&nbsp; <a href="http://flaws.cloud/"><b>flAWS挑战！</b></a> - 一系列关卡，您将学习使用AWS时的常见错误和陷阱。<br>
+&nbsp;&nbsp; <a href="https://cybersecurity.wtf"><b>CyberSec WTF</b></a> - 提供源自赏金解题报告的Web黑客挑战。<br>
+&nbsp;&nbsp; <a href="https://ctfchallenge.co.uk/login"><b>CTF Challenge</b></a> - CTF Web应用挑战。<br>
+&nbsp;&nbsp; <a href="https://capturetheflag.withgoogle.com"><b>gCTF</b></a> - Google CTF 2017中使用的大部分挑战。<br>
+&nbsp;&nbsp; <a href="https://www.hackthissite.org/pages/index/index.php"><b>Hack This Site</b></a> - 免费、安全、合法的黑客训练场。<br>
+&nbsp;&nbsp; <a href="https://attackdefense.com"><b>Attack & Defense</b></a> - 基于浏览器的云实验室。<br>
+&nbsp;&nbsp; <a href="https://cryptohack.org/"><b>Cryptohack</b></a> - 学习现代密码学的有趣平台。<br>
+&nbsp;&nbsp; <a href="https://cryptopals.com/"><b>Cryptopals</b></a> - Cryptopals密码挑战。<br>
+</p>
+
+##### :black_small_square: CTF平台
+
+<p>
+&nbsp;&nbsp; <a href="https://github.com/facebook/fbctf"><b>fbctf</b></a> - 举办夺旗赛的平台。<br>
+&nbsp;&nbsp; <a href="https://github.com/google/ctfscoreboard"><b>ctfscoreboard</b></a> - 夺旗赛记分板。<br>
+</p>
+
+##### :black_small_square: 其他资源
+
+<p>
+&nbsp;&nbsp; <a href="https://github.com/bugcrowd/bugcrowd_university"><b>Bugcrowd大学</b></a> - 面向研究人员社区的开源教育内容。<br>
+&nbsp;&nbsp; <a href="https://github.com/rewardone/OSCPRepo"><b>OSCPRepo</b></a> - 我为准备OSCP而收集的资源和脚本列表。<br>
+&nbsp;&nbsp; <a href="https://medium.com/@cxosmo/owasp-top-10-real-world-examples-part-1-a540c4ea2df5"><b>OWASP Top 10：真实世界示例</b></a> - 用真实世界示例测试您的Web应用(两部分系列)。<br>
+&nbsp;&nbsp; <a href="http://phrack.org/index.html"><b>phrack.org</b></a> - 来自几位受人尊敬的黑客和其他思想家的精彩文章集合。<br>
+&nbsp;&nbsp; <a href="https://github.com/Gr1mmie/Practical-Ethical-Hacking-Resources"><b>实用道德黑客资源</b></a> - TCM Udemy课程的资源汇编。<br>
+</p>
 
 #### 您的日常知识和新闻 &nbsp;[<sup>[目录]</sup>](#anger-目录)
 
-> :construction: **本章节正在翻译中，欢迎贡献！**
->
-> 请参阅[英文原版](https://github.com/trimstray/the-book-of-secret-knowledge#daily-knowledge-and-news)获取完整内容。
+##### :black_small_square: RSS阅读器
+
+<p>
+&nbsp;&nbsp; <a href="https://feedly.com/"><b>Feedly</b></a> - 组织、阅读和分享对您重要的内容。<br>
+&nbsp;&nbsp; <a href="https://www.inoreader.com/"><b>Inoreader</b></a> - 类似于feedly，支持过滤从RSS获取的内容。<br>
+</p>
+
+##### :black_small_square: IRC频道
+
+<p>
+&nbsp;&nbsp; <a href="https://wiki.hackerspaces.org/IRC_Channel"><b>#hackerspaces</b></a> - 黑客空间IRC频道。<br>
+</p>
+
+##### :black_small_square: 安全资讯
+
+<p>
+&nbsp;&nbsp; <a href="https://thehackernews.com/"><b>The Hacker News</b></a> - 领先的新闻源，致力于向安全专家和黑客推广安全意识。<br>
+&nbsp;&nbsp; <a href="https://latesthackingnews.com/"><b>Latest Hacking News</b></a> - 为道德黑客提供最新的黑客新闻、漏洞利用和漏洞。<br>
+&nbsp;&nbsp; <a href="https://securitynewsletter.co/"><b>Security Newsletter</b></a> - 每周摘要形式的安全新闻(电子邮件通知)。<br>
+&nbsp;&nbsp; <a href="https://security.googleblog.com/"><b>Google Online Security Blog</b></a> - Google关于互联网安全和安全的最新新闻和见解。<br>
+&nbsp;&nbsp; <a href="https://blog.qualys.com/"><b>Qualys Blog</b></a> - 专家网络安全指导和新闻。<br>
+&nbsp;&nbsp; <a href="https://www.darkreading.com/"><b>DARKReading</b></a> - 连接信息安全社区。<br>
+&nbsp;&nbsp; <a href="https://www.darknet.org.uk/"><b>Darknet</b></a> - 最新的黑客工具、黑客新闻、网络安全最佳实践、道德黑客和渗透测试。<br>
+&nbsp;&nbsp; <a href="https://twitter.com/disclosedh1"><b>publiclyDisclosed</b></a> - 公开披露观察者，让您随时了解最近披露的漏洞。<br>
+&nbsp;&nbsp; <a href="https://www.reddit.com/r/hacking/"><b>Reddit - Hacking</b></a> - 专门用于黑客和黑客的subreddit。<br>
+&nbsp;&nbsp; <a href="https://packetstormsecurity.com/"><b>Packet Storm</b></a> - 信息安全服务、新闻、文件、工具、漏洞利用、公告和白皮书。<br>
+&nbsp;&nbsp; <a href="https://sekurak.pl/"><b>Sekurak</b></a> - 关于安全、渗透测试、漏洞等(波兰语/英语)。<br>
+&nbsp;&nbsp; <a href="https://nfsec.pl/"><b>nf.sec</b></a> - Linux操作系统安全的基本方面和机制(波兰语)。<br>
+</p>
+
+##### :black_small_square: 其他/综合
+
+<p>
+&nbsp;&nbsp; <a href="https://changelog.com/"><b>Changelog</b></a> - 黑客社区；面向开发人员和黑客的新闻和播客。<br>
+</p>
 
 #### 其他速查表 &nbsp;[<sup>[目录]</sup>](#anger-目录)
 
-> :construction: **本章节正在翻译中，欢迎贡献！**
->
-> 请参阅[英文原版](https://github.com/trimstray/the-book-of-secret-knowledge#other-cheat-sheets)获取完整内容。
+
+###### 构建您自己的DNS服务器
+
+<p>
+&nbsp;&nbsp; <a href="https://calomel.org/unbound_dns.html"><b>Unbound DNS教程</b></a> - 验证、递归和缓存DNS服务器。<br>
+&nbsp;&nbsp; <a href="https://www.ctrl.blog/entry/knot-dns-resolver-tutorial.html"><b>Fedora上的Knot Resolver</b></a> - 如何在Fedora上使用Knot Resolver获得更快、更安全的DNS解析。<br>
+&nbsp;&nbsp; <a href="https://www.aaflalo.me/2018/10/tutorial-setup-dns-over-https-server/"><b>DNS-over-HTTPS</b></a> - 设置您自己的DNS-over-HTTPS (DoH)服务器的教程。<br>
+&nbsp;&nbsp; <a href="https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/"><b>DNS-over-HTTPS</b></a> - DNS over HTTPS的卡通介绍。<br>
+&nbsp;&nbsp; <a href="https://www.aaflalo.me/2019/03/dns-over-tls/"><b>DNS-over-TLS</b></a> - 在DoH服务器之后，设置您的DNS-over-TLS (DoT)服务器。<br>
+&nbsp;&nbsp; <a href="https://zwischenzugs.com/2018/01/26/how-and-why-i-run-my-own-dns-servers/"><b>DNS服务器</b></a> - 如何(以及为什么)运行我自己的DNS服务器。<br>
+</p>
+
+###### 构建您自己的证书颁发机构
+
+<p>
+&nbsp;&nbsp; <a href="https://jamielinux.com/docs/openssl-certificate-authority/"><b>OpenSSL证书颁发机构</b></a> - 使用OpenSSL工具构建您自己的证书颁发机构(CA)。<br>
+&nbsp;&nbsp; <a href="https://github.com/smallstep/certificates"><b>step-ca证书颁发机构</b></a> - 使用开源step-ca构建您自己的证书颁发机构(CA)。<br>
+</p>
+
+###### 构建您自己的系统/虚拟机
+
+<p>
+&nbsp;&nbsp; <a href="https://github.com/cfenollosa/os-tutorial"><b>os-tutorial</b></a> - 如何从头开始创建操作系统。<br>
+&nbsp;&nbsp; <a href="https://justinmeiners.github.io/lc3-vm/"><b>编写您自己的虚拟机</b></a> - 如何编写您自己的虚拟机(VM)。<br>
+&nbsp;&nbsp; <a href="https://github.com/cirosantilli/x86-bare-metal-examples"><b>x86裸机示例</b></a> - 数十个最小操作系统，用于学习x86系统编程。<br>
+&nbsp;&nbsp; <a href="https://github.com/djhworld/simple-computer"><b>simple-computer</b></a> - J. Clark Scott的"But How Do It Know?"中的Scott CPU。<br>
+&nbsp;&nbsp; <a href="https://littleosbook.github.io/"><b>littleosbook</b></a> - 关于操作系统开发的小书。<br>
+</p>
+
+###### DNS服务器列表(隐私)
+
+| <b><u>IP</u></b> | <b><u>URL</u></b> |
+| :---         | :---         |
+| **`84.200.69.80`** | [dns.watch](https://dns.watch/) |
+| **`94.247.43.254`** | [opennic.org](https://www.opennic.org/) |
+| **`64.6.64.6`** | [verisign.com](https://www.verisign.com/en_US/security-services/public-dns/index.xhtml) |
+| **`89.233.43.71`** | [censurfridns.dk](https://blog.uncensoreddns.org/) |
+| **`1.1.1.1`** | [cloudflare.com](https://1.1.1.1/) |
+| **`94.130.110.185`** | [dnsprivacy.at](https://dnsprivacy.at/) |
+
+###### 顶级浏览器扩展
+
+| <b><u>扩展名称</u></b> | <b><u>描述</u></b> |
+| :---         | :---         |
+| **`IPvFoo`** | 在所有页面元素中显示服务器IP地址和HTTPS信息。 |
+| **`FoxyProxy`** | 简化配置浏览器访问代理服务器。 |
+| **`HTTPS Everywhere`** | 在许多网站上自动使用HTTPS安全。 |
+| **`uMatrix`** | 点击即可禁止/允许浏览器发出的任何类型的请求。 |
+| **`uBlock Origin`** | 高效的拦截器：对内存和CPU占用小。 |
+| **`Session Buddy`** | 轻松管理浏览器标签页和书签。 |
+| **`SuperSorter`** | 递归排序书签、删除重复项、合并文件夹等。 |
+| **`Clear Cache`** | 清除缓存和浏览数据。 |
+| **`d3coder`** | 各种类型编码的编码/解码插件。 |
+| **`Web Developer`** | 添加包含各种Web开发者工具的工具栏按钮。 |
+| **`ThreatPinch Lookup`** | 添加威胁情报悬停工具提示。 |
+
+###### 顶级Burp扩展
+
+| <b><u>扩展名称</u></b> | <b><u>描述</u></b> |
+| :---         | :---         |
+| **`Active Scan++`** | 扩展Burp的主动和被动扫描功能。 |
+| **`Autorize`** | 自动检测授权执行。 |
+| **`AuthMatrix`** | 定义所需访问权限级别的简单矩阵网格。 |
+| **`Logger++`** | 以可排序表格记录所有Burp工具的请求和响应。 |
+| **`Bypass WAF`** | 添加用于绕过某些WAF设备的有用标头。 |
+| **`JSON Beautifier`** | 在HTTP消息查看器中美化JSON内容。 |
+| **`JSON Web Tokens`** | 使Burp能够解码和操作JSON Web令牌。 |
+| **`CSP Auditor`** | 显示响应的CSP标头，并被动报告CSP弱点。 |
+| **`CSP-Bypass`** | 被动扫描包含已知绕过的CSP标头。 |
+| **`Hackvertor`** | 使用基于标签的配置转换数据以应用各种编码。 |
+| **`HTML5 Auditor`** | 扫描风险HTML5功能的使用。 |
+| **`Software Vulnerability Scanner`** | 基于vulners.com审计API的漏洞扫描器。 |
+| **`Turbo Intruder`** | 强大的暴力破解工具。 |
+| **`Upload Scanner`** | 上传多种不同类型的文件，附带不同形式的payload。 |
+
+###### 破解Mozilla Firefox地址栏
+
+在Firefox的地址栏中，您可以通过在搜索词之前或之后键入特殊字符来限制结果：
+
+- `^` - 匹配浏览历史记录
+- `*` - 匹配书签。
+- `%` - 匹配当前打开的标签页。
+- `#` - 匹配页面标题。
+- `@` - 匹配Web地址。
+
+###### Chrome隐藏命令
+
+- `chrome://chrome-urls` - 所有命令列表
+- `chrome://flags` - 启用实验和开发功能
+- `chrome://interstitials` - 错误和警告
+- `chrome://net-internals` - 网络内部(事件、dns、缓存)
+- `chrome://network-errors` - 网络错误
+- `chrome://net-export` - 开始将未来的网络活动记录到文件
+- `chrome://safe-browsing` - 安全浏览选项
+- `chrome://user-actions` - 记录所有用户操作
+- `chrome://restart` - 重启chrome
+- `chrome://dino` - 离线小恐龙游戏...
+- `cache:<网站地址>` - 查看网页的缓存版本
 
 #### Shell 单行命令 &nbsp;[<sup>[目录]</sup>](#anger-目录)
 
-> :construction: **本章节正在翻译中，欢迎贡献！**
+> :construction: **本章节内容较多，正在逐步翻译中，欢迎贡献！**
 >
 > 请参阅[英文原版](https://github.com/trimstray/the-book-of-secret-knowledge#one-liners)获取完整内容。
 
 #### Shell 技巧 &nbsp;[<sup>[目录]</sup>](#anger-目录)
 
-> :construction: **本章节正在翻译中，欢迎贡献！**
+> :construction: **本章节内容较多，正在逐步翻译中，欢迎贡献！**
 >
 > 请参阅[英文原版](https://github.com/trimstray/the-book-of-secret-knowledge#shell-tricks)获取完整内容。
 
 #### Shell 函数 &nbsp;[<sup>[目录]</sup>](#anger-目录)
 
-> :construction: **本章节正在翻译中，欢迎贡献！**
+> :construction: **本章节内容较多，正在逐步翻译中，欢迎贡献！**
 >
 > 请参阅[英文原版](https://github.com/trimstray/the-book-of-secret-knowledge#shell-functions)获取完整内容。

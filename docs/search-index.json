@@ -1,0 +1,4531 @@
+[
+  {
+    "title": "CLI 工具",
+    "path": "/tools/",
+    "type": "category"
+  },
+  {
+    "title": "GNU Bash",
+    "path": "/tools/",
+    "url": "https://www.gnu.org/software/bash/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Zsh",
+    "path": "/tools/",
+    "url": "https://www.zsh.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "tclsh",
+    "path": "/tools/",
+    "url": "https://tcl-lang.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "bash-it",
+    "path": "/tools/",
+    "url": "https://github.com/Bash-it/bash-it",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Oh My ZSH!",
+    "path": "/tools/",
+    "url": "https://ohmyz.sh/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Oh My Fish",
+    "path": "/tools/",
+    "url": "https://github.com/oh-my-fish/oh-my-fish",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Starship",
+    "path": "/tools/",
+    "url": "https://github.com/starship/starship",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "powerlevel10k",
+    "path": "/tools/",
+    "url": "https://github.com/romkatv/powerlevel10k",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "z",
+    "path": "/tools/",
+    "url": "https://github.com/rupa/z",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "fzf",
+    "path": "/tools/",
+    "url": "https://github.com/junegunn/fzf",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "zsh-autosuggestions",
+    "path": "/tools/",
+    "url": "https://github.com/zsh-users/zsh-autosuggestions",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "zsh-syntax-highlighting",
+    "path": "/tools/",
+    "url": "https://github.com/zsh-users/zsh-syntax-highlighting",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Awesome ZSH Plugins",
+    "path": "/tools/",
+    "url": "https://github.com/unixorn/awesome-zsh-plugins",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Midnight Commander",
+    "path": "/tools/",
+    "url": "https://midnight-commander.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "ranger",
+    "path": "/tools/",
+    "url": "https://github.com/ranger/ranger",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "nnn",
+    "path": "/tools/",
+    "url": "https://github.com/jarun/nnn",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "screen",
+    "path": "/tools/",
+    "url": "https://www.gnu.org/software/screen/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "tmux",
+    "path": "/tools/",
+    "url": "https://github.com/tmux/tmux/wiki",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "tmux-cssh",
+    "path": "/tools/",
+    "url": "https://github.com/peikk0/tmux-cssh",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "vi",
+    "path": "/tools/",
+    "url": "http://ex-vi.sourceforge.net/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "vim",
+    "path": "/tools/",
+    "url": "https://www.vim.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "emacs",
+    "path": "/tools/",
+    "url": "https://www.gnu.org/software/emacs/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "micro",
+    "path": "/tools/",
+    "url": "https://github.com/zyedidia/micro",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "neovim",
+    "path": "/tools/",
+    "url": "https://neovim.io/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "spacemacs",
+    "path": "/tools/",
+    "url": "https://www.spacemacs.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "spacevim",
+    "path": "/tools/",
+    "url": "https://spacevim.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "fd",
+    "path": "/tools/",
+    "url": "https://github.com/sharkdp/fd",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "ncdu",
+    "path": "/tools/",
+    "url": "https://dev.yorhel.nl/ncdu",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "PuTTY",
+    "path": "/tools/",
+    "url": "https://www.putty.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Mosh",
+    "path": "/tools/",
+    "url": "https://mosh.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Eternal Terminal",
+    "path": "/tools/",
+    "url": "https://eternalterminal.dev/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "nmap",
+    "path": "/tools/",
+    "url": "https://nmap.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "zmap",
+    "path": "/tools/",
+    "url": "https://github.com/zmap/zmap",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Rust Scan",
+    "path": "/tools/",
+    "url": "https://github.com/RustScan/RustScan",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "masscan",
+    "path": "/tools/",
+    "url": "https://github.com/robertdavidgraham/masscan",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "pbscan",
+    "path": "/tools/",
+    "url": "https://github.com/gvb84/pbscan",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "hping",
+    "path": "/tools/",
+    "url": "http://www.hping.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "mtr",
+    "path": "/tools/",
+    "url": "https://github.com/traviscross/mtr",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "mylg",
+    "path": "/tools/",
+    "url": "https://github.com/mehrdadrad/mylg",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "netcat",
+    "path": "/tools/",
+    "url": "http://netcat.sourceforge.net/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "socat",
+    "path": "/tools/",
+    "url": "http://www.dest-unreach.org/socat/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "tcpdump",
+    "path": "/tools/",
+    "url": "https://www.tcpdump.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "tshark",
+    "path": "/tools/",
+    "url": "https://www.wireshark.org/docs/man-pages/tshark.html",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Termshark",
+    "path": "/tools/",
+    "url": "https://termshark.io/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "ngrep",
+    "path": "/tools/",
+    "url": "https://github.com/jpr5/ngrep",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "netsniff-ng",
+    "path": "/tools/",
+    "url": "http://netsniff-ng.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "sockdump",
+    "path": "/tools/",
+    "url": "https://github.com/mechpen/sockdump",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "stenographer",
+    "path": "/tools/",
+    "url": "https://github.com/google/stenographer",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "tcpterm",
+    "path": "/tools/",
+    "url": "https://github.com/sachaos/tcpterm",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "bmon",
+    "path": "/tools/",
+    "url": "https://github.com/tgraf/bmon",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "iptraf-ng",
+    "path": "/tools/",
+    "url": "http://iptraf.seul.org/2.6/manual.html#installation",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "vnstat",
+    "path": "/tools/",
+    "url": "https://github.com/vergoh/vnstat",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "iPerf3",
+    "path": "/tools/",
+    "url": "https://iperf.fr/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "ethr",
+    "path": "/tools/",
+    "url": "https://github.com/Microsoft/Ethr",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Etherate",
+    "path": "/tools/",
+    "url": "https://github.com/jwbensley/Etherate",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "echoip",
+    "path": "/tools/",
+    "url": "https://github.com/mpolden/echoip",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Nemesis",
+    "path": "/tools/",
+    "url": "https://github.com/troglobit/nemesis",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "packetfu",
+    "path": "/tools/",
+    "url": "https://github.com/packetfu/packetfu",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Scapy",
+    "path": "/tools/",
+    "url": "https://scapy.net/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "impacket",
+    "path": "/tools/",
+    "url": "https://github.com/SecureAuthCorp/impacket",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "ssh-audit",
+    "path": "/tools/",
+    "url": "https://github.com/arthepsy/ssh-audit",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "aria2",
+    "path": "/tools/",
+    "url": "https://aria2.github.io/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "iptables-tracer",
+    "path": "/tools/",
+    "url": "https://github.com/x-way/iptables-tracer",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "inception",
+    "path": "/tools/",
+    "url": "https://github.com/proabiral/inception",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "mRemoteNG",
+    "path": "/tools/",
+    "url": "https://mremoteng.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "dnsdiag",
+    "path": "/tools/",
+    "url": "https://github.com/farrokhi/dnsdiag",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "fierce",
+    "path": "/tools/",
+    "url": "https://github.com/mschwager/fierce",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "subfinder",
+    "path": "/tools/",
+    "url": "https://github.com/subfinder/subfinder",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "sublist3r",
+    "path": "/tools/",
+    "url": "https://github.com/aboul3la/Sublist3r",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "amass",
+    "path": "/tools/",
+    "url": "https://github.com/OWASP/Amass",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "namebench",
+    "path": "/tools/",
+    "url": "https://github.com/google/namebench",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "massdns",
+    "path": "/tools/",
+    "url": "https://github.com/blechschmidt/massdns",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "knock",
+    "path": "/tools/",
+    "url": "https://github.com/guelfoweb/knock",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "dnsperf",
+    "path": "/tools/",
+    "url": "https://github.com/DNS-OARC/dnsperf",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "dnscrypt-proxy 2",
+    "path": "/tools/",
+    "url": "https://github.com/jedisct1/dnscrypt-proxy",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "dnsdbq",
+    "path": "/tools/",
+    "url": "https://github.com/dnsdb/dnsdbq",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "grimd",
+    "path": "/tools/",
+    "url": "https://github.com/looterz/grimd",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "dnstwist",
+    "path": "/tools/",
+    "url": "https://github.com/elceef/dnstwist",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "curl",
+    "path": "/tools/",
+    "url": "https://curl.haxx.se/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "kurly",
+    "path": "/tools/",
+    "url": "https://gitlab.com/davidjpeacock/kurly",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "HTTPie",
+    "path": "/tools/",
+    "url": "https://github.com/jakubroztocil/httpie",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "wuzz",
+    "path": "/tools/",
+    "url": "https://github.com/asciimoo/wuzz",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "h2spec",
+    "path": "/tools/",
+    "url": "https://github.com/summerwind/h2spec",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "h2t",
+    "path": "/tools/",
+    "url": "https://github.com/gildasio/h2t",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "htrace.sh",
+    "path": "/tools/",
+    "url": "https://github.com/trimstray/htrace.sh",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "httpstat",
+    "path": "/tools/",
+    "url": "https://github.com/reorx/httpstat",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "httplab",
+    "path": "/tools/",
+    "url": "https://github.com/gchaincl/httplab",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Lynx",
+    "path": "/tools/",
+    "url": "https://lynx.browser.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Browsh",
+    "path": "/tools/",
+    "url": "https://github.com/browsh-org/browsh/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "HeadlessBrowsers",
+    "path": "/tools/",
+    "url": "https://github.com/dhamaniasad/HeadlessBrowsers",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "ab",
+    "path": "/tools/",
+    "url": "https://httpd.apache.org/docs/2.4/programs/ab.html",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "siege",
+    "path": "/tools/",
+    "url": "https://www.joedog.org/siege-home/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "wrk",
+    "path": "/tools/",
+    "url": "https://github.com/wg/wrk",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "wrk2",
+    "path": "/tools/",
+    "url": "https://github.com/giltene/wrk2",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "vegeta",
+    "path": "/tools/",
+    "url": "https://github.com/tsenart/vegeta",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "bombardier",
+    "path": "/tools/",
+    "url": "https://github.com/codesenberg/bombardier",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "gobench",
+    "path": "/tools/",
+    "url": "https://github.com/cmpxchg16/gobench",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "hey",
+    "path": "/tools/",
+    "url": "https://github.com/rakyll/hey",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "boom",
+    "path": "/tools/",
+    "url": "https://github.com/tarekziade/boom",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "SlowHTTPTest",
+    "path": "/tools/",
+    "url": "https://github.com/shekyan/slowhttptest",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "gobuster",
+    "path": "/tools/",
+    "url": "https://github.com/OJ/gobuster",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "sslyze",
+    "path": "/tools/",
+    "url": "https://github.com/ssllabs/sslyze",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "truffleHog",
+    "path": "/tools/",
+    "url": "https://github.com/dxa4481/truffleHog",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "dalfox",
+    "path": "/tools/",
+    "url": "https://github.com/hahwul/dalfox",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "sqlmap",
+    "path": "/tools/",
+    "url": "https://github.com/sqlmapproject/sqlmap",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Lynis",
+    "path": "/tools/",
+    "url": "https://github.com/CISOfy/lynis",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "OpenSCAP",
+    "path": "/tools/",
+    "url": "https://www.open-scap.org/tools/oscap-command-line-tool/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Trivy",
+    "path": "/tools/",
+    "url": "https://github.com/aquasecurity/trivy",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Vuls",
+    "path": "/tools/",
+    "url": "https://github.com/future-architect/vuls",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "grype",
+    "path": "/tools/",
+    "url": "https://github.com/anchore/grype",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Clair",
+    "path": "/tools/",
+    "url": "https://github.com/quay/clair",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "getsploit",
+    "path": "/tools/",
+    "url": "https://github.com/vulnersCom/getsploit",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "linux-exploit-suggester",
+    "path": "/tools/",
+    "url": "https://github.com/mzet-/linux-exploit-suggester",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "ossec",
+    "path": "/tools/",
+    "url": "https://www.ossec.net/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Wazuh",
+    "path": "/tools/",
+    "url": "https://wazuh.com/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Falco",
+    "path": "/tools/",
+    "url": "https://github.com/falcosecurity/falco",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Tripwire",
+    "path": "/tools/",
+    "url": "https://www.tripwire.com/products/tripwire-open-source",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Security Hardenig",
+    "path": "/tools/",
+    "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/security_hardening/index",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "radare2",
+    "path": "/tools/",
+    "url": "https://github.com/radare/radare2",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Rizin",
+    "path": "/tools/",
+    "url": "https://github.com/rizin-re/rizin",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "angr",
+    "path": "/tools/",
+    "url": "https://github.com/angr/angr",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "barebox",
+    "path": "/tools/",
+    "url": "https://barebox.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Capstone",
+    "path": "/tools/",
+    "url": "https://www.capstone-engine.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "RetDec",
+    "path": "/tools/",
+    "url": "https://github.com/avast/retdec",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Ghidra",
+    "path": "/tools/",
+    "url": "https://ghidra-sre.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "gdb",
+    "path": "/tools/",
+    "url": "https://www.gnu.org/software/gdb/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "pwndbg",
+    "path": "/tools/",
+    "url": "https://github.com/pwndbg/pwndbg",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "PEDA",
+    "path": "/tools/",
+    "url": "https://github.com/longld/peda",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "GEF",
+    "path": "/tools/",
+    "url": "https://github.com/hugsy/gef",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "x64dbg",
+    "path": "/tools/",
+    "url": "https://github.com/hellman/x64dbg",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Zstandard",
+    "path": "/tools/",
+    "url": "https://z.digitalclouds.dev/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "watchman",
+    "path": "/tools/",
+    "url": "https://github.com/facebook/watchman",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "uds-tools",
+    "path": "/tools/",
+    "url": "https://github.com/stewartmcgown/uds-tools",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "logagent",
+    "path": "/tools/",
+    "url": "https://github.com/sematext/logagent-js",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "lsof",
+    "path": "/tools/",
+    "url": "https://lsof.github.io/lsof/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Cynet",
+    "path": "/tools/",
+    "url": "https://github.com/Pithikos/Cynet",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "dirhunt",
+    "path": "/tools/",
+    "url": "https://github.com/Nekmo/dirhunt",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "John The Ripper",
+    "path": "/tools/",
+    "url": "https://www.openwall.com/john/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "hashcat",
+    "path": "/tools/",
+    "url": "https://hashcat.net/hashcat/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "p0f",
+    "path": "/tools/",
+    "url": "http://lcamtuf.coredump.cx/p0f3/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "ssh_scan",
+    "path": "/tools/",
+    "url": "https://github.com/mozilla/ssh_scan",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "LeakLooker",
+    "path": "/tools/",
+    "url": "https://github.com/woj-ciech/LeakLooker",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "exploitdb",
+    "path": "/tools/",
+    "url": "https://github.com/offensive-security/exploitdb",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "ctf-tools",
+    "path": "/tools/",
+    "url": "https://github.com/zardus/ctf-tools",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "pwntools",
+    "path": "/tools/",
+    "url": "https://github.com/Gallopsled/pwntools",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "security-tools",
+    "path": "/tools/",
+    "url": "https://github.com/bl4de/security-tools",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "pentestpackage",
+    "path": "/tools/",
+    "url": "https://github.com/leonteale/pentestpackage",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "python-pentest-tools",
+    "path": "/tools/",
+    "url": "https://github.com/dloss/python-pentest-tools",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "fuzzdb",
+    "path": "/tools/",
+    "url": "https://github.com/fuzzdb-project/fuzzdb",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "AFL",
+    "path": "/tools/",
+    "url": "https://github.com/google/AFL",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "AFL++",
+    "path": "/tools/",
+    "url": "https://github.com/AFLplusplus/AFLplusplus",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "syzkaller",
+    "path": "/tools/",
+    "url": "https://github.com/google/syzkaller",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "IDA",
+    "path": "/tools/",
+    "url": "https://www.hex-rays.com/products/ida/index.shtml",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "routersploit",
+    "path": "/tools/",
+    "url": "https://github.com/threat9/routersploit",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Cutter",
+    "path": "/tools/",
+    "url": "https://cutter.re/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Vulnreport",
+    "path": "/tools/",
+    "url": "https://github.com/salesforce/vulnreport",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Mentalist",
+    "path": "/tools/",
+    "url": "https://github.com/sc0tfree/mentalist",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "archerysec",
+    "path": "/tools/",
+    "url": "https://github.com/archerysec/archerysec",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Osmedeus",
+    "path": "/tools/",
+    "url": "https://github.com/j3ssie/Osmedeus",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "beef",
+    "path": "/tools/",
+    "url": "https://github.com/beefproject/beef",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "AutoSploit",
+    "path": "/tools/",
+    "url": "https://github.com/NullArray/AutoSploit",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "SUDO_KILLER",
+    "path": "/tools/",
+    "url": "https://github.com/TH3xACE/SUDO_KILLER",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "yara",
+    "path": "/tools/",
+    "url": "https://github.com/VirusTotal/yara",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "mimikatz",
+    "path": "/tools/",
+    "url": "https://github.com/gentilkiwi/mimikatz",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "sherlock",
+    "path": "/tools/",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "OWASP Threat Dragon",
+    "path": "/tools/",
+    "url": "https://owasp.org/www-project-threat-dragon/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "PTES",
+    "path": "/tools/",
+    "url": "http://www.pentest-standard.org/index.php/Main_Page",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "渗透测试思维导图",
+    "path": "/tools/",
+    "url": "https://www.amanhardikar.com/mindmaps/Practice.html",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "WebApp 安全测试思维导图",
+    "path": "/tools/",
+    "url": "https://www.amanhardikar.com/mindmaps/webapptest.html",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Brute XSS",
+    "path": "/tools/",
+    "url": "https://brutelogic.com.br/blog/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "XSS 速查表",
+    "path": "/tools/",
+    "url": "https://portswigger.net/web-security/cross-site-scripting/cheat-sheet",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "攻击性安全书签",
+    "path": "/tools/",
+    "url": "https://jivoi.github.io/2015/07/03/offensive-security-bookmarks/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的渗透测试速查表",
+    "path": "/tools/",
+    "url": "https://github.com/coreb1t/awesome-pentest-cheat-sheets",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "HackWithGithub 的超棒黑客",
+    "path": "/tools/",
+    "url": "https://github.com/Hack-with-Github/Awesome-Hacking",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "carpedm20 的超棒黑客",
+    "path": "/tools/",
+    "url": "https://github.com/carpedm20/awesome-hacking",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的黑客资源",
+    "path": "/tools/",
+    "url": "https://github.com/vitalysim/Awesome-Hacking-Resources",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的渗透测试",
+    "path": "/tools/",
+    "url": "https://github.com/enaqx/awesome-pentest",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的黑客工具",
+    "path": "/tools/",
+    "url": "https://github.com/m4ll0k/Awesome-Hacking-Tools",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "黑客速查表",
+    "path": "/tools/",
+    "url": "https://github.com/ksanchezcld/Hacking_Cheat_Sheet",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "blackhat-arsenal-tools",
+    "path": "/tools/",
+    "url": "https://github.com/toolswatch/blackhat-arsenal-tools",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "渗透测试和 WebApp 速查表",
+    "path": "/tools/",
+    "url": "https://www.peerlyst.com/posts/the-complete-list-of-infosec-related-cheat-sheets-claus-cramon",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "网络安全资源",
+    "path": "/tools/",
+    "url": "https://github.com/The-Art-of-Hacking/h4cker",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "渗透测试书签",
+    "path": "/tools/",
+    "url": "https://github.com/jhaddix/pentest-bookmarks",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "速查表之神",
+    "path": "/tools/",
+    "url": "https://github.com/OlivierLaflamme/Cheatsheet-God",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "威胁猎人手册",
+    "path": "/tools/",
+    "url": "https://github.com/Cyb3rWard0g/ThreatHunter-Playbook",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "初学者网络渗透测试",
+    "path": "/tools/",
+    "url": "https://github.com/hmaverickadams/Beginner-Network-Pentesting",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "OSCPRepo",
+    "path": "/tools/",
+    "url": "https://github.com/rewardone/OSCPRepo",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "PayloadsAllTheThings",
+    "path": "/tools/",
+    "url": "https://github.com/swisskyrepo/PayloadsAllTheThings",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "payloads",
+    "path": "/tools/",
+    "url": "https://github.com/foospidy/payloads",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "command-injection-payload-list",
+    "path": "/tools/",
+    "url": "https://github.com/payloadbox/command-injection-payload-list",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的 Shodan 搜索查询",
+    "path": "/tools/",
+    "url": "https://github.com/jakejarvis/awesome-shodan-queries",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "AwesomeXSS",
+    "path": "/tools/",
+    "url": "https://github.com/s0md3v/AwesomeXSS",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "php-webshells",
+    "path": "/tools/",
+    "url": "https://github.com/JohnTroony/php-webshells",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "渗透测试工具速查表",
+    "path": "/tools/",
+    "url": "https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "OWASP 速查表系列",
+    "path": "/tools/",
+    "url": "https://cheatsheetseries.owasp.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "OWASP dependency-check",
+    "path": "/tools/",
+    "url": "https://jeremylong.github.io/DependencyCheck/index.html",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "OWASP 主动控制",
+    "path": "/tools/",
+    "url": "https://www.owasp.org/index.php/OWASP_Proactive_Controls",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "PENTESTING-BIBLE",
+    "path": "/tools/",
+    "url": "https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "pentest-wiki",
+    "path": "/tools/",
+    "url": "https://github.com/nixawk/pentest-wiki",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "DEF CON 媒体服务器",
+    "path": "/tools/",
+    "url": "https://media.defcon.org/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的恶意软件分析",
+    "path": "/tools/",
+    "url": "https://github.com/rshipp/awesome-malware-analysis",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "漏洞赏金 writeup",
+    "path": "/tools/",
+    "url": "https://pentester.land/list-of-bug-bounty-writeups.html",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "hackso.me",
+    "path": "/tools/",
+    "url": "https://hackso.me/",
+    "category": "CLI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "GUI 工具",
+    "path": "/gui-tools/",
+    "type": "category"
+  },
+  {
+    "title": "kitty",
+    "path": "/gui-tools/",
+    "url": "https://sw.kovidgoyal.net/kitty/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Alacritty",
+    "path": "/gui-tools/",
+    "url": "https://github.com/alacritty/alacritty",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Hyper",
+    "path": "/gui-tools/",
+    "url": "https://hyper.is/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "iTerm2",
+    "path": "/gui-tools/",
+    "url": "https://iterm2.com/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "PuTTY",
+    "path": "/gui-tools/",
+    "url": "https://www.putty.org/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "mRemoteNG",
+    "path": "/gui-tools/",
+    "url": "https://mremoteng.org/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Wireshark",
+    "path": "/gui-tools/",
+    "url": "https://www.wireshark.org/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Burp Suite",
+    "path": "/gui-tools/",
+    "url": "https://portswigger.net/burp",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "OWASP ZAP",
+    "path": "/gui-tools/",
+    "url": "https://www.zaproxy.org/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "JMeter™",
+    "path": "/gui-tools/",
+    "url": "https://jmeter.apache.org/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "locust",
+    "path": "/gui-tools/",
+    "url": "https://github.com/locustio/locust",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "TOR 浏览器",
+    "path": "/gui-tools/",
+    "url": "https://www.torproject.org/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "KeePassXC",
+    "path": "/gui-tools/",
+    "url": "https://keepassxc.org/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Bitwarden",
+    "path": "/gui-tools/",
+    "url": "https://bitwarden.com/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Vaultwarden",
+    "path": "/gui-tools/",
+    "url": "https://github.com/dani-garcia/vaultwarden/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "HexChat",
+    "path": "/gui-tools/",
+    "url": "https://hexchat.github.io/index.html",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Pidgin",
+    "path": "/gui-tools/",
+    "url": "https://pidgin.im/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Signal",
+    "path": "/gui-tools/",
+    "url": "https://www.signal.org/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Wire",
+    "path": "/gui-tools/",
+    "url": "https://wire.com/en/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "TorChat",
+    "path": "/gui-tools/",
+    "url": "https://github.com/prof7bit/TorChat",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Matrix",
+    "path": "/gui-tools/",
+    "url": "https://matrix.org/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Sublime Text",
+    "path": "/gui-tools/",
+    "url": "https://www.sublimetext.com/3",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Visual Studio Code",
+    "path": "/gui-tools/",
+    "url": "https://code.visualstudio.com/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Atom",
+    "path": "/gui-tools/",
+    "url": "https://atom.io/",
+    "category": "GUI 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Web 工具",
+    "path": "/web-tools/",
+    "type": "category"
+  },
+  {
+    "title": "浏览器的 SSL/TLS 能力",
+    "path": "/web-tools/",
+    "url": "https://www.ssllabs.com/ssltest/viewMyClient.html",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Can I use",
+    "path": "/web-tools/",
+    "url": "https://caniuse.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Panopticlick 3.0",
+    "path": "/web-tools/",
+    "url": "https://panopticlick.eff.org/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "隐私分析器",
+    "path": "/web-tools/",
+    "url": "https://privacy.net/analyzer/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Web 浏览器安全",
+    "path": "/web-tools/",
+    "url": "https://browserleaks.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "我的 SSL 怎么样？",
+    "path": "/web-tools/",
+    "url": "https://www.howsmyssl.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "sslClientInfo",
+    "path": "/web-tools/",
+    "url": "https://suche.org/sslClientInfo",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "SSL 服务器测试",
+    "path": "/web-tools/",
+    "url": "https://www.ssllabs.com/ssltest/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "SSL 服务器测试 (开发版)",
+    "path": "/web-tools/",
+    "url": "https://dev.ssllabs.com/ssltest/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "ImmuniWeb® SSLScan",
+    "path": "/web-tools/",
+    "url": "https://www.immuniweb.com/ssl/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "SSL 检查",
+    "path": "/web-tools/",
+    "url": "https://www.jitbit.com/sslcheck/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "SSL 扫描器",
+    "path": "/web-tools/",
+    "url": "http://www.ssltools.com",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "CryptCheck",
+    "path": "/web-tools/",
+    "url": "https://cryptcheck.fr/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "urlscan.io",
+    "path": "/web-tools/",
+    "url": "https://urlscan.io/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Report URI",
+    "path": "/web-tools/",
+    "url": "https://report-uri.com/home/tools",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "CSP 评估器",
+    "path": "/web-tools/",
+    "url": "https://csp-evaluator.withgoogle.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "无用的 CSP",
+    "path": "/web-tools/",
+    "url": "https://uselesscsp.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "为什么不用 HTTPS？",
+    "path": "/web-tools/",
+    "url": "https://whynohttps.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "TLS 密码套件搜索",
+    "path": "/web-tools/",
+    "url": "https://ciphersuite.info/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "cipherli.st",
+    "path": "/web-tools/",
+    "url": "https://github.com/RaymiiOrg/cipherli.st",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "dhtool",
+    "path": "/web-tools/",
+    "url": "https://2ton.com.au/dhtool/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "badssl.com",
+    "path": "/web-tools/",
+    "url": "https://badssl.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "tlsfun.de",
+    "path": "/web-tools/",
+    "url": "https://tlsfun.de/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "CAA 记录助手",
+    "path": "/web-tools/",
+    "url": "https://sslmate.com/caa/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "公共 CA 数据库",
+    "path": "/web-tools/",
+    "url": "https://ccadb.org/resources",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "CERTSTREAM",
+    "path": "/web-tools/",
+    "url": "https://certstream.calidog.io/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "crt.sh",
+    "path": "/web-tools/",
+    "url": "https://crt.sh/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Hardenize",
+    "path": "/web-tools/",
+    "url": "https://www.hardenize.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "密码套件兼容性",
+    "path": "/web-tools/",
+    "url": "https://cryptcheck.fr/suite/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "urlvoid",
+    "path": "/web-tools/",
+    "url": "https://www.urlvoid.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "security.txt",
+    "path": "/web-tools/",
+    "url": "https://securitytxt.org/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "ssl-config-generator",
+    "path": "/web-tools/",
+    "url": "https://github.com/mozilla/ssl-config-generator",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "TLScan",
+    "path": "/web-tools/",
+    "url": "https://github.com/mjol/TLScan",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "安全头",
+    "path": "/web-tools/",
+    "url": "https://securityheaders.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Mozilla Observatory",
+    "path": "/web-tools/",
+    "url": "https://observatory.mozilla.org/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "webhint",
+    "path": "/web-tools/",
+    "url": "https://webhint.io/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "ViewDNS",
+    "path": "/web-tools/",
+    "url": "http://viewdns.info/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "DNSLookup",
+    "path": "/web-tools/",
+    "url": "https://dnslookup.org/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "DNSlytics",
+    "path": "/web-tools/",
+    "url": "https://dnslytics.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "DNS Spy",
+    "path": "/web-tools/",
+    "url": "https://dnsspy.io/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Zonemaster",
+    "path": "/web-tools/",
+    "url": "https://zonemaster.iis.se/en/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Leaf DNS",
+    "path": "/web-tools/",
+    "url": "http://leafdns.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "在线查找子域名",
+    "path": "/web-tools/",
+    "url": "https://findsubdomains.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "DNSdumpster",
+    "path": "/web-tools/",
+    "url": "https://dnsdumpster.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "DNS Table online",
+    "path": "/web-tools/",
+    "url": "https://dnstable.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "intoDNS",
+    "path": "/web-tools/",
+    "url": "https://intodns.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "DNS Bajaj",
+    "path": "/web-tools/",
+    "url": "http://www.zonecut.net/dns/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "BuddyNS 委派实验室",
+    "path": "/web-tools/",
+    "url": "https://www.buddyns.com/delegation-lab/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "dnssec-debugger",
+    "path": "/web-tools/",
+    "url": "https://dnssec-debugger.verisignlabs.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "PTRarchive.com",
+    "path": "/web-tools/",
+    "url": "http://ptrarchive.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "xip.io",
+    "path": "/web-tools/",
+    "url": "http://xip.io/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "nip.io",
+    "path": "/web-tools/",
+    "url": "https://nip.io/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "dnslookup (ceipam)",
+    "path": "/web-tools/",
+    "url": "https://ceipam.eu/en/dnslookup.php",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "What's My DNS",
+    "path": "/web-tools/",
+    "url": "https://whatsmydns.com",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "DNSGrep",
+    "path": "/web-tools/",
+    "url": "https://blog.erbbysam.com/index.php/2019/02/09/dnsgrep/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "smtp-tls-checker",
+    "path": "/web-tools/",
+    "url": "https://luxsci.com/smtp-tls-checker",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "MX Toolbox",
+    "path": "/web-tools/",
+    "url": "https://mxtoolbox.com/SuperTool.aspx",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "安全电子邮件",
+    "path": "/web-tools/",
+    "url": "https://www.checktls.com/index.html",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "blacklistalert",
+    "path": "/web-tools/",
+    "url": "http://www.blacklistalert.org/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "MultiRBL",
+    "path": "/web-tools/",
+    "url": "http://multirbl.valli.org/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "DKIM SPF & Spam Assassin 验证器",
+    "path": "/web-tools/",
+    "url": "https://dkimvalidator.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "URL 编码/解码",
+    "path": "/web-tools/",
+    "url": "https://www.url-encode-decode.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Uncoder",
+    "path": "/web-tools/",
+    "url": "https://uncoder.io/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Regex101",
+    "path": "/web-tools/",
+    "url": "https://regex101.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "RegExr",
+    "path": "/web-tools/",
+    "url": "https://regexr.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Regexp Tester",
+    "path": "/web-tools/",
+    "url": "https://www.regextester.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "RegEx Pal",
+    "path": "/web-tools/",
+    "url": "https://www.regexpal.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "网络瑞士军刀",
+    "path": "/web-tools/",
+    "url": "https://gchq.github.io/CyberChef/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Netcraft Site Report",
+    "path": "/web-tools/",
+    "url": "https://sitereport.netcraft.com",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "RIPE NCC Atlas",
+    "path": "/web-tools/",
+    "url": "https://atlas.ripe.net/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Robtex",
+    "path": "/web-tools/",
+    "url": "https://www.robtex.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Security Trails",
+    "path": "/web-tools/",
+    "url": "https://securitytrails.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "在线 Curl",
+    "path": "/web-tools/",
+    "url": "https://tools.keycdn.com/curl",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "开发者在线工具",
+    "path": "/web-tools/",
+    "url": "https://extendsclass.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Ping.eu",
+    "path": "/web-tools/",
+    "url": "https://ping.eu/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Network-Tools.com",
+    "path": "/web-tools/",
+    "url": "https://network-tools.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "BGPview",
+    "path": "/web-tools/",
+    "url": "https://bgpview.io/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "BGP 安全了吗？",
+    "path": "/web-tools/",
+    "url": "https://isbgpsafeyet.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Riseup",
+    "path": "/web-tools/",
+    "url": "https://riseup.net/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "VirusTotal",
+    "path": "/web-tools/",
+    "url": "https://www.virustotal.com/gui/home/upload",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "privacyguides.org",
+    "path": "/web-tools/",
+    "url": "https://www.privacyguides.org/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "DNS 隐私测试服务器",
+    "path": "/web-tools/",
+    "url": "https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Test+Servers",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "ShellCheck",
+    "path": "/web-tools/",
+    "url": "https://www.shellcheck.net/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "explainshell.com",
+    "path": "/web-tools/",
+    "url": "https://explainshell.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "jsbin",
+    "path": "/web-tools/",
+    "url": "https://jsbin.com/?html,output",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "CodeSandbox",
+    "path": "/web-tools/",
+    "url": "https://codesandbox.io/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "PHP 沙盒",
+    "path": "/web-tools/",
+    "url": "http://sandbox.onlinephpfunctions.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Repl.it",
+    "path": "/web-tools/",
+    "url": "https://www.repl.it/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "vclFiddle",
+    "path": "/web-tools/",
+    "url": "http://www.vclfiddle.net/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Haskell Dockerfile Linter",
+    "path": "/web-tools/",
+    "url": "https://github.com/hadolint/hadolint",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "GTmetrix",
+    "path": "/web-tools/",
+    "url": "https://gtmetrix.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Sucuri 加载时间测试器",
+    "path": "/web-tools/",
+    "url": "https://performance.sucuri.net/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Pingdom 工具",
+    "path": "/web-tools/",
+    "url": "https://tools.pingdom.com/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "PingMe.io",
+    "path": "/web-tools/",
+    "url": "https://pingme.io/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "PageSpeed Insights",
+    "path": "/web-tools/",
+    "url": "https://developers.google.com/speed/pagespeed/insights/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "web.dev",
+    "path": "/web-tools/",
+    "url": "https://web.dev/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Lighthouse",
+    "path": "/web-tools/",
+    "url": "https://github.com/GoogleChrome/lighthouse",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Censys",
+    "path": "/web-tools/",
+    "url": "https://censys.io/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Shodan",
+    "path": "/web-tools/",
+    "url": "https://www.shodan.io/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "Shodan 2000",
+    "path": "/web-tools/",
+    "url": "https://2000.shodan.io/#/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "GreyNoise",
+    "path": "/web-tools/",
+    "url": "https://viz.greynoise.io/table",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "ZoomEye",
+    "path": "/web-tools/",
+    "url": "https://www.zoomeye.org/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "FOFA",
+    "path": "/web-tools/",
+    "url": "https://fofa.so/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "onyphe.io",
+    "path": "/web-tools/",
+    "url": "https://www.onyphe.io/",
+    "category": "Web 工具",
+    "type": "tool"
+  },
+  {
+    "title": "系统/服务",
+    "path": "/system/",
+    "type": "category"
+  },
+  {
+    "title": "Kali Linux",
+    "path": "/system/",
+    "url": "https://www.kali.org/",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "Parrot Security OS",
+    "path": "/system/",
+    "url": "https://www.parrotsec.org/",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "BlackArch",
+    "path": "/system/",
+    "url": "https://blackarch.org/",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "ArchStrike",
+    "path": "/system/",
+    "url": "https://www.archstrike.org/",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "Pentoo",
+    "path": "/system/",
+    "url": "https://www.pentoo.ch/",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "Tails",
+    "path": "/system/",
+    "url": "https://tails.boum.org/",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "Qubes OS",
+    "path": "/system/",
+    "url": "https://www.qubes-os.org/",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "Whonix",
+    "path": "/system/",
+    "url": "https://www.whonix.org/",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "Sandmap",
+    "path": "/system/",
+    "url": "https://github.com/trimstray/sandmap",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "sovereign",
+    "path": "/system/",
+    "url": "https://github.com/sovereign/sovereign",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "mailinabox",
+    "path": "/system/",
+    "url": "https://github.com/mail-in-a-box/mailinabox",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "mailcow-dockerized",
+    "path": "/system/",
+    "url": "https://github.com/mailcow/mailcow-dockerized",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "iRedMail",
+    "path": "/system/",
+    "url": "https://github.com/iredmail/iRedMail",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "Vultr",
+    "path": "/system/",
+    "url": "https://www.vultr.com/",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "DigitalOcean",
+    "path": "/system/",
+    "url": "https://www.digitalocean.com/",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "AWS 免费套餐",
+    "path": "/system/",
+    "url": "https://aws.amazon.com/free/",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "GitHub Pages",
+    "path": "/system/",
+    "url": "https://pages.github.com/",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "Netlify",
+    "path": "/system/",
+    "url": "https://www.netlify.com/",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "Heroku",
+    "path": "/system/",
+    "url": "https://www.herokucdn.com/",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "Virtustream",
+    "path": "/system/",
+    "url": "https://www.virtustream.com/",
+    "category": "系统/服务",
+    "type": "tool"
+  },
+  {
+    "title": "网络",
+    "path": "/network/",
+    "type": "category"
+  },
+  {
+    "title": "思科网络技术学院",
+    "path": "/network/",
+    "url": "https://www.netacad.com/",
+    "category": "网络",
+    "type": "tool"
+  },
+  {
+    "title": "网络故障排除工具",
+    "path": "/network/",
+    "url": "https://www.comparitech.com/net-admin/network-troubleshooting-tools/",
+    "category": "网络",
+    "type": "tool"
+  },
+  {
+    "title": "GNS3",
+    "path": "/network/",
+    "url": "https://www.gns3.com/",
+    "category": "网络",
+    "type": "tool"
+  },
+  {
+    "title": "容器/编排",
+    "path": "/containers/",
+    "type": "category"
+  },
+  {
+    "title": "Docker",
+    "path": "/containers/",
+    "url": "https://www.docker.com/",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "Moby",
+    "path": "/containers/",
+    "url": "https://github.com/moby/moby",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "podman",
+    "path": "/containers/",
+    "url": "https://podman.io/",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "gVisor",
+    "path": "/containers/",
+    "url": "https://github.com/google/gvisor",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "Buildah",
+    "path": "/containers/",
+    "url": "https://github.com/containers/buildah",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "runc",
+    "path": "/containers/",
+    "url": "https://github.com/opencontainers/runc",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "containerd",
+    "path": "/containers/",
+    "url": "https://containerd.io/",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "Kata 容器",
+    "path": "/containers/",
+    "url": "https://github.com/kata-containers/kata-containers",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "dive",
+    "path": "/containers/",
+    "url": "https://github.com/wagoodman/dive",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "Kubernetes",
+    "path": "/containers/",
+    "url": "https://kubernetes.io/",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "K3s",
+    "path": "/containers/",
+    "url": "https://k3s.io/",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "k9s",
+    "path": "/containers/",
+    "url": "https://github.com/derailed/k9s",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "kops",
+    "path": "/containers/",
+    "url": "https://kops.sigs.k8s.io/",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "kpack",
+    "path": "/containers/",
+    "url": "https://github.com/pivotal/kpack",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "OpenShift",
+    "path": "/containers/",
+    "url": "https://www.open-shift.com/",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "Rancher",
+    "path": "/containers/",
+    "url": "https://rancher.com/",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "kaniko",
+    "path": "/containers/",
+    "url": "https://github.com/GoogleContainerTools/kaniko",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "BuildKit",
+    "path": "/containers/",
+    "url": "https://github.com/moby/buildkit",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "CRI-O",
+    "path": "/containers/",
+    "url": "https://cri-o.io/",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "Harbor",
+    "path": "/containers/",
+    "url": "https://goharbor.io/",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "Helm",
+    "path": "/containers/",
+    "url": "https://github.com/helm/helm",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "Skaffold",
+    "path": "/containers/",
+    "url": "https://github.com/GoogleContainerTools/skaffold",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "Argo CD",
+    "path": "/containers/",
+    "url": "https://github.com/argoproj/argo-cd",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "Traefik",
+    "path": "/containers/",
+    "url": "https://traefik.io/",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "Istio",
+    "path": "/containers/",
+    "url": "https://istio.io/",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "Envoy",
+    "path": "/containers/",
+    "url": "https://www.envoyproxy.io/",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "eBPF",
+    "path": "/containers/",
+    "url": "https://ebpf.io/",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "Cilium",
+    "path": "/containers/",
+    "url": "https://github.com/cilium/cilium",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "Falco",
+    "path": "/containers/",
+    "url": "https://falco.org/",
+    "category": "容器/编排",
+    "type": "tool"
+  },
+  {
+    "title": "手册/指南/教程",
+    "path": "/guides/",
+    "type": "category"
+  },
+  {
+    "title": "我的 AWS 安全工具库",
+    "path": "/guides/",
+    "url": "https://github.com/toniblyx/my-arsenal-of-aws-security-tools",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "渗透测试圣经",
+    "path": "/guides/",
+    "url": "https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "Awesome Pentest",
+    "path": "/guides/",
+    "url": "https://github.com/enaqx/awesome-pentest",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的恶意软件分析",
+    "path": "/guides/",
+    "url": "https://github.com/rshipp/awesome-malware-analysis",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "Awesome",
+    "path": "/guides/",
+    "url": "https://github.com/sindresorhus/awesome",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "Awesome OSINT",
+    "path": "/guides/",
+    "url": "https://github.com/jivoi/awesome-osint",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的威胁情报",
+    "path": "/guides/",
+    "url": "https://github.com/hslatman/awesome-threat-intelligence",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "Awesome RAT",
+    "path": "/guides/",
+    "url": "https://github.com/alphaSeclab/awesome-rat",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的蜜罐",
+    "path": "/guides/",
+    "url": "https://github.com/paralax/awesome-honeypots",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的事件响应",
+    "path": "/guides/",
+    "url": "https://github.com/meirwah/awesome-incident-response",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "威胁猎人手册",
+    "path": "/guides/",
+    "url": "https://github.com/Cyb3rWard0g/ThreatHunter-Playbook",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "红队工具包",
+    "path": "/guides/",
+    "url": "https://github.com/infosecn1nja/Red-Teaming-Toolkit",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "No Code",
+    "path": "/guides/",
+    "url": "https://github.com/kelseyhightower/nocode",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "提问的智慧",
+    "path": "/guides/",
+    "url": "http://www.catb.org/~esr/faqs/smart-questions.html",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "高级 Bash 脚本指南",
+    "path": "/guides/",
+    "url": "https://www.tldp.org/HOWTO/HTML/Adv-Bash-Scr-HOWTO/index.html",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "Bash 指南",
+    "path": "/guides/",
+    "url": "http://mywiki.wooledge.org/BashGuide",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "Shell & 工具",
+    "path": "/guides/",
+    "url": "https://www.shell-tips.com/",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "命令行的艺术",
+    "path": "/guides/",
+    "url": "https://github.com/jlevy/the-art-of-command-line",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "Awesome SRE",
+    "path": "/guides/",
+    "url": "https://github.com/dastergon/awesome-sre",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "Awesome REST",
+    "path": "/guides/",
+    "url": "https://github.com/uptimejp/awesome-rest",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "Awesome gRPC",
+    "path": "/guides/",
+    "url": "https://github.com/grpc-ecosystem/awesome-grpc",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "Awesome Docker",
+    "path": "/guides/",
+    "url": "https://github.com/veggiemonk/awesome-docker",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "Awesome-Python-Testing",
+    "path": "/guides/",
+    "url": "https://github.com/gforcada/awesome-python-testing",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "Awesome Django",
+    "path": "/guides/",
+    "url": "https://github.com/wsvincent/awesome-django",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "Nginx 管理员手册",
+    "path": "/guides/",
+    "url": "https://github.com/trimstray/nginx-admins-handbook",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "nginxconfig.io",
+    "path": "/guides/",
+    "url": "https://github.com/digitalocean/nginxconfig.io",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "Linux PS 命令示例",
+    "path": "/guides/",
+    "url": "https://www.thegeekstuff.com/2017/04/linux-ps-command-examples/",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "50 个最常用的 Linux 命令",
+    "path": "/guides/",
+    "url": "https://www.thegeekstuff.com/2010/11/50-linux-commands/",
+    "category": "手册/指南/教程",
+    "type": "tool"
+  },
+  {
+    "title": "精选列表",
+    "path": "/lists/",
+    "type": "category"
+  },
+  {
+    "title": "awesome",
+    "path": "/lists/",
+    "url": "https://github.com/sindresorhus/awesome",
+    "category": "精选列表",
+    "type": "tool"
+  },
+  {
+    "title": "awesome-awesomeness",
+    "path": "/lists/",
+    "url": "https://github.com/bayandin/awesome-awesomeness",
+    "category": "精选列表",
+    "type": "tool"
+  },
+  {
+    "title": "lists",
+    "path": "/lists/",
+    "url": "https://github.com/jnv/lists",
+    "category": "精选列表",
+    "type": "tool"
+  },
+  {
+    "title": "技术白皮书",
+    "path": "/lists/",
+    "url": "https://github.com/trimstray/technical-whitepapers",
+    "category": "精选列表",
+    "type": "tool"
+  },
+  {
+    "title": "multitor",
+    "path": "/lists/",
+    "url": "https://github.com/trimstray/multitor",
+    "category": "精选列表",
+    "type": "tool"
+  },
+  {
+    "title": "博客/播客/视频",
+    "path": "/media/",
+    "type": "category"
+  },
+  {
+    "title": "Troy Hunt",
+    "path": "/media/",
+    "url": "https://www.troyhunt.com/",
+    "category": "博客/播客/视频",
+    "type": "tool"
+  },
+  {
+    "title": "Krebs on Security",
+    "path": "/media/",
+    "url": "https://krebsonsecurity.com/",
+    "category": "博客/播客/视频",
+    "type": "tool"
+  },
+  {
+    "title": "Schneier on Security",
+    "path": "/media/",
+    "url": "https://www.schneier.com/",
+    "category": "博客/播客/视频",
+    "type": "tool"
+  },
+  {
+    "title": "Darknet",
+    "path": "/media/",
+    "url": "https://www.darknet.org.uk/",
+    "category": "博客/播客/视频",
+    "type": "tool"
+  },
+  {
+    "title": "Risky Business",
+    "path": "/media/",
+    "url": "https://www.risky.biz/netcasts/risky-business/",
+    "category": "博客/播客/视频",
+    "type": "tool"
+  },
+  {
+    "title": "JackkTutorials",
+    "path": "/media/",
+    "url": "https://www.youtube.com/user/JackkTutorials",
+    "category": "博客/播客/视频",
+    "type": "tool"
+  },
+  {
+    "title": "Hak5",
+    "path": "/media/",
+    "url": "https://www.youtube.com/user/Hak5Darren",
+    "category": "博客/播客/视频",
+    "type": "tool"
+  },
+  {
+    "title": "黑客/渗透测试",
+    "path": "/pentest/",
+    "type": "category"
+  },
+  {
+    "title": "Sandcat 浏览器",
+    "path": "/pentest/",
+    "url": "http://www.syhunt.com/sandcat/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Metasploit",
+    "path": "/pentest/",
+    "url": "https://www.metasploit.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Burp Suite",
+    "path": "/pentest/",
+    "url": "https://portswigger.net/burp",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "OWASP ZAP",
+    "path": "/pentest/",
+    "url": "https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "w3af",
+    "path": "/pentest/",
+    "url": "http://w3af.org/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "mitmproxy",
+    "path": "/pentest/",
+    "url": "https://mitmproxy.org/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Nikto2",
+    "path": "/pentest/",
+    "url": "https://cirt.net/Nikto2",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "sqlmap",
+    "path": "/pentest/",
+    "url": "http://sqlmap.org/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Recon-ng",
+    "path": "/pentest/",
+    "url": "https://github.com/lanmaster53/recon-ng",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "AutoRecon",
+    "path": "/pentest/",
+    "url": "https://github.com/Tib3rius/AutoRecon",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Faraday",
+    "path": "/pentest/",
+    "url": "https://www.faradaysec.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Photon",
+    "path": "/pentest/",
+    "url": "https://github.com/s0md3v/Photon",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "XSStrike",
+    "path": "/pentest/",
+    "url": "https://github.com/s0md3v/XSStrike",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Sn1per",
+    "path": "/pentest/",
+    "url": "https://github.com/1N3/Sn1per",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "vuls",
+    "path": "/pentest/",
+    "url": "https://github.com/future-architect/vuls",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "tsunami",
+    "path": "/pentest/",
+    "url": "https://github.com/google/tsunami-security-scanner",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "aquatone",
+    "path": "/pentest/",
+    "url": "https://github.com/michenriksen/aquatone",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "BillCipher",
+    "path": "/pentest/",
+    "url": "https://github.com/GitHackTools/BillCipher",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "WhatWaf",
+    "path": "/pentest/",
+    "url": "https://github.com/Ekultek/WhatWaf",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Corsy",
+    "path": "/pentest/",
+    "url": "https://github.com/s0md3v/Corsy",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Raccoon",
+    "path": "/pentest/",
+    "url": "https://github.com/evyatarmeged/Raccoon",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "dirhunt",
+    "path": "/pentest/",
+    "url": "https://github.com/Nekmo/dirhunt",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "John The Ripper",
+    "path": "/pentest/",
+    "url": "https://www.openwall.com/john/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "hashcat",
+    "path": "/pentest/",
+    "url": "https://hashcat.net/hashcat/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "p0f",
+    "path": "/pentest/",
+    "url": "http://lcamtuf.coredump.cx/p0f3/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "ssh_scan",
+    "path": "/pentest/",
+    "url": "https://github.com/mozilla/ssh_scan",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "LeakLooker",
+    "path": "/pentest/",
+    "url": "https://github.com/woj-ciech/LeakLooker",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "exploitdb",
+    "path": "/pentest/",
+    "url": "https://github.com/offensive-security/exploitdb",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "getsploit",
+    "path": "/pentest/",
+    "url": "https://github.com/vulnersCom/getsploit",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "ctf-tools",
+    "path": "/pentest/",
+    "url": "https://github.com/zardus/ctf-tools",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "pwntools",
+    "path": "/pentest/",
+    "url": "https://github.com/Gallopsled/pwntools",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "security-tools",
+    "path": "/pentest/",
+    "url": "https://github.com/bl4de/security-tools",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "pentestpackage",
+    "path": "/pentest/",
+    "url": "https://github.com/leonteale/pentestpackage",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "python-pentest-tools",
+    "path": "/pentest/",
+    "url": "https://github.com/dloss/python-pentest-tools",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "fuzzdb",
+    "path": "/pentest/",
+    "url": "https://github.com/fuzzdb-project/fuzzdb",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "AFL",
+    "path": "/pentest/",
+    "url": "https://github.com/google/AFL",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "AFL++",
+    "path": "/pentest/",
+    "url": "https://github.com/AFLplusplus/AFLplusplus",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "syzkaller",
+    "path": "/pentest/",
+    "url": "https://github.com/google/syzkaller",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "pwndbg",
+    "path": "/pentest/",
+    "url": "https://github.com/pwndbg/pwndbg",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "GDB PEDA",
+    "path": "/pentest/",
+    "url": "https://github.com/longld/peda",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "IDA",
+    "path": "/pentest/",
+    "url": "https://www.hex-rays.com/products/ida/index.shtml",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "radare2",
+    "path": "/pentest/",
+    "url": "https://github.com/radare/radare2",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "routersploit",
+    "path": "/pentest/",
+    "url": "https://github.com/threat9/routersploit",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Ghidra",
+    "path": "/pentest/",
+    "url": "https://github.com/NationalSecurityAgency/ghidra",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Cutter",
+    "path": "/pentest/",
+    "url": "https://cutter.re/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Vulnreport",
+    "path": "/pentest/",
+    "url": "https://github.com/salesforce/vulnreport",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Mentalist",
+    "path": "/pentest/",
+    "url": "https://github.com/sc0tfree/mentalist",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "archerysec",
+    "path": "/pentest/",
+    "url": "https://github.com/archerysec/archerysec",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Osmedeus",
+    "path": "/pentest/",
+    "url": "https://github.com/j3ssie/Osmedeus",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "beef",
+    "path": "/pentest/",
+    "url": "https://github.com/beefproject/beef",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "AutoSploit",
+    "path": "/pentest/",
+    "url": "https://github.com/NullArray/AutoSploit",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "SUDO_KILLER",
+    "path": "/pentest/",
+    "url": "https://github.com/TH3xACE/SUDO_KILLER",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "yara",
+    "path": "/pentest/",
+    "url": "https://github.com/VirusTotal/yara",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "mimikatz",
+    "path": "/pentest/",
+    "url": "https://github.com/gentilkiwi/mimikatz",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "sherlock",
+    "path": "/pentest/",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "OWASP Threat Dragon",
+    "path": "/pentest/",
+    "url": "https://owasp.org/www-project-threat-dragon/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "PTES",
+    "path": "/pentest/",
+    "url": "http://www.pentest-standard.org/index.php/Main_Page",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "渗透测试思维导图",
+    "path": "/pentest/",
+    "url": "https://www.amanhardikar.com/mindmaps/Practice.html",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Web应用安全测试思维导图",
+    "path": "/pentest/",
+    "url": "https://www.amanhardikar.com/mindmaps/webapptest.html",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Brute XSS",
+    "path": "/pentest/",
+    "url": "https://brutelogic.com.br/blog/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "XSS速查表",
+    "path": "/pentest/",
+    "url": "https://portswigger.net/web-security/cross-site-scripting/cheat-sheet",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "攻击性安全书签",
+    "path": "/pentest/",
+    "url": "https://jivoi.github.io/2015/07/03/offensive-security-bookmarks/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的渗透测试速查表",
+    "path": "/pentest/",
+    "url": "https://github.com/coreb1t/awesome-pentest-cheat-sheets",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "HackWithGithub的超棒黑客资源",
+    "path": "/pentest/",
+    "url": "https://github.com/Hack-with-Github/Awesome-Hacking",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "carpedm20的超棒黑客资源",
+    "path": "/pentest/",
+    "url": "https://github.com/carpedm20/awesome-hacking",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的黑客资源",
+    "path": "/pentest/",
+    "url": "https://github.com/vitalysim/Awesome-Hacking-Resources",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的渗透测试",
+    "path": "/pentest/",
+    "url": "https://github.com/enaqx/awesome-pentest",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的黑客工具",
+    "path": "/pentest/",
+    "url": "https://github.com/m4ll0k/Awesome-Hacking-Tools",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "黑客速查表",
+    "path": "/pentest/",
+    "url": "https://github.com/ksanchezcld/Hacking_Cheat_Sheet",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "blackhat-arsenal-tools",
+    "path": "/pentest/",
+    "url": "https://github.com/toolswatch/blackhat-arsenal-tools",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "渗透测试和Web应用速查表",
+    "path": "/pentest/",
+    "url": "https://www.peerlyst.com/posts/the-complete-list-of-infosec-related-cheat-sheets-claus-cramon",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "网络安全资源",
+    "path": "/pentest/",
+    "url": "https://github.com/The-Art-of-Hacking/h4cker",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "渗透测试书签",
+    "path": "/pentest/",
+    "url": "https://github.com/jhaddix/pentest-bookmarks",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "速查表之神",
+    "path": "/pentest/",
+    "url": "https://github.com/OlivierLaflamme/Cheatsheet-God",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "威胁猎人手册",
+    "path": "/pentest/",
+    "url": "https://github.com/Cyb3rWard0g/ThreatHunter-Playbook",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "初学者网络渗透测试",
+    "path": "/pentest/",
+    "url": "https://github.com/hmaverickadams/Beginner-Network-Pentesting",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "OSCPRepo",
+    "path": "/pentest/",
+    "url": "https://github.com/rewardone/OSCPRepo",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "PayloadsAllTheThings",
+    "path": "/pentest/",
+    "url": "https://github.com/swisskyrepo/PayloadsAllTheThings",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "payloads",
+    "path": "/pentest/",
+    "url": "https://github.com/foospidy/payloads",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "命令注入payload列表",
+    "path": "/pentest/",
+    "url": "https://github.com/payloadbox/command-injection-payload-list",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的Shodan搜索查询",
+    "path": "/pentest/",
+    "url": "https://github.com/jakejarvis/awesome-shodan-queries",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "AwesomeXSS",
+    "path": "/pentest/",
+    "url": "https://github.com/s0md3v/AwesomeXSS",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "php-webshells",
+    "path": "/pentest/",
+    "url": "https://github.com/JohnTroony/php-webshells",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "渗透测试工具速查表",
+    "path": "/pentest/",
+    "url": "https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "OWASP速查表系列",
+    "path": "/pentest/",
+    "url": "https://cheatsheetseries.owasp.org/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "OWASP dependency-check",
+    "path": "/pentest/",
+    "url": "https://jeremylong.github.io/DependencyCheck/index.html",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "OWASP主动控制",
+    "path": "/pentest/",
+    "url": "https://www.owasp.org/index.php/OWASP_Proactive_Controls",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "PENTESTING-BIBLE",
+    "path": "/pentest/",
+    "url": "https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "pentest-wiki",
+    "path": "/pentest/",
+    "url": "https://github.com/nixawk/pentest-wiki",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "DEF CON媒体服务器",
+    "path": "/pentest/",
+    "url": "https://media.defcon.org/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的恶意软件分析",
+    "path": "/pentest/",
+    "url": "https://github.com/rshipp/awesome-malware-analysis",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "SQL注入速查表",
+    "path": "/pentest/",
+    "url": "https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Entersoft知识库",
+    "path": "/pentest/",
+    "url": "http://kb.entersoft.co.in/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "HTML5安全速查表",
+    "path": "/pentest/",
+    "url": "http://html5sec.org/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "XSS字符串编码器",
+    "path": "/pentest/",
+    "url": "http://evuln.com/tools/xss-encoder/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "GTFOBins",
+    "path": "/pentest/",
+    "url": "https://gtfobins.github.io/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Guifre Ruiz笔记",
+    "path": "/pentest/",
+    "url": "https://guif.re/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "SSRF技巧",
+    "path": "/pentest/",
+    "url": "http://blog.safebuff.com/2016/07/03/SSRF-Tips/index.html",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "shell-storm CTF仓库",
+    "path": "/pentest/",
+    "url": "http://shell-storm.org/repo/CTF/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "ctf",
+    "path": "/pentest/",
+    "url": "https://github.com/bl4de/ctf",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "我的CTF Web挑战",
+    "path": "/pentest/",
+    "url": "https://github.com/orangetw/My-CTF-Web-Challenges",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "MSTG",
+    "path": "/pentest/",
+    "url": "https://github.com/OWASP/owasp-mstg",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "内部渗透测试手册",
+    "path": "/pentest/",
+    "url": "https://github.com/sdcampbell/Internal-Pentest-Playbook",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "KeyHacks",
+    "path": "/pentest/",
+    "url": "https://github.com/streaak/keyhacks",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "securitum/research",
+    "path": "/pentest/",
+    "url": "https://github.com/securitum/research",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "公开渗透测试报告",
+    "path": "/pentest/",
+    "url": "https://github.com/juliocesarfort/public-pentesting-reports",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的漏洞赏金",
+    "path": "/pentest/",
+    "url": "https://github.com/djadmin/awesome-bug-bounty",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "漏洞赏金参考",
+    "path": "/pentest/",
+    "url": "https://github.com/ngalongc/bug-bounty-reference",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "超棒的漏洞赏金解题报告",
+    "path": "/pentest/",
+    "url": "https://github.com/devanshbatham/Awesome-Bugbounty-Writeups",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "漏洞赏金解题报告",
+    "path": "/pentest/",
+    "url": "https://pentester.land/list-of-bug-bounty-writeups.html",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "hackso.me",
+    "path": "/pentest/",
+    "url": "https://hackso.me/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "PHP-backdoors",
+    "path": "/pentest/",
+    "url": "https://github.com/bartblaze/PHP-backdoors",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Weakpass",
+    "path": "/pentest/",
+    "url": "https://weakpass.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Hashes.org",
+    "path": "/pentest/",
+    "url": "https://hashes.org/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "SecLists",
+    "path": "/pentest/",
+    "url": "https://github.com/danielmiessler/SecLists",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Probable-Wordlists",
+    "path": "/pentest/",
+    "url": "https://github.com/berzerk0/Probable-Wordlists",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "skullsecurity密码",
+    "path": "/pentest/",
+    "url": "https://wiki.skullsecurity.org/index.php?title=Passwords",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "统计可能的用户名",
+    "path": "/pentest/",
+    "url": "https://github.com/insidetrust/statistically-likely-usernames",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "YesWeHack",
+    "path": "/pentest/",
+    "url": "https://www.yeswehack.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Openbugbounty",
+    "path": "/pentest/",
+    "url": "https://www.openbugbounty.org/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "hackerone",
+    "path": "/pentest/",
+    "url": "https://www.hackerone.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "bugcrowd",
+    "path": "/pentest/",
+    "url": "https://www.bugcrowd.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Crowdshield",
+    "path": "/pentest/",
+    "url": "https://crowdshield.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Synack",
+    "path": "/pentest/",
+    "url": "https://www.synack.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Hacktrophy",
+    "path": "/pentest/",
+    "url": "https://hacktrophy.com/en/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "OWASP-VWAD",
+    "path": "/pentest/",
+    "url": "https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "DVWA",
+    "path": "/pentest/",
+    "url": "http://www.dvwa.co.uk/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "metasploitable2",
+    "path": "/pentest/",
+    "url": "https://metasploit.help.rapid7.com/docs/metasploitable-2",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "metasploitable3",
+    "path": "/pentest/",
+    "url": "https://github.com/rapid7/metasploitable3",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "DSVW",
+    "path": "/pentest/",
+    "url": "https://github.com/stamparm/DSVW",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "OWASP Mutillidae II",
+    "path": "/pentest/",
+    "url": "https://sourceforge.net/projects/mutillidae/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "OWASP Juice Shop项目",
+    "path": "/pentest/",
+    "url": "https://www.owasp.org/index.php/OWASP_Juice_Shop_Project",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "OWASP Node.js Goat项目",
+    "path": "/pentest/",
+    "url": "https://www.owasp.org/index.php/Projects/OWASP_Node_js_Goat_Project",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "juicy-ctf",
+    "path": "/pentest/",
+    "url": "https://github.com/iteratec/juicy-ctf",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "SecurityShepherd",
+    "path": "/pentest/",
+    "url": "https://github.com/OWASP/SecurityShepherd",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Security Ninjas",
+    "path": "/pentest/",
+    "url": "https://github.com/opendns/Security_Ninjas_AppSec_Training",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "hackazon",
+    "path": "/pentest/",
+    "url": "https://github.com/rapid7/hackazon",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "dvna",
+    "path": "/pentest/",
+    "url": "https://github.com/appsecco/dvna",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "django-DefectDojo",
+    "path": "/pentest/",
+    "url": "https://github.com/DefectDojo/django-DefectDojo",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Google Gruyere",
+    "path": "/pentest/",
+    "url": "https://google-gruyere.appspot.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Bodhi",
+    "path": "/pentest/",
+    "url": "https://github.com/amolnaik4/bodhi",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Websploit",
+    "path": "/pentest/",
+    "url": "https://websploit.h4cker.org/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "vulhub",
+    "path": "/pentest/",
+    "url": "https://github.com/vulhub/vulhub",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "CloudGoat 2",
+    "path": "/pentest/",
+    "url": "https://rhinosecuritylabs.com/aws/introducing-cloudgoat-2/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "secDevLabs",
+    "path": "/pentest/",
+    "url": "https://github.com/globocom/secDevLabs",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "CORS-vulnerable-Lab",
+    "path": "/pentest/",
+    "url": "https://github.com/incredibleindishell/CORS-vulnerable-Lab",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "RootTheBox",
+    "path": "/pentest/",
+    "url": "https://github.com/moloch--/RootTheBox",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "KONTRA",
+    "path": "/pentest/",
+    "url": "https://application.security/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Offensive Security",
+    "path": "/pentest/",
+    "url": "https://www.offensive-security.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Hack The Box",
+    "path": "/pentest/",
+    "url": "https://www.hackthebox.eu/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Hacking-Lab",
+    "path": "/pentest/",
+    "url": "https://www.hacking-lab.com/index.html",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "pwnable.kr",
+    "path": "/pentest/",
+    "url": "http://pwnable.kr/index.php",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Pwnable.tw",
+    "path": "/pentest/",
+    "url": "https://pwnable.tw/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "picoCTF",
+    "path": "/pentest/",
+    "url": "https://picoctf.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "CTFlearn",
+    "path": "/pentest/",
+    "url": "https://ctflearn.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "ctftime",
+    "path": "/pentest/",
+    "url": "https://ctftime.org/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Silesia Security Lab",
+    "path": "/pentest/",
+    "url": "https://silesiasecuritylab.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Practical Pentest Labs",
+    "path": "/pentest/",
+    "url": "https://practicalpentestlabs.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Root Me",
+    "path": "/pentest/",
+    "url": "https://www.root-me.org/?lang=en",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "rozwal.to",
+    "path": "/pentest/",
+    "url": "https://rozwal.to/login",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "TryHackMe",
+    "path": "/pentest/",
+    "url": "https://tryhackme.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "hackxor",
+    "path": "/pentest/",
+    "url": "https://hackxor.net/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Hack Yourself First",
+    "path": "/pentest/",
+    "url": "http://hack-yourself-first.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "OverTheWire",
+    "path": "/pentest/",
+    "url": "http://overthewire.org/wargames/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Wizard Labs",
+    "path": "/pentest/",
+    "url": "https://labs.wizard-security.net/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "PentesterLab",
+    "path": "/pentest/",
+    "url": "https://pentesterlab.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "RingZer0",
+    "path": "/pentest/",
+    "url": "https://ringzer0ctf.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "try2hack",
+    "path": "/pentest/",
+    "url": "http://www.try2hack.nl/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Ubeeri",
+    "path": "/pentest/",
+    "url": "https://www.ubeeri.com/preconfig-labs",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Pentestit",
+    "path": "/pentest/",
+    "url": "https://lab.pentestit.ru/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Microcorruption",
+    "path": "/pentest/",
+    "url": "https://microcorruption.com/login",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Crackmes",
+    "path": "/pentest/",
+    "url": "https://crackmes.one/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "DomGoat",
+    "path": "/pentest/",
+    "url": "https://domgo.at/cxss/intro",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "陈规定型挑战",
+    "path": "/pentest/",
+    "url": "https://chall.stypr.com",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Vulnhub",
+    "path": "/pentest/",
+    "url": "https://www.vulnhub.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "W3Challs",
+    "path": "/pentest/",
+    "url": "https://w3challs.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "RingZer0 CTF",
+    "path": "/pentest/",
+    "url": "https://ringzer0ctf.com/challenges",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Hack.me",
+    "path": "/pentest/",
+    "url": "https://hack.me/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Hack This!",
+    "path": "/pentest/",
+    "url": "https://www.hackthis.co.uk/levels/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Enigma Group WebApp培训",
+    "path": "/pentest/",
+    "url": "https://www.enigmagroup.org/#",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "逆向工程挑战",
+    "path": "/pentest/",
+    "url": "https://challenges.re/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "0x00sec",
+    "path": "/pentest/",
+    "url": "https://0x00sec.org/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "We Chall",
+    "path": "/pentest/",
+    "url": "https://www.wechall.net/challs",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Hacker Gateway",
+    "path": "/pentest/",
+    "url": "https://www.hackergateway.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Hacker101",
+    "path": "/pentest/",
+    "url": "https://www.hacker101.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "contained.af",
+    "path": "/pentest/",
+    "url": "https://contained.af/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "flAWS挑战！",
+    "path": "/pentest/",
+    "url": "http://flaws.cloud/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "CyberSec WTF",
+    "path": "/pentest/",
+    "url": "https://cybersecurity.wtf",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "CTF Challenge",
+    "path": "/pentest/",
+    "url": "https://ctfchallenge.co.uk/login",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "gCTF",
+    "path": "/pentest/",
+    "url": "https://capturetheflag.withgoogle.com",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Hack This Site",
+    "path": "/pentest/",
+    "url": "https://www.hackthissite.org/pages/index/index.php",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Attack & Defense",
+    "path": "/pentest/",
+    "url": "https://attackdefense.com",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Cryptohack",
+    "path": "/pentest/",
+    "url": "https://cryptohack.org/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Cryptopals",
+    "path": "/pentest/",
+    "url": "https://cryptopals.com/",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "fbctf",
+    "path": "/pentest/",
+    "url": "https://github.com/facebook/fbctf",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "ctfscoreboard",
+    "path": "/pentest/",
+    "url": "https://github.com/google/ctfscoreboard",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "Bugcrowd大学",
+    "path": "/pentest/",
+    "url": "https://github.com/bugcrowd/bugcrowd_university",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "OSCPRepo",
+    "path": "/pentest/",
+    "url": "https://github.com/rewardone/OSCPRepo",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "OWASP Top 10：真实世界示例",
+    "path": "/pentest/",
+    "url": "https://medium.com/@cxosmo/owasp-top-10-real-world-examples-part-1-a540c4ea2df5",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "phrack.org",
+    "path": "/pentest/",
+    "url": "http://phrack.org/index.html",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "实用道德黑客资源",
+    "path": "/pentest/",
+    "url": "https://github.com/Gr1mmie/Practical-Ethical-Hacking-Resources",
+    "category": "黑客/渗透测试",
+    "type": "tool"
+  },
+  {
+    "title": "其他速查表",
+    "path": "/cheatsheets/",
+    "type": "category"
+  },
+  {
+    "title": "Unbound DNS教程",
+    "path": "/cheatsheets/",
+    "url": "https://calomel.org/unbound_dns.html",
+    "category": "其他速查表",
+    "type": "tool"
+  },
+  {
+    "title": "Fedora上的Knot Resolver",
+    "path": "/cheatsheets/",
+    "url": "https://www.ctrl.blog/entry/knot-dns-resolver-tutorial.html",
+    "category": "其他速查表",
+    "type": "tool"
+  },
+  {
+    "title": "DNS-over-HTTPS",
+    "path": "/cheatsheets/",
+    "url": "https://www.aaflalo.me/2018/10/tutorial-setup-dns-over-https-server/",
+    "category": "其他速查表",
+    "type": "tool"
+  },
+  {
+    "title": "DNS-over-HTTPS",
+    "path": "/cheatsheets/",
+    "url": "https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/",
+    "category": "其他速查表",
+    "type": "tool"
+  },
+  {
+    "title": "DNS-over-TLS",
+    "path": "/cheatsheets/",
+    "url": "https://www.aaflalo.me/2019/03/dns-over-tls/",
+    "category": "其他速查表",
+    "type": "tool"
+  },
+  {
+    "title": "DNS服务器",
+    "path": "/cheatsheets/",
+    "url": "https://zwischenzugs.com/2018/01/26/how-and-why-i-run-my-own-dns-servers/",
+    "category": "其他速查表",
+    "type": "tool"
+  },
+  {
+    "title": "OpenSSL证书颁发机构",
+    "path": "/cheatsheets/",
+    "url": "https://jamielinux.com/docs/openssl-certificate-authority/",
+    "category": "其他速查表",
+    "type": "tool"
+  },
+  {
+    "title": "step-ca证书颁发机构",
+    "path": "/cheatsheets/",
+    "url": "https://github.com/smallstep/certificates",
+    "category": "其他速查表",
+    "type": "tool"
+  },
+  {
+    "title": "os-tutorial",
+    "path": "/cheatsheets/",
+    "url": "https://github.com/cfenollosa/os-tutorial",
+    "category": "其他速查表",
+    "type": "tool"
+  },
+  {
+    "title": "编写您自己的虚拟机",
+    "path": "/cheatsheets/",
+    "url": "https://justinmeiners.github.io/lc3-vm/",
+    "category": "其他速查表",
+    "type": "tool"
+  },
+  {
+    "title": "x86裸机示例",
+    "path": "/cheatsheets/",
+    "url": "https://github.com/cirosantilli/x86-bare-metal-examples",
+    "category": "其他速查表",
+    "type": "tool"
+  },
+  {
+    "title": "simple-computer",
+    "path": "/cheatsheets/",
+    "url": "https://github.com/djhworld/simple-computer",
+    "category": "其他速查表",
+    "type": "tool"
+  },
+  {
+    "title": "littleosbook",
+    "path": "/cheatsheets/",
+    "url": "https://littleosbook.github.io/",
+    "category": "其他速查表",
+    "type": "tool"
+  },
+  {
+    "title": "Shell 单行命令",
+    "path": "/one-liners/",
+    "type": "category"
+  },
+  {
+    "title": "Shell 技巧",
+    "path": "/shell-tricks/",
+    "type": "category"
+  },
+  {
+    "title": "Shell 函数",
+    "path": "/shell-functions/",
+    "type": "category"
+  }
+]

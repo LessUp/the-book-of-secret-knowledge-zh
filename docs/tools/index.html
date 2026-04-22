@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLI 工具 | 秘密知识之书</title>
+    <meta name="description" content="CLI 工具 - 秘密知识之书中文版，系统管理员、DevOps工程师和安全研究人员的知识宝库">
+    <meta name="keywords" content="DevOps, SysAdmin, Security, Pentest, Tools, CLI, 中文翻译, 渗透测试, 安全工具">
+    <meta property="og:title" content="CLI 工具 | 秘密知识之书">
+    <meta property="og:description" content="系统管理员、DevOps工程师和安全研究人员的知识宝库">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lessup.github.io/the-book-of-secret-knowledge-zh/">
+    <link rel="canonical" href="https://lessup.github.io/the-book-of-secret-knowledge-zh/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📚%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="/the-book-of-secret-knowledge-zh/css/style.css">
+    <link rel="stylesheet" href="/the-book-of-secret-knowledge-zh/css/highlight.css">
+</head>
+<body data-theme="dark">
+    <header class="site-header">
+        <div class="header-left">
+            <button class="menu-toggle" aria-label="切换菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="/the-book-of-secret-knowledge-zh/" class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">秘密知识之书</span>
+            </a>
+        </div>
+        <div class="header-center">
+            <div class="search-box">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                </svg>
+                <input type="text" id="search-input" placeholder="搜索工具、资源... (Ctrl+K)" autocomplete="off">
+                <div class="search-results" id="search-results"></div>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle" id="theme-toggle" aria-label="切换主题">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="site-container">
+        <aside class="sidebar-left">
+            <nav class="toc-tree">
+                <div class="toc-section">
+                    <h4>目录导航</h4>
+                    <a href="/the-book-of-secret-knowledge-zh/tools/" class="toc-item">🛠️ CLI 工具</a><a href="/the-book-of-secret-knowledge-zh/gui-tools/" class="toc-item">🖥️ GUI 工具</a><a href="/the-book-of-secret-knowledge-zh/web-tools/" class="toc-item">🌐 Web 工具</a><a href="/the-book-of-secret-knowledge-zh/system/" class="toc-item">⚙️ 系统/服务</a><a href="/the-book-of-secret-knowledge-zh/network/" class="toc-item">🌐 网络</a><a href="/the-book-of-secret-knowledge-zh/containers/" class="toc-item">🐳 容器/编排</a><a href="/the-book-of-secret-knowledge-zh/guides/" class="toc-item">📖 手册/指南/教程</a><a href="/the-book-of-secret-knowledge-zh/lists/" class="toc-item">⭐ 精选列表</a><a href="/the-book-of-secret-knowledge-zh/media/" class="toc-item">🎧 博客/播客/视频</a><a href="/the-book-of-secret-knowledge-zh/pentest/" class="toc-item">🔐 黑客/渗透测试</a><a href="/the-book-of-secret-knowledge-zh/cheatsheets/" class="toc-item">📋 其他速查表</a><a href="/the-book-of-secret-knowledge-zh/one-liners/" class="toc-item">⚡ Shell 单行命令</a><a href="/the-book-of-secret-knowledge-zh/shell-tricks/" class="toc-item">💡 Shell 技巧</a><a href="/the-book-of-secret-knowledge-zh/shell-functions/" class="toc-item">🔧 Shell 函数</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="content">
+            
+        <nav class="breadcrumb">
+            <a href="/the-book-of-secret-knowledge-zh/">首页</a>
+            <span class="separator">/</span>
+            <span class="current">CLI 工具</span>
+        </nav>
+            <article class="markdown-body">
+                <h5 id="black_small_square-shell">▪ Shell</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noopener" class="tool-name">GNU Bash</a>
+        <span class="tool-domain">gnu.org</span>
+    </div>
+    <p class="tool-desc">是一个与 sh 兼容的 shell，融合了 Korn shell 和 C shell 的实用功能。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.zsh.org/" target="_blank" rel="noopener" class="tool-name">Zsh</a>
+        <span class="tool-domain">zsh.org</span>
+    </div>
+    <p class="tool-desc">是一个为交互式使用而设计的 shell，同时也是一种强大的脚本语言。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://tcl-lang.org/" target="_blank" rel="noopener" class="tool-name">tclsh</a>
+        <span class="tool-domain">tcl-lang.org</span>
+    </div>
+    <p class="tool-desc">是一个非常强大的跨平台 shell，适用于各种用途。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/Bash-it/bash-it" target="_blank" rel="noopener" class="tool-name">bash-it</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于使用、开发和维护 shell 脚本及自定义命令的框架。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://ohmyz.sh/" target="_blank" rel="noopener" class="tool-name">Oh My ZSH!</a>
+        <span class="tool-domain">ohmyz.sh</span>
+    </div>
+    <p class="tool-desc">是管理 Zsh 配置的最佳框架。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/oh-my-fish/oh-my-fish" target="_blank" rel="noopener" class="tool-name">Oh My Fish</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">Fish shell 框架。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/starship/starship" target="_blank" rel="noopener" class="tool-name">Starship</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">用 Rust 编写的跨 shell 提示符。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/romkatv/powerlevel10k" target="_blank" rel="noopener" class="tool-name">powerlevel10k</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是 Powerlevel9k ZSH 主题的快速重新实现。</p>
+</div>
+</p>
+<h5 id="black_small_square-shell-插件">▪ Shell 插件</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/rupa/z" target="_blank" rel="noopener" class="tool-name">z</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">跟踪您最常使用的文件夹，并允许您快速跳转，而无需输入完整路径。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/junegunn/fzf" target="_blank" rel="noopener" class="tool-name">fzf</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个通用的命令行模糊查找器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/zsh-users/zsh-autosuggestions" target="_blank" rel="noopener" class="tool-name">zsh-autosuggestions</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">为 Zsh 提供类似 Fish 的自动建议功能。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/zsh-users/zsh-syntax-highlighting" target="_blank" rel="noopener" class="tool-name">zsh-syntax-highlighting</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">为 Zsh 提供类似 Fish shell 的语法高亮功能。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/unixorn/awesome-zsh-plugins" target="_blank" rel="noopener" class="tool-name">Awesome ZSH Plugins</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">ZSH 框架、插件、主题和教程的列表。</p>
+</div>
+</p>
+<h5 id="black_small_square-管理器">▪ 管理器</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://midnight-commander.org/" target="_blank" rel="noopener" class="tool-name">Midnight Commander</a>
+        <span class="tool-domain">midnight-commander.org</span>
+    </div>
+    <p class="tool-desc">是一个可视化的文件管理器，基于 GNU 通用公共许可证发布。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/ranger/ranger" target="_blank" rel="noopener" class="tool-name">ranger</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个受 VIM 启发的文件管理器，用于控制台。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/jarun/nnn" target="_blank" rel="noopener" class="tool-name">nnn</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个极小、速度极快、功能丰富的文件管理器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.gnu.org/software/screen/" target="_blank" rel="noopener" class="tool-name">screen</a>
+        <span class="tool-domain">gnu.org</span>
+    </div>
+    <p class="tool-desc">是一个全屏窗口管理器，可以复用一个物理终端。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/tmux/tmux/wiki" target="_blank" rel="noopener" class="tool-name">tmux</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个终端复用器，让您可以在一个终端中轻松切换多个程序。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/peikk0/tmux-cssh" target="_blank" rel="noopener" class="tool-name">tmux-cssh</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于设置舒适易用的 tmux 会话的工具。</p>
+</div>
+</p>
+<h5 id="black_small_square-文本编辑器">▪ 文本编辑器</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://ex-vi.sourceforge.net/" target="_blank" rel="noopener" class="tool-name">vi</a>
+        <span class="tool-domain">ex-vi.sourceforge.net</span>
+    </div>
+    <p class="tool-desc">是 Unix 上最常见的文本编辑器之一。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.vim.org/" target="_blank" rel="noopener" class="tool-name">vim</a>
+        <span class="tool-domain">vim.org</span>
+    </div>
+    <p class="tool-desc">是一个高度可配置的文本编辑器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.gnu.org/software/emacs/" target="_blank" rel="noopener" class="tool-name">emacs</a>
+        <span class="tool-domain">gnu.org</span>
+    </div>
+    <p class="tool-desc">是一个可扩展、可定制、自由/免费的文本编辑器，功能远不止于此。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/zyedidia/micro" target="_blank" rel="noopener" class="tool-name">micro</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个现代化、直观的基于终端的文本编辑器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://neovim.io/" target="_blank" rel="noopener" class="tool-name">neovim</a>
+        <span class="tool-domain">neovim.io</span>
+    </div>
+    <p class="tool-desc">是一个免费开源、功能强大、可扩展且易于使用的代码编辑器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.spacemacs.org/" target="_blank" rel="noopener" class="tool-name">spacemacs</a>
+        <span class="tool-domain">spacemacs.org</span>
+    </div>
+    <p class="tool-desc">一个社区驱动的 Emacs 发行版。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://spacevim.org/" target="_blank" rel="noopener" class="tool-name">spacevim</a>
+        <span class="tool-domain">spacevim.org</span>
+    </div>
+    <p class="tool-desc">一个社区驱动的 vim 发行版。</p>
+</div>
+</p>
+<h5 id="black_small_square-文件和目录">▪ 文件和目录</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/sharkdp/fd" target="_blank" rel="noopener" class="tool-name">fd</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个简单、快速且用户友好的 find 命令替代品。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://dev.yorhel.nl/ncdu" target="_blank" rel="noopener" class="tool-name">ncdu</a>
+        <span class="tool-domain">dev.yorhel.nl</span>
+    </div>
+    <p class="tool-desc">是一个易于使用、快速的磁盘使用情况分析器。</p>
+</div>
+</p>
+<h5 id="black_small_square-网络">▪ 网络</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.putty.org/" target="_blank" rel="noopener" class="tool-name">PuTTY</a>
+        <span class="tool-domain">putty.org</span>
+    </div>
+    <p class="tool-desc">是一个 SSH 和 telnet 客户端，最初由 Simon Tatham 开发。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://mosh.org/" target="_blank" rel="noopener" class="tool-name">Mosh</a>
+        <span class="tool-domain">mosh.org</span>
+    </div>
+    <p class="tool-desc">是一个 SSH 包装器，旨在在不稳定的连接上保持 SSH 会话的存活。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://eternalterminal.dev/" target="_blank" rel="noopener" class="tool-name">Eternal Terminal</a>
+        <span class="tool-domain">eternalterminal.dev</span>
+    </div>
+    <p class="tool-desc">在 SSH 会话中启用鼠标滚动和 tmux 命令。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://nmap.org/" target="_blank" rel="noopener" class="tool-name">nmap</a>
+        <span class="tool-domain">nmap.org</span>
+    </div>
+    <p class="tool-desc">是一个免费开源的（许可证）实用程序，用于网络发现和安全审计。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/zmap/zmap" target="_blank" rel="noopener" class="tool-name">zmap</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个快速的单包网络扫描器，专为全网范围的网络调查而设计。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/RustScan/RustScan" target="_blank" rel="noopener" class="tool-name">Rust Scan</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">比 Nmap 更快地找到所有开放端口。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/robertdavidgraham/masscan" target="_blank" rel="noopener" class="tool-name">masscan</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是最快的互联网端口扫描器，异步发送 SYN 包。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/gvb84/pbscan" target="_blank" rel="noopener" class="tool-name">pbscan</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个更快、更高效的无状态 SYN 扫描器和横幅抓取器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://www.hping.org/" target="_blank" rel="noopener" class="tool-name">hping</a>
+        <span class="tool-domain">hping.org</span>
+    </div>
+    <p class="tool-desc">是一个面向命令行的 TCP/IP 包组装/分析工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/traviscross/mtr" target="_blank" rel="noopener" class="tool-name">mtr</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个将 'traceroute' 和 'ping' 程序的功能结合在一个工具中的程序。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/mehrdadrad/mylg" target="_blank" rel="noopener" class="tool-name">mylg</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">将不同网络探针的功能组合到一个诊断工具中的实用程序。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://netcat.sourceforge.net/" target="_blank" rel="noopener" class="tool-name">netcat</a>
+        <span class="tool-domain">netcat.sourceforge.net</span>
+    </div>
+    <p class="tool-desc">使用 TCP/IP 协议在网络连接上读取和写入数据的实用程序。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://www.dest-unreach.org/socat/" target="_blank" rel="noopener" class="tool-name">socat</a>
+        <span class="tool-domain">dest-unreach.org</span>
+    </div>
+    <p class="tool-desc">在两个对象之间传输数据的实用程序。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.tcpdump.org/" target="_blank" rel="noopener" class="tool-name">tcpdump</a>
+        <span class="tool-domain">tcpdump.org</span>
+    </div>
+    <p class="tool-desc">是一个强大的命令行数据包分析器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.wireshark.org/docs/man-pages/tshark.html" target="_blank" rel="noopener" class="tool-name">tshark</a>
+        <span class="tool-domain">wireshark.org</span>
+    </div>
+    <p class="tool-desc">是一个允许我们转储和分析网络流量的工具（wireshark cli）。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://termshark.io/" target="_blank" rel="noopener" class="tool-name">Termshark</a>
+        <span class="tool-domain">termshark.io</span>
+    </div>
+    <p class="tool-desc">是 tshark 的一个简单终端用户界面。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/jpr5/ngrep" target="_blank" rel="noopener" class="tool-name">ngrep</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">类似于应用于网络层的 GNU grep。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://netsniff-ng.org/" target="_blank" rel="noopener" class="tool-name">netsniff-ng</a>
+        <span class="tool-domain">netsniff-ng.org</span>
+    </div>
+    <p class="tool-desc">是您日常 Linux 网络操作的瑞士军刀。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/mechpen/sockdump" target="_blank" rel="noopener" class="tool-name">sockdump</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">转储 unix 域套接字流量。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/google/stenographer" target="_blank" rel="noopener" class="tool-name">stenographer</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个数据包捕获解决方案，旨在快速将所有数据包缓存到磁盘。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/sachaos/tcpterm" target="_blank" rel="noopener" class="tool-name">tcpterm</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">在 TUI 中可视化数据包。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/tgraf/bmon" target="_blank" rel="noopener" class="tool-name">bmon</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个监控和调试工具，用于捕获与网络相关的统计信息并以可视方式呈现。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://iptraf.seul.org/2.6/manual.html#installation" target="_blank" rel="noopener" class="tool-name">iptraf-ng</a>
+        <span class="tool-domain">iptraf.seul.org</span>
+    </div>
+    <p class="tool-desc">是一个基于控制台的网络监控程序，用于 Linux，显示有关 IP 流量的信息。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/vergoh/vnstat" target="_blank" rel="noopener" class="tool-name">vnstat</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于 Linux 和 BSD 的网络流量监视器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://iperf.fr/" target="_blank" rel="noopener" class="tool-name">iPerf3</a>
+        <span class="tool-domain">iperf.fr</span>
+    </div>
+    <p class="tool-desc">是一个用于主动测量 IP 网络上最大可实现带宽的工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/Microsoft/Ethr" target="_blank" rel="noopener" class="tool-name">ethr</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是用于 TCP、UDP 和 HTTP 的网络性能测量工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/jwbensley/Etherate" target="_blank" rel="noopener" class="tool-name">Etherate</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个基于 Linux CLI 的以太网和 MPLS 流量测试工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/mpolden/echoip" target="_blank" rel="noopener" class="tool-name">echoip</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个 IP 地址查询服务。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/troglobit/nemesis" target="_blank" rel="noopener" class="tool-name">Nemesis</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">数据包操作 CLI 工具；制作和注入多种协议的数据包。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/packetfu/packetfu" target="_blank" rel="noopener" class="tool-name">packetfu</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是 Ruby 的一个中级数据包操作库。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://scapy.net/" target="_blank" rel="noopener" class="tool-name">Scapy</a>
+        <span class="tool-domain">scapy.net</span>
+    </div>
+    <p class="tool-desc">数据包操作库；伪造、发送、解码、捕获多种协议的数据包。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/SecureAuthCorp/impacket" target="_blank" rel="noopener" class="tool-name">impacket</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是用于处理网络协议的 Python 类集合。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/arthepsy/ssh-audit" target="_blank" rel="noopener" class="tool-name">ssh-audit</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于 SSH 服务器审计的工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://aria2.github.io/" target="_blank" rel="noopener" class="tool-name">aria2</a>
+        <span class="tool-domain">aria2.github.io</span>
+    </div>
+    <p class="tool-desc">是一个轻量级的多协议和多源命令行下载实用程序。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/x-way/iptables-tracer" target="_blank" rel="noopener" class="tool-name">iptables-tracer</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">观察数据包通过 iptables 链的路径。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/proabiral/inception" target="_blank" rel="noopener" class="tool-name">inception</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一个高度可配置的工具，可针对任意数量的主机检查您喜欢的任何内容。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://mremoteng.org/" target="_blank" rel="noopener" class="tool-name">mRemoteNG</a>
+        <span class="tool-domain">mremoteng.org</span>
+    </div>
+    <p class="tool-desc">mRemote 的一个分支，功能强大的多标签 PuTTy！</p>
+</div>
+</p>
+<h5 id="black_small_square-网络-dns">▪ 网络 (DNS)</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/farrokhi/dnsdiag" target="_blank" rel="noopener" class="tool-name">dnsdiag</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个 DNS 诊断和性能测量工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/mschwager/fierce" target="_blank" rel="noopener" class="tool-name">fierce</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个 DNS 侦察工具，用于定位非连续的 IP 空间。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/subfinder/subfinder" target="_blank" rel="noopener" class="tool-name">subfinder</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个子域名发现工具，可发现网站的有效子域名。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/aboul3la/Sublist3r" target="_blank" rel="noopener" class="tool-name">sublist3r</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于渗透测试人员的快速子域名枚举工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/OWASP/Amass" target="_blank" rel="noopener" class="tool-name">amass</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个通过抓取数据源、爬行 Web 存档等方式获取子域名的工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/google/namebench" target="_blank" rel="noopener" class="tool-name">namebench</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">根据您的浏览历史提供个性化的 DNS 服务器建议。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/blechschmidt/massdns" target="_blank" rel="noopener" class="tool-name">massdns</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于批量查找和侦察的高性能 DNS stub 解析器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/guelfoweb/knock" target="_blank" rel="noopener" class="tool-name">knock</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个通过字典枚举目标域上子域名的工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/DNS-OARC/dnsperf" target="_blank" rel="noopener" class="tool-name">dnsperf</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">DNS 性能测试工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/jedisct1/dnscrypt-proxy" target="_blank" rel="noopener" class="tool-name">dnscrypt-proxy 2</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一个灵活的 DNS 代理，支持加密的 DNS 协议。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/dnsdb/dnsdbq" target="_blank" rel="noopener" class="tool-name">dnsdbq</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">提供对被动 DNS 数据库系统访问的 API 客户端。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/looterz/grimd" target="_blank" rel="noopener" class="tool-name">grimd</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">快速的 dns 代理，用于黑洞化互联网广告和恶意软件服务器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/elceef/dnstwist" target="_blank" rel="noopener" class="tool-name">dnstwist</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">检测域名抢注、网络钓鱼攻击、欺诈和品牌冒充。</p>
+</div>
+</p>
+<h5 id="black_small_square-网络-http">▪ 网络 (HTTP)</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://curl.haxx.se/" target="_blank" rel="noopener" class="tool-name">curl</a>
+        <span class="tool-domain">curl.haxx.se</span>
+    </div>
+    <p class="tool-desc">是一个用于通过 URL 传输数据的命令行工具和库。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://gitlab.com/davidjpeacock/kurly" target="_blank" rel="noopener" class="tool-name">kurly</a>
+        <span class="tool-domain">gitlab.com</span>
+    </div>
+    <p class="tool-desc">是广受欢迎的 curl 程序的替代品，用 Golang 编写。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/jakubroztocil/httpie" target="_blank" rel="noopener" class="tool-name">HTTPie</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用户友好的 HTTP 客户端。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/asciimoo/wuzz" target="_blank" rel="noopener" class="tool-name">wuzz</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于 HTTP 检查的交互式 cli 工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/summerwind/h2spec" target="_blank" rel="noopener" class="tool-name">h2spec</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于 HTTP/2 实现的一致性测试工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/gildasio/h2t" target="_blank" rel="noopener" class="tool-name">h2t</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个帮助系统管理员加固其网站的简单工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/trimstray/htrace.sh" target="_blank" rel="noopener" class="tool-name">htrace.sh</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于 http/https 故障排除和分析的简单瑞士军刀。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/reorx/httpstat" target="_blank" rel="noopener" class="tool-name">httpstat</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个以美观和清晰的方式可视化 curl 统计信息的工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/gchaincl/httplab" target="_blank" rel="noopener" class="tool-name">httplab</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个交互式 Web 服务器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://lynx.browser.org/" target="_blank" rel="noopener" class="tool-name">Lynx</a>
+        <span class="tool-domain">lynx.browser.org</span>
+    </div>
+    <p class="tool-desc">是一个用于万维网的文本浏览器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/browsh-org/browsh/" target="_blank" rel="noopener" class="tool-name">Browsh</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个完全交互式、实时且现代的基于文本的浏览器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/dhamaniasad/HeadlessBrowsers" target="_blank" rel="noopener" class="tool-name">HeadlessBrowsers</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一个（几乎）所有现存无头 Web 浏览器的列表。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://httpd.apache.org/docs/2.4/programs/ab.html" target="_blank" rel="noopener" class="tool-name">ab</a>
+        <span class="tool-domain">httpd.apache.org</span>
+    </div>
+    <p class="tool-desc">是一个用于测量 HTTP Web 服务器性能的单线程命令行工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.joedog.org/siege-home/" target="_blank" rel="noopener" class="tool-name">siege</a>
+        <span class="tool-domain">joedog.org</span>
+    </div>
+    <p class="tool-desc">是一个 http 负载测试和基准测试实用程序。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/wg/wrk" target="_blank" rel="noopener" class="tool-name">wrk</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个能够产生巨大负载的现代 HTTP 基准测试工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/giltene/wrk2" target="_blank" rel="noopener" class="tool-name">wrk2</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是 wrk 的一个恒定吞吐量、正确延迟记录的变体。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/tsenart/vegeta" target="_blank" rel="noopener" class="tool-name">vegeta</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个多功能的 HTTP 负载测试工具，以恒定请求率进行攻击。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/codesenberg/bombardier" target="_blank" rel="noopener" class="tool-name">bombardier</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用 Go 编写的快速跨平台 HTTP 基准测试工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/cmpxchg16/gobench" target="_blank" rel="noopener" class="tool-name">gobench</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">http/s 负载测试和基准测试工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/rakyll/hey" target="_blank" rel="noopener" class="tool-name">hey</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">HTTP 负载生成器，ApacheBench (ab) 的替代品，前身为 rakyll/boom。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/tarekziade/boom" target="_blank" rel="noopener" class="tool-name">boom</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个您可以用来快速对 Web 应用部署进行冒烟测试的脚本。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/shekyan/slowhttptest" target="_blank" rel="noopener" class="tool-name">SlowHTTPTest</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个通过延长 HTTP 连接来模拟某些应用层拒绝服务攻击的工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/OJ/gobuster" target="_blank" rel="noopener" class="tool-name">gobuster</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用 Go 编写的目录/文件、DNS 和 VHost 爆破工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/ssllabs/sslyze" target="_blank" rel="noopener" class="tool-name">sslyze</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个快速而全面的 TLS/SSL 服务器扫描库。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/dxa4481/truffleHog" target="_blank" rel="noopener" class="tool-name">truffleHog</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">在 git 仓库中搜索密钥，深入挖掘提交历史和分支。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/hahwul/dalfox" target="_blank" rel="noopener" class="tool-name">dalfox</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用 Go 编写的快速 XSS 参数分析和扫描工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/sqlmapproject/sqlmap" target="_blank" rel="noopener" class="tool-name">sqlmap</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个开源的渗透测试工具，可以自动化检测和利用 SQL 注入漏洞的过程。</p>
+</div>
+</p>
+<h5 id="black_small_square-安全">▪ 安全</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/CISOfy/lynis" target="_blank" rel="noopener" class="tool-name">Lynis</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个经过实战检验的 Unix 类操作系统（如 Linux、macOS、BSD 等）安全工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.open-scap.org/tools/oscap-command-line-tool/" target="_blank" rel="noopener" class="tool-name">OpenSCAP</a>
+        <span class="tool-domain">open-scap.org</span>
+    </div>
+    <p class="tool-desc">是一个经过认证的、全面的 SCAP v1.2 漏洞扫描器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/aquasecurity/trivy" target="_blank" rel="noopener" class="tool-name">Trivy</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个全面的容器漏洞扫描器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/future-architect/vuls" target="_blank" rel="noopener" class="tool-name">Vuls</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个适用于 Linux/FreeBSD 的无代理漏洞扫描器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/anchore/grype" target="_blank" rel="noopener" class="tool-name">grype</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个容器镜像和文件系统的漏洞扫描器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/quay/clair" target="_blank" rel="noopener" class="tool-name">Clair</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于静态分析应用容器（目前包括 OCI 和 docker）中漏洞的开源项目。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/vulnersCom/getsploit" target="_blank" rel="noopener" class="tool-name">getsploit</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于漏洞利用搜索和下载的命令行实用程序。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/mzet-/linux-exploit-suggester" target="_blank" rel="noopener" class="tool-name">linux-exploit-suggester</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个旨在协助 Linux 权限提升的 Perl 脚本。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.ossec.net/" target="_blank" rel="noopener" class="tool-name">ossec</a>
+        <span class="tool-domain">ossec.net</span>
+    </div>
+    <p class="tool-desc">从日志分析、文件完整性检查、策略监控、rootkit 检测、实时警报和主动响应等方面提供主机入侵检测。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://wazuh.com/" target="_blank" rel="noopener" class="tool-name">Wazuh</a>
+        <span class="tool-domain">wazuh.com</span>
+    </div>
+    <p class="tool-desc">是一个免费、开源且企业级的安全监控解决方案，用于威胁检测、完整性监控、事件响应和合规性。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/falcosecurity/falco" target="_blank" rel="noopener" class="tool-name">Falco</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个云原生运行时安全项目，是事实上的 Kubernetes 威胁检测引擎。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.tripwire.com/products/tripwire-open-source" target="_blank" rel="noopener" class="tool-name">Tripwire</a>
+        <span class="tool-domain">tripwire.com</span>
+    </div>
+    <p class="tool-desc">是一款免费的软件安全和数据完整性工具，适用于系统管理员。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/security_hardening/index" target="_blank" rel="noopener" class="tool-name">Security Hardenig</a>
+        <span class="tool-domain">access.redhat.com</span>
+    </div>
+    <p class="tool-desc">RHEL 8 的安全加固指南。</p>
+</div>
+</p>
+<h5 id="black_small_square-逆向工程">▪ 逆向工程</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/radare/radare2" target="_blank" rel="noopener" class="tool-name">radare2</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于逆向工程和分析二进制文件的完整框架。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/rizin-re/rizin" target="_blank" rel="noopener" class="tool-name">Rizin</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于逆向工程、取证、代码分析等的框架。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/angr/angr" target="_blank" rel="noopener" class="tool-name">angr</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于分析二进制文件的 python 框架。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://barebox.org/" target="_blank" rel="noopener" class="tool-name">barebox</a>
+        <span class="tool-domain">barebox.org</span>
+    </div>
+    <p class="tool-desc">是一个主要用于嵌入式系统的引导加载程序。</p>
+</div>
+</p>
+<h5 id="black_small_square-反汇编器">▪ 反汇编器</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.capstone-engine.org/" target="_blank" rel="noopener" class="tool-name">Capstone</a>
+        <span class="tool-domain">capstone-engine.org</span>
+    </div>
+    <p class="tool-desc">是一个轻量级的多平台、多架构反汇编框架。</p>
+</div>
+</p>
+<h5 id="black_small_square-反编译器">▪ 反编译器</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/avast/retdec" target="_blank" rel="noopener" class="tool-name">RetDec</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个基于 LLVM 的可重定向机器码反编译器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://ghidra-sre.org/" target="_blank" rel="noopener" class="tool-name">Ghidra</a>
+        <span class="tool-domain">ghidra-sre.org</span>
+    </div>
+    <p class="tool-desc">是一个由美国国家安全局研究理事会创建和维护的软件逆向工程（SRE）框架。</p>
+</div>
+</p>
+<h5 id="black_small_square-调试器">▪ 调试器</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.gnu.org/software/gdb/" target="_blank" rel="noopener" class="tool-name">gdb</a>
+        <span class="tool-domain">gnu.org</span>
+    </div>
+    <p class="tool-desc">是 GNU 项目的调试器，可用于多种编程语言，包括 C、C++、Ada 和 Fortran。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/pwndbg/pwndbg" target="_blank" rel="noopener" class="tool-name">pwndbg</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是 GDB 的一个插件，使 GDB 在漏洞利用开发中更易于使用。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/longld/peda" target="_blank" rel="noopener" class="tool-name">PEDA</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是 GDB 的 Python 漏洞利用开发辅助工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/hugsy/gef" target="_blank" rel="noopener" class="tool-name">GEF</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是 GDB 的一个插件，旨在为逆向工程师和漏洞利用者提供便利。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/hellman/x64dbg" target="_blank" rel="noopener" class="tool-name">x64dbg</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个用于 Windows 的开源 x64/x32 调试器。</p>
+</div>
+</p>
+<h5 id="black_small_square-其他">▪ 其他</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://z.digitalclouds.dev/" target="_blank" rel="noopener" class="tool-name">Zstandard</a>
+        <span class="tool-domain">z.digitalclouds.dev</span>
+    </div>
+    <p class="tool-desc">是一种快速无损压缩算法，主要针对实时压缩场景。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/facebook/watchman" target="_blank" rel="noopener" class="tool-name">watchman</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一种文件监视服务。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/stewartmcgown/uds-tools" target="_blank" rel="noopener" class="tool-name">uds-tools</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一种用于Unix域流套接字的工具，非常类似于netcat。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/sematext/logagent-js" target="_blank" rel="noopener" class="tool-name">logagent</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个现代、开源、轻量级的日志托运工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://lsof.github.io/lsof/" target="_blank" rel="noopener" class="tool-name">lsof</a>
+        <span class="tool-domain">lsof.github.io</span>
+    </div>
+    <p class="tool-desc">是一个用于列出已打开文件的命令。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/Pithikos/Cynet" target="_blank" rel="noopener" class="tool-name">Cynet</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一个在Docker容器中为您的进程提供伪TTY的程序。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/Nekmo/dirhunt" target="_blank" rel="noopener" class="tool-name">dirhunt</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">无需暴力破解即可查找 Web 目录。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.openwall.com/john/" target="_blank" rel="noopener" class="tool-name">John The Ripper</a>
+        <span class="tool-domain">openwall.com</span>
+    </div>
+    <p class="tool-desc">是一款快速的密码破解器，目前支持多种 Unix、Windows 等操作系统。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://hashcat.net/hashcat/" target="_blank" rel="noopener" class="tool-name">hashcat</a>
+        <span class="tool-domain">hashcat.net</span>
+    </div>
+    <p class="tool-desc">世界上最快、最先进的密码恢复工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://lcamtuf.coredump.cx/p0f3/" target="_blank" rel="noopener" class="tool-name">p0f</a>
+        <span class="tool-domain">lcamtuf.coredump.cx</span>
+    </div>
+    <p class="tool-desc">是一款识别任何附带 TCP/IP 通信背后参与者的工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/mozilla/ssh_scan" target="_blank" rel="noopener" class="tool-name">ssh_scan</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一个 SSH 配置和策略扫描器的原型。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/woj-ciech/LeakLooker" target="_blank" rel="noopener" class="tool-name">LeakLooker</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">查找开放的数据库 - 由 Binaryedge.io 提供支持。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/offensive-security/exploitdb" target="_blank" rel="noopener" class="tool-name">exploitdb</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">来自 Exploit 数据库的可搜索存档。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/zardus/ctf-tools" target="_blank" rel="noopener" class="tool-name">ctf-tools</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一些用于安全研究工具的设置脚本。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/Gallopsled/pwntools" target="_blank" rel="noopener" class="tool-name">pwntools</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">CTF 框架和漏洞利用开发库。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/bl4de/security-tools" target="_blank" rel="noopener" class="tool-name">security-tools</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">主要用 Python 创建的小型安全工具集合。用于 CTF、渗透测试等。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/leonteale/pentestpackage" target="_blank" rel="noopener" class="tool-name">pentestpackage</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">渗透测试脚本包。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/dloss/python-pentest-tools" target="_blank" rel="noopener" class="tool-name">python-pentest-tools</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">面向渗透测试人员的 python 工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/fuzzdb-project/fuzzdb" target="_blank" rel="noopener" class="tool-name">fuzzdb</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">用于黑盒应用故障注入的攻击模式和原语字典。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/google/AFL" target="_blank" rel="noopener" class="tool-name">AFL</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">由 Google 维护的一款免费软件模糊测试器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/AFLplusplus/AFLplusplus" target="_blank" rel="noopener" class="tool-name">AFL++</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">带有社区补丁的 AFL。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/google/syzkaller" target="_blank" rel="noopener" class="tool-name">syzkaller</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一款无监督、覆盖率引导的内核模糊测试器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.hex-rays.com/products/ida/index.shtml" target="_blank" rel="noopener" class="tool-name">IDA</a>
+        <span class="tool-domain">hex-rays.com</span>
+    </div>
+    <p class="tool-desc">用于逆向工程恶意软件的多处理器反汇编器和调试器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/threat9/routersploit" target="_blank" rel="noopener" class="tool-name">routersploit</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">嵌入式设备的漏洞利用框架。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://cutter.re/" target="_blank" rel="noopener" class="tool-name">Cutter</a>
+        <span class="tool-domain">cutter.re</span>
+    </div>
+    <p class="tool-desc">集成 Ghidra 反编译器的 SRE 平台。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/salesforce/vulnreport" target="_blank" rel="noopener" class="tool-name">Vulnreport</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">Salesforce 产品安全团队开发的开源渗透测试管理和自动化平台。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/sc0tfree/mentalist" target="_blank" rel="noopener" class="tool-name">Mentalist</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一款用于自定义词表生成的图形化工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/archerysec/archerysec" target="_blank" rel="noopener" class="tool-name">archerysec</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">漏洞评估和管理有助于执行扫描和管理漏洞。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/j3ssie/Osmedeus" target="_blank" rel="noopener" class="tool-name">Osmedeus</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">用于侦察和漏洞扫描的全自动化攻击性安全工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/beefproject/beef" target="_blank" rel="noopener" class="tool-name">beef</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">浏览器漏洞利用框架项目。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/NullArray/AutoSploit" target="_blank" rel="noopener" class="tool-name">AutoSploit</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">自动化大规模漏洞利用者。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/TH3xACE/SUDO_KILLER" target="_blank" rel="noopener" class="tool-name">SUDO_KILLER</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一款识别和利用 sudo 规则配置错误和漏洞的工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/VirusTotal/yara" target="_blank" rel="noopener" class="tool-name">yara</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">模式匹配的瑞士军刀。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/gentilkiwi/mimikatz" target="_blank" rel="noopener" class="tool-name">mimikatz</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一款用于玩转 Windows 安全的小工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/sherlock-project/sherlock" target="_blank" rel="noopener" class="tool-name">sherlock</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">按用户名在社交网络中追查社交媒体帐户。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://owasp.org/www-project-threat-dragon/" target="_blank" rel="noopener" class="tool-name">OWASP Threat Dragon</a>
+        <span class="tool-domain">owasp.org</span>
+    </div>
+    <p class="tool-desc">一款用于创建威胁模型图和记录可能威胁的工具。</p>
+</div>
+</p>
+<h5 id="black_small_square-渗透测试书签集">▪ 渗透测试书签集</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://www.pentest-standard.org/index.php/Main_Page" target="_blank" rel="noopener" class="tool-name">PTES</a>
+        <span class="tool-domain">pentest-standard.org</span>
+    </div>
+    <p class="tool-desc">渗透测试执行标准。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.amanhardikar.com/mindmaps/Practice.html" target="_blank" rel="noopener" class="tool-name">渗透测试思维导图</a>
+        <span class="tool-domain">amanhardikar.com</span>
+    </div>
+    <p class="tool-desc">包含易受攻击应用和系统的惊人思维导图。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.amanhardikar.com/mindmaps/webapptest.html" target="_blank" rel="noopener" class="tool-name">WebApp 安全测试思维导图</a>
+        <span class="tool-domain">amanhardikar.com</span>
+    </div>
+    <p class="tool-desc">用于 WebApp 安全测试的令人难以置信的思维导图。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://brutelogic.com.br/blog/" target="_blank" rel="noopener" class="tool-name">Brute XSS</a>
+        <span class="tool-domain">brutelogic.com.br</span>
+    </div>
+    <p class="tool-desc">掌握跨站脚本的艺术。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://portswigger.net/web-security/cross-site-scripting/cheat-sheet" target="_blank" rel="noopener" class="tool-name">XSS 速查表</a>
+        <span class="tool-domain">portswigger.net</span>
+    </div>
+    <p class="tool-desc">包含许多可以帮助您绕过 WAF 和过滤器的向量。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://jivoi.github.io/2015/07/03/offensive-security-bookmarks/" target="_blank" rel="noopener" class="tool-name">攻击性安全书签</a>
+        <span class="tool-domain">jivoi.github.io</span>
+    </div>
+    <p class="tool-desc">安全书签集合，作者通过 OSCP 所需的一切。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/coreb1t/awesome-pentest-cheat-sheets" target="_blank" rel="noopener" class="tool-name">超棒的渗透测试速查表</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">对渗透测试有用的速查表集合。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/Hack-with-Github/Awesome-Hacking" target="_blank" rel="noopener" class="tool-name">HackWithGithub 的超棒黑客</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">面向黑客、渗透测试人员和安全研究人员的超棒列表。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/carpedm20/awesome-hacking" target="_blank" rel="noopener" class="tool-name">carpedm20 的超棒黑客</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一系列精选的超棒黑客教程、工具和资源。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/vitalysim/Awesome-Hacking-Resources" target="_blank" rel="noopener" class="tool-name">超棒的黑客资源</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">黑客/渗透测试资源的集合，让您变得更强。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/enaqx/awesome-pentest" target="_blank" rel="noopener" class="tool-name">超棒的渗透测试</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">超棒的渗透测试资源、工具和其他亮点的集合。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/m4ll0k/Awesome-Hacking-Tools" target="_blank" rel="noopener" class="tool-name">超棒的黑客工具</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一系列精选的超棒黑客工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/ksanchezcld/Hacking_Cheat_Sheet" target="_blank" rel="noopener" class="tool-name">黑客速查表</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">作者的黑客和渗透测试笔记。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/toolswatch/blackhat-arsenal-tools" target="_blank" rel="noopener" class="tool-name">blackhat-arsenal-tools</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">官方黑帽 arsenal 安全工具库。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.peerlyst.com/posts/the-complete-list-of-infosec-related-cheat-sheets-claus-cramon" target="_blank" rel="noopener" class="tool-name">渗透测试和 WebApp 速查表</a>
+        <span class="tool-domain">peerlyst.com</span>
+    </div>
+    <p class="tool-desc">信息安全相关速查表的完整列表。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/The-Art-of-Hacking/h4cker" target="_blank" rel="noopener" class="tool-name">网络安全资源</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">包括数千个与网络安全相关的参考资料和资源。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/jhaddix/pentest-bookmarks" target="_blank" rel="noopener" class="tool-name">渗透测试书签</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">有很多渗透测试博客。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/OlivierLaflamme/Cheatsheet-God" target="_blank" rel="noopener" class="tool-name">速查表之神</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">渗透测试参考库 - OSCP/PTP & PTX 速查表。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/Cyb3rWard0g/ThreatHunter-Playbook" target="_blank" rel="noopener" class="tool-name">威胁猎人手册</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">帮助开发狩猎活动的技术和假设。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/hmaverickadams/Beginner-Network-Pentesting" target="_blank" rel="noopener" class="tool-name">初学者网络渗透测试</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">初学者网络渗透测试课程的笔记。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/rewardone/OSCPRepo" target="_blank" rel="noopener" class="tool-name">OSCPRepo</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">作者为准备 OSCP 而收集的资源列表。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/swisskyrepo/PayloadsAllTheThings" target="_blank" rel="noopener" class="tool-name">PayloadsAllTheThings</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">Web 应用程序安全和渗透测试/CTF 的有用 payload 和绕过方法列表。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/foospidy/payloads" target="_blank" rel="noopener" class="tool-name">payloads</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">获取所有 Payload！Web 攻击 payload 的集合。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/payloadbox/command-injection-payload-list" target="_blank" rel="noopener" class="tool-name">command-injection-payload-list</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">命令注入 payload 列表。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/jakejarvis/awesome-shodan-queries" target="_blank" rel="noopener" class="tool-name">超棒的 Shodan 搜索查询</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">用于插入 Shodan 的出色搜索查询。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/s0md3v/AwesomeXSS" target="_blank" rel="noopener" class="tool-name">AwesomeXSS</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">超棒 XSS 资源的集合。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/JohnTroony/php-webshells" target="_blank" rel="noopener" class="tool-name">php-webshells</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">常见的 php webshell。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/" target="_blank" rel="noopener" class="tool-name">渗透测试工具速查表</a>
+        <span class="tool-domain">highon.coffee</span>
+    </div>
+    <p class="tool-desc">典型渗透测试的快速参考高级概述。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://cheatsheetseries.owasp.org/" target="_blank" rel="noopener" class="tool-name">OWASP 速查表系列</a>
+        <span class="tool-domain">cheatsheetseries.owasp.org</span>
+    </div>
+    <p class="tool-desc">关于特定应用程序安全主题的高价值信息集合。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://jeremylong.github.io/DependencyCheck/index.html" target="_blank" rel="noopener" class="tool-name">OWASP dependency-check</a>
+        <span class="tool-domain">jeremylong.github.io</span>
+    </div>
+    <p class="tool-desc">OWASP Top 10 2013 条目的开源解决方案。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.owasp.org/index.php/OWASP_Proactive_Controls" target="_blank" rel="noopener" class="tool-name">OWASP 主动控制</a>
+        <span class="tool-domain">owasp.org</span>
+    </div>
+    <p class="tool-desc">OWASP Top 10 主动控制 2018。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE" target="_blank" rel="noopener" class="tool-name">PENTESTING-BIBLE</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">黑客、渗透测试、红队和网络安全资源。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/nixawk/pentest-wiki" target="_blank" rel="noopener" class="tool-name">pentest-wiki</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">面向渗透测试人员/研究人员的免费在线安全知识库。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://media.defcon.org/" target="_blank" rel="noopener" class="tool-name">DEF CON 媒体服务器</a>
+        <span class="tool-domain">media.defcon.org</span>
+    </div>
+    <p class="tool-desc">来自 DEFCON 的精彩内容。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/rshipp/awesome-malware-analysis" target="_blank" rel="noopener" class="tool-name">超棒的恶意软件分析</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">一系列精选的超棒恶意软件分析工具和资源。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://pentester.land/list-of-bug-bounty-writeups.html" target="_blank" rel="noopener" class="tool-name">漏洞赏金 writeup</a>
+        <span class="tool-domain">pentester.land</span>
+    </div>
+    <p class="tool-desc">漏洞赏金 write-up 列表 (2012-2020)。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://hackso.me/" target="_blank" rel="noopener" class="tool-name">hackso.me</a>
+        <span class="tool-domain">hackso.me</span>
+    </div>
+    <p class="tool-desc">一次伟大的安全之旅。</p>
+</div>
+</p>
+            </article>
+        </main>
+
+        <aside class="sidebar-right">
+            <nav class="page-outline"><h4>本页大纲</h4><ul><li class="level-3"><a href="#black_small_square-shell">▪ Shell</a></li><li class="level-3"><a href="#black_small_square-shell-插件">▪ Shell 插件</a></li><li class="level-3"><a href="#black_small_square-管理器">▪ 管理器</a></li><li class="level-3"><a href="#black_small_square-文本编辑器">▪ 文本编辑器</a></li><li class="level-3"><a href="#black_small_square-文件和目录">▪ 文件和目录</a></li><li class="level-3"><a href="#black_small_square-网络">▪ 网络</a></li><li class="level-3"><a href="#black_small_square-网络-dns">▪ 网络 (DNS)</a></li><li class="level-3"><a href="#black_small_square-网络-http">▪ 网络 (HTTP)</a></li><li class="level-3"><a href="#black_small_square-安全">▪ 安全</a></li><li class="level-3"><a href="#black_small_square-逆向工程">▪ 逆向工程</a></li><li class="level-3"><a href="#black_small_square-反汇编器">▪ 反汇编器</a></li><li class="level-3"><a href="#black_small_square-反编译器">▪ 反编译器</a></li><li class="level-3"><a href="#black_small_square-调试器">▪ 调试器</a></li><li class="level-3"><a href="#black_small_square-其他">▪ 其他</a></li><li class="level-3"><a href="#black_small_square-渗透测试书签集">▪ 渗透测试书签集</a></li></ul></nav>
+        </aside>
+    </div>
+
+    <button class="back-to-top" id="back-to-top" aria-label="回到顶部">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="/the-book-of-secret-knowledge-zh/js/search.js"></script>
+    <script src="/the-book-of-secret-knowledge-zh/js/theme.js"></script>
+    <script src="/the-book-of-secret-knowledge-zh/js/nav.js"></script>
+</body>
+</html>

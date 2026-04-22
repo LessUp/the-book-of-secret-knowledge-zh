@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 工具 | 秘密知识之书</title>
+    <meta name="description" content="Web 工具 - 秘密知识之书中文版，系统管理员、DevOps工程师和安全研究人员的知识宝库">
+    <meta name="keywords" content="DevOps, SysAdmin, Security, Pentest, Tools, CLI, 中文翻译, 渗透测试, 安全工具">
+    <meta property="og:title" content="Web 工具 | 秘密知识之书">
+    <meta property="og:description" content="系统管理员、DevOps工程师和安全研究人员的知识宝库">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lessup.github.io/the-book-of-secret-knowledge-zh/">
+    <link rel="canonical" href="https://lessup.github.io/the-book-of-secret-knowledge-zh/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📚%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="/the-book-of-secret-knowledge-zh/css/style.css">
+    <link rel="stylesheet" href="/the-book-of-secret-knowledge-zh/css/highlight.css">
+</head>
+<body data-theme="dark">
+    <header class="site-header">
+        <div class="header-left">
+            <button class="menu-toggle" aria-label="切换菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="/the-book-of-secret-knowledge-zh/" class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">秘密知识之书</span>
+            </a>
+        </div>
+        <div class="header-center">
+            <div class="search-box">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                </svg>
+                <input type="text" id="search-input" placeholder="搜索工具、资源... (Ctrl+K)" autocomplete="off">
+                <div class="search-results" id="search-results"></div>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle" id="theme-toggle" aria-label="切换主题">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="site-container">
+        <aside class="sidebar-left">
+            <nav class="toc-tree">
+                <div class="toc-section">
+                    <h4>目录导航</h4>
+                    <a href="/the-book-of-secret-knowledge-zh/tools/" class="toc-item">🛠️ CLI 工具</a><a href="/the-book-of-secret-knowledge-zh/gui-tools/" class="toc-item">🖥️ GUI 工具</a><a href="/the-book-of-secret-knowledge-zh/web-tools/" class="toc-item">🌐 Web 工具</a><a href="/the-book-of-secret-knowledge-zh/system/" class="toc-item">⚙️ 系统/服务</a><a href="/the-book-of-secret-knowledge-zh/network/" class="toc-item">🌐 网络</a><a href="/the-book-of-secret-knowledge-zh/containers/" class="toc-item">🐳 容器/编排</a><a href="/the-book-of-secret-knowledge-zh/guides/" class="toc-item">📖 手册/指南/教程</a><a href="/the-book-of-secret-knowledge-zh/lists/" class="toc-item">⭐ 精选列表</a><a href="/the-book-of-secret-knowledge-zh/media/" class="toc-item">🎧 博客/播客/视频</a><a href="/the-book-of-secret-knowledge-zh/pentest/" class="toc-item">🔐 黑客/渗透测试</a><a href="/the-book-of-secret-knowledge-zh/cheatsheets/" class="toc-item">📋 其他速查表</a><a href="/the-book-of-secret-knowledge-zh/one-liners/" class="toc-item">⚡ Shell 单行命令</a><a href="/the-book-of-secret-knowledge-zh/shell-tricks/" class="toc-item">💡 Shell 技巧</a><a href="/the-book-of-secret-knowledge-zh/shell-functions/" class="toc-item">🔧 Shell 函数</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="content">
+            
+        <nav class="breadcrumb">
+            <a href="/the-book-of-secret-knowledge-zh/">首页</a>
+            <span class="separator">/</span>
+            <span class="current">Web 工具</span>
+        </nav>
+            <article class="markdown-body">
+                <h5 id="black_small_square-浏览器">▪ 浏览器</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.ssllabs.com/ssltest/viewMyClient.html" target="_blank" rel="noopener" class="tool-name">浏览器的 SSL/TLS 能力</a>
+        <span class="tool-domain">ssllabs.com</span>
+    </div>
+    <p class="tool-desc">检查您浏览器的 SSL 实现。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://caniuse.com/" target="_blank" rel="noopener" class="tool-name">Can I use</a>
+        <span class="tool-domain">caniuse.com</span>
+    </div>
+    <p class="tool-desc">提供最新的前端 Web 技术浏览器支持表。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://panopticlick.eff.org/" target="_blank" rel="noopener" class="tool-name">Panopticlick 3.0</a>
+        <span class="tool-domain">panopticlick.eff.org</span>
+    </div>
+    <p class="tool-desc">您的浏览器能有效防止跟踪吗？</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://privacy.net/analyzer/" target="_blank" rel="noopener" class="tool-name">隐私分析器</a>
+        <span class="tool-domain">privacy.net</span>
+    </div>
+    <p class="tool-desc">查看您的浏览器暴露了哪些数据。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://browserleaks.com/" target="_blank" rel="noopener" class="tool-name">Web 浏览器安全</a>
+        <span class="tool-domain">browserleaks.com</span>
+    </div>
+    <p class="tool-desc">关于 Web 浏览器指纹识别的一切。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.howsmyssl.com/" target="_blank" rel="noopener" class="tool-name">我的 SSL 怎么样？</a>
+        <span class="tool-domain">howsmyssl.com</span>
+    </div>
+    <p class="tool-desc">帮助 Web 服务器开发者了解真实世界中 TLS 客户端的能力。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://suche.org/sslClientInfo" target="_blank" rel="noopener" class="tool-name">sslClientInfo</a>
+        <span class="tool-domain">suche.org</span>
+    </div>
+    <p class="tool-desc">客户端测试（包括 TLSv1.3 信息）。</p>
+</div>
+</p>
+<h5 id="black_small_square-ssl安全">▪ SSL/安全</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.ssllabs.com/ssltest/" target="_blank" rel="noopener" class="tool-name">SSL 服务器测试</a>
+        <span class="tool-domain">ssllabs.com</span>
+    </div>
+    <p class="tool-desc">对任何 SSL Web 服务器的配置进行深入分析。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://dev.ssllabs.com/ssltest/" target="_blank" rel="noopener" class="tool-name">SSL 服务器测试 (开发版)</a>
+        <span class="tool-domain">dev.ssllabs.com</span>
+    </div>
+    <p class="tool-desc">对任何 SSL Web 服务器的配置进行深入分析。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.immuniweb.com/ssl/" target="_blank" rel="noopener" class="tool-name">ImmuniWeb® SSLScan</a>
+        <span class="tool-domain">immuniweb.com</span>
+    </div>
+    <p class="tool-desc">测试 SSL/TLS (PCI DSS, HIPAA & NIST 合规性)。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.jitbit.com/sslcheck/" target="_blank" rel="noopener" class="tool-name">SSL 检查</a>
+        <span class="tool-domain">jitbit.com</span>
+    </div>
+    <p class="tool-desc">扫描网站中的非安全内容。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://www.ssltools.com" target="_blank" rel="noopener" class="tool-name">SSL 扫描器</a>
+        <span class="tool-domain">ssltools.com</span>
+    </div>
+    <p class="tool-desc">分析网站安全性。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://cryptcheck.fr/" target="_blank" rel="noopener" class="tool-name">CryptCheck</a>
+        <span class="tool-domain">cryptcheck.fr</span>
+    </div>
+    <p class="tool-desc">测试您的 TLS 服务器配置（例如密码套件）。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://urlscan.io/" target="_blank" rel="noopener" class="tool-name">urlscan.io</a>
+        <span class="tool-domain">urlscan.io</span>
+    </div>
+    <p class="tool-desc">用于扫描和分析网站的服务。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://report-uri.com/home/tools" target="_blank" rel="noopener" class="tool-name">Report URI</a>
+        <span class="tool-domain">report-uri.com</span>
+    </div>
+    <p class="tool-desc">用于监控如 CSP 和 HPKP 等安全策略的免费工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://csp-evaluator.withgoogle.com/" target="_blank" rel="noopener" class="tool-name">CSP 评估器</a>
+        <span class="tool-domain">csp-evaluator.withgoogle.com</span>
+    </div>
+    <p class="tool-desc">允许开发者和安全专家检查内容安全策略。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://uselesscsp.com/" target="_blank" rel="noopener" class="tool-name">无用的 CSP</a>
+        <span class="tool-domain">uselesscsp.com</span>
+    </div>
+    <p class="tool-desc">一些世界顶级网站正在使用的 CSP 公开列表。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://whynohttps.com/" target="_blank" rel="noopener" class="tool-name">为什么不用 HTTPS？</a>
+        <span class="tool-domain">whynohttps.com</span>
+    </div>
+    <p class="tool-desc">Alexa 排名前 100 的未自动重定向到 HTTPS 的网站列表。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://ciphersuite.info/" target="_blank" rel="noopener" class="tool-name">TLS 密码套件搜索</a>
+        <span class="tool-domain">ciphersuite.info</span>
+    </div>
+    <p class="tool-desc">密码套件搜索引擎。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/RaymiiOrg/cipherli.st" target="_blank" rel="noopener" class="tool-name">cipherli.st</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">用于 Apache、Nginx、Lighttpd 等的强密码套件。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://2ton.com.au/dhtool/" target="_blank" rel="noopener" class="tool-name">dhtool</a>
+        <span class="tool-domain">2ton.com.au</span>
+    </div>
+    <p class="tool-desc">公共 Diffie-Hellman 参数服务/工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://badssl.com/" target="_blank" rel="noopener" class="tool-name">badssl.com</a>
+        <span class="tool-domain">badssl.com</span>
+    </div>
+    <p class="tool-desc">测试客户端对不良 SSL 配置的响应。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://tlsfun.de/" target="_blank" rel="noopener" class="tool-name">tlsfun.de</a>
+        <span class="tool-domain">tlsfun.de</span>
+    </div>
+    <p class="tool-desc">用于各种 TLS/SSL 协议测试。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://sslmate.com/caa/" target="_blank" rel="noopener" class="tool-name">CAA 记录助手</a>
+        <span class="tool-domain">sslmate.com</span>
+    </div>
+    <p class="tool-desc">生成 CAA 策略。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://ccadb.org/resources" target="_blank" rel="noopener" class="tool-name">公共 CA 数据库</a>
+        <span class="tool-domain">ccadb.org</span>
+    </div>
+    <p class="tool-desc">关于 CA 及其根证书和中间证书的信息库。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://certstream.calidog.io/" target="_blank" rel="noopener" class="tool-name">CERTSTREAM</a>
+        <span class="tool-domain">certstream.calidog.io</span>
+    </div>
+    <p class="tool-desc">实时证书透明度日志更新流。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://crt.sh/" target="_blank" rel="noopener" class="tool-name">crt.sh</a>
+        <span class="tool-domain">crt.sh</span>
+    </div>
+    <p class="tool-desc">通过持续监控所有公开的 CT 来发现证书。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.hardenize.com/" target="_blank" rel="noopener" class="tool-name">Hardenize</a>
+        <span class="tool-domain">hardenize.com</span>
+    </div>
+    <p class="tool-desc">部署安全标准。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://cryptcheck.fr/suite/" target="_blank" rel="noopener" class="tool-name">密码套件兼容性</a>
+        <span class="tool-domain">cryptcheck.fr</span>
+    </div>
+    <p class="tool-desc">测试 TLS 密码套件的兼容性。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.urlvoid.com/" target="_blank" rel="noopener" class="tool-name">urlvoid</a>
+        <span class="tool-domain">urlvoid.com</span>
+    </div>
+    <p class="tool-desc">一个帮助您检测潜在恶意网站的服务。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://securitytxt.org/" target="_blank" rel="noopener" class="tool-name">security.txt</a>
+        <span class="tool-domain">securitytxt.org</span>
+    </div>
+    <p class="tool-desc">一种提议的标准，允许网站定义安全策略。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/mozilla/ssl-config-generator" target="_blank" rel="noopener" class="tool-name">ssl-config-generator</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">帮助您遵循 Mozilla 服务器端 TLS 配置指南。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/mjol/TLScan" target="_blank" rel="noopener" class="tool-name">TLScan</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">纯 Python 的 SSL/TLS 扫描器/枚举器。</p>
+</div>
+</p>
+<h5 id="black_small_square-http-头与-web-检查工具">▪ HTTP 头与 Web 检查工具</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://securityheaders.com/" target="_blank" rel="noopener" class="tool-name">安全头</a>
+        <span class="tool-domain">securityheaders.com</span>
+    </div>
+    <p class="tool-desc">分析 HTTP 响应头（带评级系统）。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://observatory.mozilla.org/" target="_blank" rel="noopener" class="tool-name">Mozilla Observatory</a>
+        <span class="tool-domain">observatory.mozilla.org</span>
+    </div>
+    <p class="tool-desc">一套用于分析您网站的工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://webhint.io/" target="_blank" rel="noopener" class="tool-name">webhint</a>
+        <span class="tool-domain">webhint.io</span>
+    </div>
+    <p class="tool-desc">一个检查工具，帮助您改善网站的可访问性、速度和安全性。</p>
+</div>
+</p>
+<h5 id="black_small_square-dns">▪ DNS</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://viewdns.info/" target="_blank" rel="noopener" class="tool-name">ViewDNS</a>
+        <span class="tool-domain">viewdns.info</span>
+    </div>
+    <p class="tool-desc">一个免费提供 DNS 相关工具和信息的来源。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://dnslookup.org/" target="_blank" rel="noopener" class="tool-name">DNSLookup</a>
+        <span class="tool-domain">dnslookup.org</span>
+    </div>
+    <p class="tool-desc">一个先进的基于 DNS 的研究工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://dnslytics.com/" target="_blank" rel="noopener" class="tool-name">DNSlytics</a>
+        <span class="tool-domain">dnslytics.com</span>
+    </div>
+    <p class="tool-desc">在线 DNS 调查工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://dnsspy.io/" target="_blank" rel="noopener" class="tool-name">DNS Spy</a>
+        <span class="tool-domain">dnsspy.io</span>
+    </div>
+    <p class="tool-desc">监控、验证和检查您的 DNS 配置。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://zonemaster.iis.se/en/" target="_blank" rel="noopener" class="tool-name">Zonemaster</a>
+        <span class="tool-domain">zonemaster.iis.se</span>
+    </div>
+    <p class="tool-desc">帮助您控制 DNS 工作方式的工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://leafdns.com/" target="_blank" rel="noopener" class="tool-name">Leaf DNS</a>
+        <span class="tool-domain">leafdns.com</span>
+    </div>
+    <p class="tool-desc">一个全面的 DNS 测试工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://findsubdomains.com/" target="_blank" rel="noopener" class="tool-name">在线查找子域名</a>
+        <span class="tool-domain">findsubdomains.com</span>
+    </div>
+    <p class="tool-desc">为安全评估和渗透测试查找子域名。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://dnsdumpster.com/" target="_blank" rel="noopener" class="tool-name">DNSdumpster</a>
+        <span class="tool-domain">dnsdumpster.com</span>
+    </div>
+    <p class="tool-desc">DNS 侦察与研究，查找和查询 DNS 记录。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://dnstable.com/" target="_blank" rel="noopener" class="tool-name">DNS Table online</a>
+        <span class="tool-domain">dnstable.com</span>
+    </div>
+    <p class="tool-desc">按域名、IP、CIDR、ISP 搜索 DNS 记录。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://intodns.com/" target="_blank" rel="noopener" class="tool-name">intoDNS</a>
+        <span class="tool-domain">intodns.com</span>
+    </div>
+    <p class="tool-desc">检查 DNS 和邮件服务器的健康状况和配置。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://www.zonecut.net/dns/" target="_blank" rel="noopener" class="tool-name">DNS Bajaj</a>
+        <span class="tool-domain">zonecut.net</span>
+    </div>
+    <p class="tool-desc">检查您域名的委派情况。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.buddyns.com/delegation-lab/" target="_blank" rel="noopener" class="tool-name">BuddyNS 委派实验室</a>
+        <span class="tool-domain">buddyns.com</span>
+    </div>
+    <p class="tool-desc">检查、追踪和可视化您域名的委派情况。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://dnssec-debugger.verisignlabs.com/" target="_blank" rel="noopener" class="tool-name">dnssec-debugger</a>
+        <span class="tool-domain">dnssec-debugger.verisignlabs.com</span>
+    </div>
+    <p class="tool-desc">DS 或 DNSKEY 记录验证器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://ptrarchive.com/" target="_blank" rel="noopener" class="tool-name">PTRarchive.com</a>
+        <span class="tool-domain">ptrarchive.com</span>
+    </div>
+    <p class="tool-desc">最大的反向 DNS 查询数据库。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://xip.io/" target="_blank" rel="noopener" class="tool-name">xip.io</a>
+        <span class="tool-domain">xip.io</span>
+    </div>
+    <p class="tool-desc">一个为任何 IP 地址提供通配符 DNS 的神奇域名。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://nip.io/" target="_blank" rel="noopener" class="tool-name">nip.io</a>
+        <span class="tool-domain">nip.io</span>
+    </div>
+    <p class="tool-desc">为任何 IP 地址提供的极简通配符 DNS。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://ceipam.eu/en/dnslookup.php" target="_blank" rel="noopener" class="tool-name">dnslookup (ceipam)</a>
+        <span class="tool-domain">ceipam.eu</span>
+    </div>
+    <p class="tool-desc">最好的 DNS 传播检查器之一。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://whatsmydns.com" target="_blank" rel="noopener" class="tool-name">What's My DNS</a>
+        <span class="tool-domain">whatsmydns.com</span>
+    </div>
+    <p class="tool-desc">DNS 传播检查工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://blog.erbbysam.com/index.php/2019/02/09/dnsgrep/" target="_blank" rel="noopener" class="tool-name">DNSGrep</a>
+        <span class="tool-domain">blog.erbbysam.com</span>
+    </div>
+    <p class="tool-desc">快速搜索大型 DNS 数据集。</p>
+</div>
+</p>
+<h5 id="black_small_square-邮件">▪ 邮件</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://luxsci.com/smtp-tls-checker" target="_blank" rel="noopener" class="tool-name">smtp-tls-checker</a>
+        <span class="tool-domain">luxsci.com</span>
+    </div>
+    <p class="tool-desc">检查电子邮件域的 SMTP TLS 支持。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://mxtoolbox.com/SuperTool.aspx" target="_blank" rel="noopener" class="tool-name">MX Toolbox</a>
+        <span class="tool-domain">mxtoolbox.com</span>
+    </div>
+    <p class="tool-desc">您所有的 MX 记录、DNS、黑名单和 SMTP 诊断工具都集中于此。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.checktls.com/index.html" target="_blank" rel="noopener" class="tool-name">安全电子邮件</a>
+        <span class="tool-domain">checktls.com</span>
+    </div>
+    <p class="tool-desc">为电子邮件技术人员提供的一整套工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://www.blacklistalert.org/" target="_blank" rel="noopener" class="tool-name">blacklistalert</a>
+        <span class="tool-domain">blacklistalert.org</span>
+    </div>
+    <p class="tool-desc">检查您的域名是否在实时垃圾邮件黑名单上。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://multirbl.valli.org/" target="_blank" rel="noopener" class="tool-name">MultiRBL</a>
+        <span class="tool-domain">multirbl.valli.org</span>
+    </div>
+    <p class="tool-desc">为发送邮件服务器提供完整的 IP 检查。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://dkimvalidator.com/" target="_blank" rel="noopener" class="tool-name">DKIM SPF & Spam Assassin 验证器</a>
+        <span class="tool-domain">dkimvalidator.com</span>
+    </div>
+    <p class="tool-desc">检查邮件认证并使用 Spam Assassin 进行评分。</p>
+</div>
+</p>
+<h5 id="black_small_square-编码解码与正则表达式测试">▪ 编码/解码与正则表达式测试</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.url-encode-decode.com/" target="_blank" rel="noopener" class="tool-name">URL 编码/解码</a>
+        <span class="tool-domain">url-encode-decode.com</span>
+    </div>
+    <p class="tool-desc">一个帮助您编码或解码文本字符串的在线工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://uncoder.io/" target="_blank" rel="noopener" class="tool-name">Uncoder</a>
+        <span class="tool-domain">uncoder.io</span>
+    </div>
+    <p class="tool-desc">日志数据搜索查询的在线翻译器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://regex101.com/" target="_blank" rel="noopener" class="tool-name">Regex101</a>
+        <span class="tool-domain">regex101.com</span>
+    </div>
+    <p class="tool-desc">在线正则表达式测试和调试器：支持 PHP、PCRE、Python、Golang 和 JavaScript。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://regexr.com/" target="_blank" rel="noopener" class="tool-name">RegExr</a>
+        <span class="tool-domain">regexr.com</span>
+    </div>
+    <p class="tool-desc">一个用于学习、构建和测试正则表达式的在线工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.regextester.com/" target="_blank" rel="noopener" class="tool-name">Regexp Tester</a>
+        <span class="tool-domain">regextester.com</span>
+    </div>
+    <p class="tool-desc">一个在线正则表达式测试工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.regexpal.com/" target="_blank" rel="noopener" class="tool-name">RegEx Pal</a>
+        <span class="tool-domain">regexpal.com</span>
+    </div>
+    <p class="tool-desc">在线正则表达式测试工具 + 其他工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://gchq.github.io/CyberChef/" target="_blank" rel="noopener" class="tool-name">网络瑞士军刀</a>
+        <span class="tool-domain">gchq.github.io</span>
+    </div>
+    <p class="tool-desc">一个用于加密、编码、压缩和数据分析的 Web 应用。</p>
+</div>
+</p>
+<h5 id="black_small_square-网络工具">▪ 网络工具</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://sitereport.netcraft.com" target="_blank" rel="noopener" class="tool-name">Netcraft Site Report</a>
+        <span class="tool-domain">sitereport.netcraft.com</span>
+    </div>
+    <p class="tool-desc">关于网站的详细报告，帮助您做出明智的选择。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://atlas.ripe.net/" target="_blank" rel="noopener" class="tool-name">RIPE NCC Atlas</a>
+        <span class="tool-domain">atlas.ripe.net</span>
+    </div>
+    <p class="tool-desc">一个全球性、开放、分布式的互联网测量平台。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.robtex.com/" target="_blank" rel="noopener" class="tool-name">Robtex</a>
+        <span class="tool-domain">robtex.com</span>
+    </div>
+    <p class="tool-desc">使用各种来源收集关于 IP 地址、域名、主机名等的公开信息。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://securitytrails.com/" target="_blank" rel="noopener" class="tool-name">Security Trails</a>
+        <span class="tool-domain">securitytrails.com</span>
+    </div>
+    <p class="tool-desc">为安全公司、研究人员和团队提供的 API。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://tools.keycdn.com/curl" target="_blank" rel="noopener" class="tool-name">在线 Curl</a>
+        <span class="tool-domain">tools.keycdn.com</span>
+    </div>
+    <p class="tool-desc">curl 测试，分析 HTTP 响应头。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://extendsclass.com/" target="_blank" rel="noopener" class="tool-name">开发者在线工具</a>
+        <span class="tool-domain">extendsclass.com</span>
+    </div>
+    <p class="tool-desc">HTTP API 工具、测试器、编码器、转换器、格式化工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://ping.eu/" target="_blank" rel="noopener" class="tool-name">Ping.eu</a>
+        <span class="tool-domain">ping.eu</span>
+    </div>
+    <p class="tool-desc">在线 Ping、Traceroute、DNS 查询、WHOIS、端口检查、反向查询、代理检查。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://network-tools.com/" target="_blank" rel="noopener" class="tool-name">Network-Tools.com</a>
+        <span class="tool-domain">network-tools.com</span>
+    </div>
+    <p class="tool-desc">为网站管理员、IT 技术人员和极客提供的网络工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://bgpview.io/" target="_blank" rel="noopener" class="tool-name">BGPview</a>
+        <span class="tool-domain">bgpview.io</span>
+    </div>
+    <p class="tool-desc">搜索任何 ASN、IP、前缀或资源名称。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://isbgpsafeyet.com/" target="_blank" rel="noopener" class="tool-name">BGP 安全了吗？</a>
+        <span class="tool-domain">isbgpsafeyet.com</span>
+    </div>
+    <p class="tool-desc">检查您的 ISP 和其他主要互联网参与者的 BGP (RPKI) 安全性。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://riseup.net/" target="_blank" rel="noopener" class="tool-name">Riseup</a>
+        <span class="tool-domain">riseup.net</span>
+    </div>
+    <p class="tool-desc">为致力于解放性社会变革的人们和团体提供在线通信工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.virustotal.com/gui/home/upload" target="_blank" rel="noopener" class="tool-name">VirusTotal</a>
+        <span class="tool-domain">virustotal.com</span>
+    </div>
+    <p class="tool-desc">分析可疑文件和 URL 以检测恶意软件类型。</p>
+</div>
+</p>
+<h5 id="black_small_square-隐私">▪ 隐私</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.privacyguides.org/" target="_blank" rel="noopener" class="tool-name">privacyguides.org</a>
+        <span class="tool-domain">privacyguides.org</span>
+    </div>
+    <p class="tool-desc">提供知识和工具以保护您的隐私免受全球大规模监控。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Test+Servers" target="_blank" rel="noopener" class="tool-name">DNS 隐私测试服务器</a>
+        <span class="tool-domain">dnsprivacy.org</span>
+    </div>
+    <p class="tool-desc">DNS 隐私递归服务器列表（具有"无日志"政策）。</p>
+</div>
+</p>
+<h5 id="black_small_square-代码解析器实验场">▪ 代码解析器/实验场</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.shellcheck.net/" target="_blank" rel="noopener" class="tool-name">ShellCheck</a>
+        <span class="tool-domain">shellcheck.net</span>
+    </div>
+    <p class="tool-desc">查找您的 shell 脚本中的错误。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://explainshell.com/" target="_blank" rel="noopener" class="tool-name">explainshell.com</a>
+        <span class="tool-domain">explainshell.com</span>
+    </div>
+    <p class="tool-desc">获取 shell 命令的交互式帮助文本。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://jsbin.com/?html,output" target="_blank" rel="noopener" class="tool-name">jsbin</a>
+        <span class="tool-domain">jsbin.com</span>
+    </div>
+    <p class="tool-desc">是 HTML、CSS 和 JavaScript 等的实时粘贴板。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://codesandbox.io/" target="_blank" rel="noopener" class="tool-name">CodeSandbox</a>
+        <span class="tool-domain">codesandbox.io</span>
+    </div>
+    <p class="tool-desc">用于 Web 应用程序开发的在线代码编辑器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://sandbox.onlinephpfunctions.com/" target="_blank" rel="noopener" class="tool-name">PHP 沙盒</a>
+        <span class="tool-domain">sandbox.onlinephpfunctions.com</span>
+    </div>
+    <p class="tool-desc">使用此代码测试器测试您的 PHP 代码。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.repl.it/" target="_blank" rel="noopener" class="tool-name">Repl.it</a>
+        <span class="tool-domain">repl.it</span>
+    </div>
+    <p class="tool-desc">一个集学习、构建、协作和托管于一体的即时 IDE。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="http://www.vclfiddle.net/" target="_blank" rel="noopener" class="tool-name">vclFiddle</a>
+        <span class="tool-domain">vclfiddle.net</span>
+    </div>
+    <p class="tool-desc">用于试验 Varnish Cache VCL 的在线工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/hadolint/hadolint" target="_blank" rel="noopener" class="tool-name">Haskell Dockerfile Linter</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">更智能的 Dockerfile linter，帮助您构建最佳实践的 Docker 镜像。</p>
+</div>
+</p>
+<h5 id="black_small_square-性能">▪ 性能</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://gtmetrix.com/" target="_blank" rel="noopener" class="tool-name">GTmetrix</a>
+        <span class="tool-domain">gtmetrix.com</span>
+    </div>
+    <p class="tool-desc">分析您的网站速度并使其更快。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://performance.sucuri.net/" target="_blank" rel="noopener" class="tool-name">Sucuri 加载时间测试器</a>
+        <span class="tool-domain">performance.sucuri.net</span>
+    </div>
+    <p class="tool-desc">从全球各地测试您任何网站的性能。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://tools.pingdom.com/" target="_blank" rel="noopener" class="tool-name">Pingdom 工具</a>
+        <span class="tool-domain">tools.pingdom.com</span>
+    </div>
+    <p class="tool-desc">分析您网站的速度，然后找到并修复瓶颈。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://pingme.io/" target="_blank" rel="noopener" class="tool-name">PingMe.io</a>
+        <span class="tool-domain">pingme.io</span>
+    </div>
+    <p class="tool-desc">从多个地理区域运行网站延迟测试。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank" rel="noopener" class="tool-name">PageSpeed Insights</a>
+        <span class="tool-domain">developers.google.com</span>
+    </div>
+    <p class="tool-desc">分析您的网站速度并使其更快。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://web.dev/" target="_blank" rel="noopener" class="tool-name">web.dev</a>
+        <span class="tool-domain">web.dev</span>
+    </div>
+    <p class="tool-desc">帮助像您一样的开发者学习并将现代 Web 功能应用到自己的网站和应用中。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/GoogleChrome/lighthouse" target="_blank" rel="noopener" class="tool-name">Lighthouse</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">对 Web 进行审计、性能指标和最佳实践。</p>
+</div>
+</p>
+<h5 id="black_small_square-大规模扫描器搜索引擎">▪ 大规模扫描器(搜索引擎)</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://censys.io/" target="_blank" rel="noopener" class="tool-name">Censys</a>
+        <span class="tool-domain">censys.io</span>
+    </div>
+    <p class="tool-desc">帮助信息安全从业者发现、监控和分析设备。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.shodan.io/" target="_blank" rel="noopener" class="tool-name">Shodan</a>
+        <span class="tool-domain">shodan.io</span>
+    </div>
+    <p class="tool-desc">是世界上第一个互联网连接设备的搜索引擎。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://2000.shodan.io/#/" target="_blank" rel="noopener" class="tool-name">Shodan 2000</a>
+        <span class="tool-domain">2000.shodan.io</span>
+    </div>
+    <p class="tool-desc">此工具从 Shodan 查找随机生成的数据。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://viz.greynoise.io/table" target="_blank" rel="noopener" class="tool-name">GreyNoise</a>
+        <span class="tool-domain">viz.greynoise.io</span>
+    </div>
+    <p class="tool-desc">像 Shodan 和 Censys 一样的大规模扫描器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.zoomeye.org/" target="_blank" rel="noopener" class="tool-name">ZoomEye</a>
+        <span class="tool-domain">zoomeye.org</span>
+    </div>
+    <p class="tool-desc">是一个网络空间搜索引擎，让用户找到特定的网络组件。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://fofa.so/" target="_blank" rel="noopener" class="tool-name">FOFA</a>
+        <span class="tool-domain">fofa.so</span>
+    </div>
+    <p class="tool-desc">是一个网络空间搜索引擎。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.onyphe.io/" target="_blank" rel="noopener" class="tool-name">onyphe.io</a>
+        <span class="tool-domain">onyphe.io</span>
+    </div>
+    <p class="tool-desc">是一个用于开源和网络威胁情报数据的网络防御搜索引擎。</p>
+</div>
+</p>
+            </article>
+        </main>
+
+        <aside class="sidebar-right">
+            <nav class="page-outline"><h4>本页大纲</h4><ul><li class="level-3"><a href="#black_small_square-浏览器">▪ 浏览器</a></li><li class="level-3"><a href="#black_small_square-ssl安全">▪ SSL/安全</a></li><li class="level-3"><a href="#black_small_square-http-头与-web-检查工具">▪ HTTP 头与 Web 检查工具</a></li><li class="level-3"><a href="#black_small_square-dns">▪ DNS</a></li><li class="level-3"><a href="#black_small_square-邮件">▪ 邮件</a></li><li class="level-3"><a href="#black_small_square-编码解码与正则表达式测试">▪ 编码/解码与正则表达式测试</a></li><li class="level-3"><a href="#black_small_square-网络工具">▪ 网络工具</a></li><li class="level-3"><a href="#black_small_square-隐私">▪ 隐私</a></li><li class="level-3"><a href="#black_small_square-代码解析器实验场">▪ 代码解析器/实验场</a></li><li class="level-3"><a href="#black_small_square-性能">▪ 性能</a></li><li class="level-3"><a href="#black_small_square-大规模扫描器搜索引擎">▪ 大规模扫描器(搜索引擎)</a></li></ul></nav>
+        </aside>
+    </div>
+
+    <button class="back-to-top" id="back-to-top" aria-label="回到顶部">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="/the-book-of-secret-knowledge-zh/js/search.js"></script>
+    <script src="/the-book-of-secret-knowledge-zh/js/theme.js"></script>
+    <script src="/the-book-of-secret-knowledge-zh/js/nav.js"></script>
+</body>
+</html>

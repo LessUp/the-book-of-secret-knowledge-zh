@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUI 工具 | 秘密知识之书</title>
+    <meta name="description" content="GUI 工具 - 秘密知识之书中文版，系统管理员、DevOps工程师和安全研究人员的知识宝库">
+    <meta name="keywords" content="DevOps, SysAdmin, Security, Pentest, Tools, CLI, 中文翻译, 渗透测试, 安全工具">
+    <meta property="og:title" content="GUI 工具 | 秘密知识之书">
+    <meta property="og:description" content="系统管理员、DevOps工程师和安全研究人员的知识宝库">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lessup.github.io/the-book-of-secret-knowledge-zh/">
+    <link rel="canonical" href="https://lessup.github.io/the-book-of-secret-knowledge-zh/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📚%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="/the-book-of-secret-knowledge-zh/css/style.css">
+    <link rel="stylesheet" href="/the-book-of-secret-knowledge-zh/css/highlight.css">
+</head>
+<body data-theme="dark">
+    <header class="site-header">
+        <div class="header-left">
+            <button class="menu-toggle" aria-label="切换菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="/the-book-of-secret-knowledge-zh/" class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">秘密知识之书</span>
+            </a>
+        </div>
+        <div class="header-center">
+            <div class="search-box">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                </svg>
+                <input type="text" id="search-input" placeholder="搜索工具、资源... (Ctrl+K)" autocomplete="off">
+                <div class="search-results" id="search-results"></div>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle" id="theme-toggle" aria-label="切换主题">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <a href="https://github.com/LessUp/the-book-of-secret-knowledge-zh" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="site-container">
+        <aside class="sidebar-left">
+            <nav class="toc-tree">
+                <div class="toc-section">
+                    <h4>目录导航</h4>
+                    <a href="/the-book-of-secret-knowledge-zh/tools/" class="toc-item">🛠️ CLI 工具</a><a href="/the-book-of-secret-knowledge-zh/gui-tools/" class="toc-item">🖥️ GUI 工具</a><a href="/the-book-of-secret-knowledge-zh/web-tools/" class="toc-item">🌐 Web 工具</a><a href="/the-book-of-secret-knowledge-zh/system/" class="toc-item">⚙️ 系统/服务</a><a href="/the-book-of-secret-knowledge-zh/network/" class="toc-item">🌐 网络</a><a href="/the-book-of-secret-knowledge-zh/containers/" class="toc-item">🐳 容器/编排</a><a href="/the-book-of-secret-knowledge-zh/guides/" class="toc-item">📖 手册/指南/教程</a><a href="/the-book-of-secret-knowledge-zh/lists/" class="toc-item">⭐ 精选列表</a><a href="/the-book-of-secret-knowledge-zh/media/" class="toc-item">🎧 博客/播客/视频</a><a href="/the-book-of-secret-knowledge-zh/pentest/" class="toc-item">🔐 黑客/渗透测试</a><a href="/the-book-of-secret-knowledge-zh/cheatsheets/" class="toc-item">📋 其他速查表</a><a href="/the-book-of-secret-knowledge-zh/one-liners/" class="toc-item">⚡ Shell 单行命令</a><a href="/the-book-of-secret-knowledge-zh/shell-tricks/" class="toc-item">💡 Shell 技巧</a><a href="/the-book-of-secret-knowledge-zh/shell-functions/" class="toc-item">🔧 Shell 函数</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="content">
+            
+        <nav class="breadcrumb">
+            <a href="/the-book-of-secret-knowledge-zh/">首页</a>
+            <span class="separator">/</span>
+            <span class="current">GUI 工具</span>
+        </nav>
+            <article class="markdown-body">
+                <h5 id="black_small_square-终端模拟器">▪ 终端模拟器</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://sw.kovidgoyal.net/kitty/" target="_blank" rel="noopener" class="tool-name">kitty</a>
+        <span class="tool-domain">sw.kovidgoyal.net</span>
+    </div>
+    <p class="tool-desc">是一款快速、功能丰富、基于 GPU 的终端模拟器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/alacritty/alacritty" target="_blank" rel="noopener" class="tool-name">Alacritty</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一款快速、跨平台的 OpenGL 终端模拟器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://hyper.is/" target="_blank" rel="noopener" class="tool-name">Hyper</a>
+        <span class="tool-domain">hyper.is</span>
+    </div>
+    <p class="tool-desc">是一款基于 Web 技术构建的终端。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://iterm2.com/" target="_blank" rel="noopener" class="tool-name">iTerm2</a>
+        <span class="tool-domain">iterm2.com</span>
+    </div>
+    <p class="tool-desc">是 Terminal 的替代品，也是 iTerm 的继任者。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.putty.org/" target="_blank" rel="noopener" class="tool-name">PuTTY</a>
+        <span class="tool-domain">putty.org</span>
+    </div>
+    <p class="tool-desc">是一款 SSH 和 telnet 客户端，最初由 Simon Tatham 开发。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://mremoteng.org/" target="_blank" rel="noopener" class="tool-name">mRemoteNG</a>
+        <span class="tool-domain">mremoteng.org</span>
+    </div>
+    <p class="tool-desc">mRemote 的一个分支，功能强大的多标签 PuTTy！</p>
+</div>
+</p>
+<h5 id="black_small_square-网络">▪ 网络</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.wireshark.org/" target="_blank" rel="noopener" class="tool-name">Wireshark</a>
+        <span class="tool-domain">wireshark.org</span>
+    </div>
+    <p class="tool-desc">是一款免费开源的数据包分析器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://portswigger.net/burp" target="_blank" rel="noopener" class="tool-name">Burp Suite</a>
+        <span class="tool-domain">portswigger.net</span>
+    </div>
+    <p class="tool-desc">是一款用于测试 Web 应用程序安全性的图形化工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.zaproxy.org/" target="_blank" rel="noopener" class="tool-name">OWASP ZAP</a>
+        <span class="tool-domain">zaproxy.org</span>
+    </div>
+    <p class="tool-desc">是世界上使用最广泛的 Web 应用扫描器。</p>
+</div>
+</p>
+<h5 id="black_small_square-负载测试工具">▪ 负载测试工具</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://jmeter.apache.org/" target="_blank" rel="noopener" class="tool-name">JMeter™</a>
+        <span class="tool-domain">jmeter.apache.org</span>
+    </div>
+    <p class="tool-desc">是一款开源负载测试工具，旨在测试功能行为和衡量性能。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/locustio/locust" target="_blank" rel="noopener" class="tool-name">locust</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一款易于使用的分布式用户负载测试工具，专为负载测试网站而设计。</p>
+</div>
+</p>
+<h5 id="black_small_square-浏览器">▪ 浏览器</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.torproject.org/" target="_blank" rel="noopener" class="tool-name">TOR 浏览器</a>
+        <span class="tool-domain">torproject.org</span>
+    </div>
+    <p class="tool-desc">保护您的隐私。保护自己免受网络监控和流量分析。</p>
+</div>
+</p>
+<h5 id="black_small_square-密码管理器">▪ 密码管理器</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://keepassxc.org/" target="_blank" rel="noopener" class="tool-name">KeePassXC</a>
+        <span class="tool-domain">keepassxc.org</span>
+    </div>
+    <p class="tool-desc">让您可以安全地存储密码，并自动将其输入到日常网站和应用程序中。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://bitwarden.com/" target="_blank" rel="noopener" class="tool-name">Bitwarden</a>
+        <span class="tool-domain">bitwarden.com</span>
+    </div>
+    <p class="tool-desc">是一款内置同步功能的开源密码管理器。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/dani-garcia/vaultwarden/" target="_blank" rel="noopener" class="tool-name">Vaultwarden</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">用 Rust 编写的非官方 Bitwarden 兼容服务器。</p>
+</div>
+</p>
+<h5 id="black_small_square-即时通讯irc-客户端">▪ 即时通讯/IRC 客户端</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://hexchat.github.io/index.html" target="_blank" rel="noopener" class="tool-name">HexChat</a>
+        <span class="tool-domain">hexchat.github.io</span>
+    </div>
+    <p class="tool-desc">是一款基于 XChat 的 IRC 客户端。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://pidgin.im/" target="_blank" rel="noopener" class="tool-name">Pidgin</a>
+        <span class="tool-domain">pidgin.im</span>
+    </div>
+    <p class="tool-desc">是一款免费且易于使用的聊天客户端，拥有数百万用户。</p>
+</div>
+</p>
+<h5 id="black_small_square-端到端加密通讯工具">▪ 端到端加密通讯工具</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.signal.org/" target="_blank" rel="noopener" class="tool-name">Signal</a>
+        <span class="tool-domain">signal.org</span>
+    </div>
+    <p class="tool-desc">是一款加密通信应用。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://wire.com/en/" target="_blank" rel="noopener" class="tool-name">Wire</a>
+        <span class="tool-domain">wire.com</span>
+    </div>
+    <p class="tool-desc">安全的消息传递、文件共享、语音通话和视频会议。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://github.com/prof7bit/TorChat" target="_blank" rel="noopener" class="tool-name">TorChat</a>
+        <span class="tool-domain">github.com</span>
+    </div>
+    <p class="tool-desc">是一款基于 Tor 隐藏服务的去中心化匿名即时通讯工具。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://matrix.org/" target="_blank" rel="noopener" class="tool-name">Matrix</a>
+        <span class="tool-domain">matrix.org</span>
+    </div>
+    <p class="tool-desc">一个用于安全、去中心化实时通信的开放网络。</p>
+</div>
+</p>
+<h5 id="black_small_square-文本编辑器">▪ 文本编辑器</h5>
+<p>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://www.sublimetext.com/3" target="_blank" rel="noopener" class="tool-name">Sublime Text</a>
+        <span class="tool-domain">sublimetext.com</span>
+    </div>
+    <p class="tool-desc">是一款轻量级、跨平台的代码编辑器，以其速度和易用性而闻名。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://code.visualstudio.com/" target="_blank" rel="noopener" class="tool-name">Visual Studio Code</a>
+        <span class="tool-domain">code.visualstudio.com</span>
+    </div>
+    <p class="tool-desc">是一款重新定义和优化的代码编辑器，用于构建和调试现代 Web 和云应用程序。</p>
+</div>
+<div class="tool-card">
+    <div class="tool-header">
+        <a href="https://atom.io/" target="_blank" rel="noopener" class="tool-name">Atom</a>
+        <span class="tool-domain">atom.io</span>
+    </div>
+    <p class="tool-desc">一款为 21 世纪打造的可定制文本编辑器。</p>
+</div>
+</p>
+            </article>
+        </main>
+
+        <aside class="sidebar-right">
+            <nav class="page-outline"><h4>本页大纲</h4><ul><li class="level-3"><a href="#black_small_square-终端模拟器">▪ 终端模拟器</a></li><li class="level-3"><a href="#black_small_square-网络">▪ 网络</a></li><li class="level-3"><a href="#black_small_square-负载测试工具">▪ 负载测试工具</a></li><li class="level-3"><a href="#black_small_square-浏览器">▪ 浏览器</a></li><li class="level-3"><a href="#black_small_square-密码管理器">▪ 密码管理器</a></li><li class="level-3"><a href="#black_small_square-即时通讯irc-客户端">▪ 即时通讯/IRC 客户端</a></li><li class="level-3"><a href="#black_small_square-端到端加密通讯工具">▪ 端到端加密通讯工具</a></li><li class="level-3"><a href="#black_small_square-文本编辑器">▪ 文本编辑器</a></li></ul></nav>
+        </aside>
+    </div>
+
+    <button class="back-to-top" id="back-to-top" aria-label="回到顶部">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="/the-book-of-secret-knowledge-zh/js/search.js"></script>
+    <script src="/the-book-of-secret-knowledge-zh/js/theme.js"></script>
+    <script src="/the-book-of-secret-knowledge-zh/js/nav.js"></script>
+</body>
+</html>
